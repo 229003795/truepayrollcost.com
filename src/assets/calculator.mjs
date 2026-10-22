@@ -1,24 +1,31 @@
 import {calculate,firstYearFields} from './cost.mjs?v=20261023-quote1';
+import {presentQuote,emptyMessage} from './quote-output.mjs?v=20261023-output1';
 const form=document.querySelector('#cost-form'),out=document.querySelector('#cost-result');
 const labels={base:'Monthly base / platform fee',perPerson:'Monthly per-person fee',people:'Billable people',oneTime:'One-time setup / implementation fee',taxAnnual:'Tax filing / year-end fees per year',otherAnnual:'Other recurring annual fees / modules',renewal:'Contracted year-two price',hours:'Internal transition hours',hourly:'Internal hourly cost'};
 const money=n=>n===null?'Pending confirmation':n.toLocaleString('en-US',{style:'currency',currency:'USD'});
 const n=v=>v===null?'[pending]':String(v);
 const node=(tag,text)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;return el;};
 function inputStates(){for(const key of Object.keys(labels)){const blank=form.elements.namedItem(key).value==='';const status=document.querySelector('#'+key+'-state');status.textContent=blank?'Pending confirmation':'Entered';status.dataset.pending=String(blank);}}
-function row(dl,label,value){const div=node('div');if(label==='First-year total'||label.startsWith('Confirmed-cost subtotal'))div.className='annual-total';div.append(node('dt',label),node('dd',value));dl.append(div);}
+function row(dl,label,value){const div=node('div');if(label==='First-year total')div.className='annual-total';div.append(node('dt',label),node('dd',value));dl.append(div);}
 function run(focus=false){if(!form.reportValidity())return;try{
  const input=Object.fromEntries([...firstYearFields,'renewal'].map(key=>{const raw=form.elements.namedItem(key).value;return [key,raw===''?null:Number(raw)];}));input.renewalMode=form.elements.namedItem('renewalMode').value;
  const r=calculate(input),formula=`(${n(r.base)} + ${n(r.perPerson)} × ${n(r.people)}) × 12 + ${n(r.oneTime)} + ${n(r.taxAnnual)} + ${n(r.otherAnnual)} + (${n(r.hours)} × ${n(r.hourly)}) = ${money(r.firstYear)}`;
  const recurrence=`(${n(r.base)} + ${n(r.perPerson)} × ${n(r.people)}) × 12 + ${n(r.taxAnnual)} + ${n(r.otherAnnual)}`;
  const yearTwoFormula=r.renewalMode==='known_total'?`Year two = quoted recurring annual total ${n(r.renewal)} = ${money(r.yearTwo)}`:r.renewalMode==='increase_percent'?`Year two = (${recurrence}) × (1 + ${n(r.renewal)} ÷ 100) = ${money(r.yearTwo)}`:`Year two = (${recurrence}) + ${n(r.renewal)} annual increase = ${money(r.yearTwo)}`;
- out.replaceChildren(node('h3',r.firstYear===null?'Your quote is incomplete':'Your entered-cost scenario'));
- const dl=node('dl');row(dl,'Monthly platform + people',money(r.monthly));row(dl,'Annual tax filing / year-end fees',money(r.taxAnnual));row(dl,'Other recurring annual fees',money(r.otherAnnual));row(dl,'One-time setup + internal work',money(r.transition));row(dl,r.firstYear===null?'Confirmed-cost subtotal — not the full annual cost':'First-year total',money(r.firstYear??r.confirmedSubtotal));row(dl,'Year-two recurring total',money(r.yearTwo));row(dl,'Two-year total',money(r.twoYears));out.append(dl);
- out.append(node('p','First year = '+formula),node('p',yearTwoFormula),node('p','Two years = '+money(r.firstYear)+' + '+money(r.yearTwo)+' = '+money(r.twoYears)));
+ const view=presentQuote(r);
+ out.replaceChildren(node('h3','Your annual cost'));
+ if(view.waiting)out.append(node('p',emptyMessage));
+ else {
+ const dl=node('dl');row(dl,'Cash outlay — first year',money(view.cash));row(dl,'Internal cost — transition time',money(r.internal));row(dl,'First-year total',money(r.firstYear));out.append(dl);
+ out.append(node('p','Cash outlay = ('+n(r.base)+' + '+n(r.perPerson)+' × '+n(r.people)+') × 12 + '+n(r.oneTime)+' + '+n(r.taxAnnual)+' + '+n(r.otherAnnual)+' = '+money(view.cash)),node('p','Internal cost = '+n(r.hours)+' × '+n(r.hourly)+' = '+money(r.internal)),node('p','First-year total = cash outlay + internal cost = '+money(r.firstYear)));
+ out.append(node('p',yearTwoFormula),node('p','Two years = '+money(r.firstYear)+' + '+money(r.yearTwo)+' = '+money(r.twoYears)));
+ out.append(node('p','Cash outlay is paid to the provider. Internal cost values your own transition time; it is not a provider charge.'));
+ }
  out.append(node('h3','Items to confirm before signing'));
- if(r.pending.length){const list=node('ul');for(const key of r.pending)list.append(node('li',key==='people'?'Confirm the number of people to be paid.':key==='hours'||key==='hourly'?'Document '+labels[key].toLowerCase()+' or confirm an explicit zero.':'Confirm '+labels[key].toLowerCase()+' in writing, including an explicit zero if no charge applies.'));out.append(list);}else out.append(node('p','No input fields are blank. These are your entered terms, not independent confirmation from the provider.'));
- out.append(node('p','Check that each charge appears once and that the year-two clause covers the same services. Percentage mode applies to the entire recurring annual subtotal only; if the contract does not specify its scope, leave the amount blank. Year two excludes the initial setup fee and initial transition work. Wages, employer taxes and benefit premiums are excluded.'));
- const date=new Date().toLocaleDateString('en-CA');out.append(node('p','Source: your quote and your own transition estimates. Calculated '+date+'. Blank fields remain pending; the incomplete subtotal excludes unconfirmed components.'));
- window.PayrollInputs.commit({title:'Your entered-cost scenario',monthly:r.firstYear===null?null:r.firstYear/12,annual:r.firstYear,people:r.people,incomplete:r.pending.length>0,items:[['Monthly platform + people',r.monthly??'Pending'],['Annual filing fees',r.taxAnnual??'Pending'],['Other recurring annual fees',r.otherAnnual??'Pending'],['Setup + internal work',r.transition??'Pending'],['Year-two recurring total',r.yearTwo??'Pending']],formula:'First year: '+formula,scope:r.pending.length?`${r.pending.length} ${r.pending.length===1?"input":"inputs"} pending; open the shared result for the confirmation checklist. Incomplete amounts are not a full annual cost.`:'Your quote and initial transition assumptions. Year two excludes initial setup and transition work. Excludes wages, employer taxes and premiums.',reviewLabel:'Your quote · Calculated '+date});
+ if(view.pending.length){const list=node('ul');for(const key of view.pending)list.append(node('li',labels[key]+' — Pending confirmation'));out.append(list);}else out.append(node('p','No blank inputs. Confirm these terms in writing before signing.'));
+ if(!view.waiting)out.append(node('p','Unconfirmed amounts remain pending. They are not treated as zero.'));
+ const date=new Date().toLocaleDateString('en-CA');
+ window.PayrollInputs.commit({title:'Your annual cost',waiting:view.waiting,emptyMessage,annualBreakdown:true,monthly:r.firstYear===null?null:r.firstYear/12,annual:r.firstYear,people:r.people,incomplete:r.pending.length>0,items:view.waiting?[]:[['Cash outlay — first year',view.cash??'Pending confirmation'],['Internal cost — transition time',r.internal??'Pending confirmation'],['First-year total',r.firstYear??'Pending confirmation']],formula:view.waiting?'':'First year: '+formula,scope:view.waiting?'':'Cash outlay is paid to the provider. Internal cost is your own transition time, not a provider charge.',reviewLabel:view.waiting?'Your quote':'Your quote · Calculated '+date});
  inputStates();if(focus)out.focus();
 }catch(error){out.textContent=error.message;}}
 form.addEventListener('input',inputStates);form.addEventListener('change',inputStates);form.addEventListener('submit',event=>{event.preventDefault();run(true);});
