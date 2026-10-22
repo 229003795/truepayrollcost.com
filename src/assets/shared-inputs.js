@@ -50,7 +50,7 @@
   link.textContent = 'Share this result';
   hint.append(link);
   output.after(hint);
-  function commit() {
+  function commit(summary) {
     const values = snapshot();
     write(values);
     const url = new URL(location.href);
@@ -59,6 +59,8 @@
     history.replaceState(null, '', url);
     link.href = url.href;
     hint.hidden = false;
+    hint.className = "share-hint";
+    if(summary){window.PayrollInputs.latest=summary;window.dispatchEvent?.(new CustomEvent("payroll:calculated",{detail:summary}));}
   }
   form.addEventListener('input', () => {
     hint.hidden = true;
