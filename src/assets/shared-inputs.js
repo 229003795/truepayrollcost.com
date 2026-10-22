@@ -6,7 +6,7 @@
   const route = location.pathname;
   const mapping = route === '/' ? {
     people:'people', base:'quote_monthly_base', perPerson:'quote_monthly_per_person',
-    addons:'quote_monthly_extras', oneTime:'quote_one_time', hours:'transition_hours', hourly:'transition_hourly_cost'
+    oneTime:'quote_one_time', taxAnnual:'quote_annual_filing', otherAnnual:'quote_annual_extras', renewal:'quote_year2_value', renewalMode:'quote_year2_basis', hours:'transition_hours', hourly:'transition_hourly_cost'
   } : route === '/gusto-vs-quickbooks/' ? {
     people:'people', broker:'gusto_broker_people', hsa:'gusto_hsa_people',
     fsa:'gusto_fsa_people', dc:'gusto_dc_people', commuter:'gusto_commuter_people'
@@ -40,6 +40,13 @@
     const raw = fromURL ? params.get(canonical) : stored[canonical];
     if (raw !== null && raw !== undefined && valid(el, raw)) {
       if (el.type === 'checkbox') el.checked = raw === '1'; else el.value = raw;
+    }
+  }
+  if(route === '/') {
+    const legacy = fromURL ? params.get('quote_monthly_extras') : stored.quote_monthly_extras;
+    const annual = fromURL ? params.get('quote_annual_extras') : stored.quote_annual_extras;
+    if(legacy !== null && legacy !== undefined && (annual === undefined || annual === null)) {
+      const warning=document.createElement('p');warning.className='hint';warning.textContent='This saved scenario used the old monthly-add-ons field ('+legacy+'). It has not been included automatically. Reconcile that amount in Other recurring annual fees and confirm the new annual-fee and year-two fields.';form.before(warning);
     }
   }
   const output = document.querySelector('#cost-result, #result');

@@ -5,13 +5,13 @@ import {readFileSync} from 'node:fs';
 const source=readFileSync(new URL('../src/assets/shared-inputs.js',import.meta.url),'utf8');
 const storage=new Map();
 function page(path, search='', initial={}, blocked=false){
-  const fields=path==='/'?['people','base','perPerson','addons','oneTime','hours','hourly']:path.includes('quickbooks')?['people','broker','hsa','fsa','dc','commuter']:['people','plan','scope','runs','gm','gy','gs','am','ap','ae','ay','as','matched'];
+  const fields=path==='/'?['people','base','perPerson','oneTime','taxAnnual','otherAnnual','renewal','renewalMode','hours','hourly']:path.includes('quickbooks')?['people','broker','hsa','fsa','dc','commuter']:['people','plan','scope','runs','gm','gy','gs','am','ap','ae','ay','as','matched'];
   const elements=Object.fromEntries(fields.map(name=>[name,{type:name==='matched'?'checkbox':'number',tagName:'INPUT',min:'0',max:'',step:['people','runs','broker','hsa','fsa','dc','commuter'].includes(name)?'1':'0.01',value:initial[name]??'',checked:false}]));
-  for(const [name, options] of Object.entries({plan:['simple','plus','premium'],scope:['single','multi']}))if(elements[name])Object.assign(elements[name],{tagName:'SELECT',options:options.map(value=>({value})),value:initial[name]??options[0]});
-  const events={},form={elements:{namedItem:n=>elements[n]},addEventListener:(name,fn)=>events[name]=fn},hints=[],location={pathname:path,search,href:'https://truepayrollcost.com'+path+search};
+  for(const [name, options] of Object.entries({plan:['simple','plus','premium'],scope:['single','multi'],renewalMode:['increase_amount','increase_percent','known_total']}))if(elements[name])Object.assign(elements[name],{tagName:'SELECT',options:options.map(value=>({value})),value:initial[name]??options[0]});
+  const notices=[],events={},form={before:n=>notices.push(n),elements:{namedItem:n=>elements[n]},addEventListener:(name,fn)=>events[name]=fn},hints=[],location={pathname:path,search,href:'https://truepayrollcost.com'+path+search};
   const context={URL,URLSearchParams,location,window:{},localStorage:{getItem:k=>{if(blocked)throw Error('blocked');return storage.get(k)},setItem:(k,v)=>{if(blocked)throw Error('blocked');storage.set(k,v)}},history:{replaceState:(_a,_b,url)=>{location.href=String(url)}},document:{querySelector:s=>s==='#cost-form, #calc'?form:{after:n=>hints.push(n)},createElement:()=>({append(){}})}};
   vm.runInNewContext(source,context);
-  return {elements,events,context,commit:context.window.PayrollInputs.commit,hints};
+  return {elements,events,context,notices,commit:context.window.PayrollInputs.commit,hints};
 }
 test('one dataset shares people without mixing unrelated fee units',()=>{
   storage.clear();const a=page('/gusto-vs-quickbooks/','',{people:'5',broker:'5',hsa:'5',fsa:'5',dc:'5',commuter:'5'});a.commit();
@@ -28,4 +28,12 @@ test('URL snapshot wins over recipient storage and preserves unknown and uncheck
 test('invalid URL values are rejected; URL sharing survives unavailable local storage',()=>{
   const a=page('/','?calc=1&people=-2&quote_monthly_base=NaN',{people:'5',base:'49'});assert.equal(a.elements.people.value,'5');assert.equal(a.elements.base.value,'49');
   const b=page('/','',{people:'5',base:'49'},true);b.commit();assert.equal(new URL(b.context.location.href).searchParams.get('people'),'5');assert.equal(b.hints[0].hidden,false);
+});
+test('annual fees and renewal basis survive URL sharing without filling an unknown fee',()=>{
+ storage.clear();const a=page('/','',{people:'5',base:'49',perPerson:'6',oneTime:'100',taxAnnual:'60',otherAnnual:'',renewal:'10',renewalMode:'increase_percent',hours:'2',hourly:'25'});a.commit();
+ const restored=page('/',new URL(a.context.location.href).search);assert.equal(restored.elements.taxAnnual.value,'60');assert.equal(restored.elements.otherAnnual.value,'');assert.equal(restored.elements.renewal.value,'10');assert.equal(restored.elements.renewalMode.value,'increase_percent');
+});
+
+test('old monthly-add-on links ask for reconciliation rather than silently dropping a fee',()=>{
+ storage.clear();const a=page('/','?calc=1&people=5&quote_monthly_extras=10');assert.equal(a.elements.otherAnnual.value,'');assert.equal(a.notices.length,1);assert.match(a.notices[0].textContent,/has not been included automatically/);
 });
