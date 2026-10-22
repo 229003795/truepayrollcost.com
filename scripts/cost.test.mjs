@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {calculate} from '../src/assets/cost.mjs';
+test('cost components stay separate: synthetic arithmetic fixture, not a provider quote',()=>{assert.deepEqual(calculate({base:40,perPerson:6,people:5,addons:10,oneTime:100,hours:2,hourly:25}),{monthly:80,annualRecurring:960,transition:150,firstYear:1110});});
+test('reject negative, non-finite and fractional headcounts',()=>{const x={base:0,perPerson:0,people:0,addons:0,oneTime:0,hours:0,hourly:0};for(const key of Object.keys(x))assert.throws(()=>calculate({...x,[key]:-1}));assert.throws(()=>calculate({...x,base:NaN}));assert.throws(()=>calculate({...x,people:1.5}));});
