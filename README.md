@@ -14,6 +14,8 @@ Add an English HTML file under `src/` (directory pages use `index.html`). The bu
 
 The worksheet uses only visitor-entered assumptions. It does not preload vendor quotes. Provider facts link to official pages with a review date. Tests use clearly labeled synthetic arithmetic fixtures, not market data.
 
+The home quote worksheet keeps missing values pending rather than treating them as zero. First-year cost is `(monthly base + monthly person rate * people) * 12 + setup + annual filing fees + other annual fees + internal hours * hourly cost`. Year-two recurring cost uses the explicitly selected contract basis: an added annual amount, an uplift on the whole recurring annual subtotal, or a quoted recurring annual total. Initial setup and transition work are not repeated in year two. Every missing field appears in the confirmation checklist; incomplete subtotals are not presented as a full annual cost.
+
 ## Analytics
 
 Cloudflare Web Analytics is the only traffic measurement source. Worksheet input values are processed locally and not emitted as analytics events.
