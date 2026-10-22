@@ -17,3 +17,7 @@ The worksheet uses only visitor-entered assumptions. It does not preload vendor 
 ## Analytics
 
 Cloudflare Web Analytics is the only traffic measurement source. Worksheet input values are processed locally and not emitted as analytics events.
+
+## Deployment configuration
+
+Cloudflare Pages project: `truepayrollcost`. Connected repository: `229003795/truepayrollcost.com`. Production branch: `main`. Build: `npm run build`. Output: `dist`. Web Analytics is enabled through the Pages integration; it takes effect on deployment. The build adds no other analytics provider. Custom domain: `truepayrollcost.com`.
