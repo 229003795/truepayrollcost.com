@@ -42,6 +42,10 @@
       if (el.type === 'checkbox') el.checked = raw === '1'; else el.value = raw;
     }
   }
+  let example = route === '/' ? ((fromURL ? params.get('quote_example') : stored.quote_example) || '') : '';
+  if(route === '/' && !fromURL && Object.keys(stored).length === 0 && entries.filter(([field])=>field.type==='number').every(([field])=>field.value==='')) {
+    form.elements.namedItem('base').value='49';form.elements.namedItem('perPerson').value='6';form.elements.namedItem('people').value='5';example='gusto-simple';
+  }
   if(route === '/') {
     const legacy = fromURL ? params.get('quote_monthly_extras') : stored.quote_monthly_extras;
     const annual = fromURL ? params.get('quote_annual_extras') : stored.quote_annual_extras;
@@ -59,6 +63,7 @@
   output.after(hint);
   function commit(summary) {
     const values = snapshot();
+    if(route==='/')values.quote_example=example;
     write(values);
     const url = new URL(location.href);
     url.searchParams.set('calc', '1');
@@ -72,14 +77,16 @@
   form.addEventListener('input', () => {
     hint.hidden = true;
     const values = {};
+    if(route==='/'){if(example)example='edited';window.PayrollInputs.example=example;values.quote_example=example;}
     for (const [el, canonical] of entries) if (valid(el, value(el))) values[canonical] = value(el);
     write(values);
   });
   form.addEventListener('change', () => {
     hint.hidden = true;
     const values = {};
+    if(route==='/'){if(example)example='edited';window.PayrollInputs.example=example;values.quote_example=example;}
     for (const [el, canonical] of entries) if (valid(el, value(el))) values[canonical] = value(el);
     write(values);
   });
-  window.PayrollInputs = {commit, fromURL};
+  window.PayrollInputs = {commit, fromURL, example};
 })();

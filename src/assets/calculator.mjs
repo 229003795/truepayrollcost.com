@@ -1,6 +1,6 @@
 import {calculate,firstYearFields} from './cost.mjs?v=20261023-quote1';
 import {presentQuote,emptyMessage,cashPrompt,internalPrompt} from './quote-output.mjs?v=20261023-output2';
-import {mountTakeaway} from './takeaway.mjs?v=20261023-takeaway1';
+import {mountTakeaway} from './takeaway.mjs?v=20261023-example1';
 const form=document.querySelector('#cost-form'),out=document.querySelector('#cost-result');
 const labels={base:'Monthly base / platform fee',perPerson:'Monthly per-person fee',people:'Billable people',oneTime:'One-time setup / implementation fee',taxAnnual:'Tax filing / year-end fees per year',otherAnnual:'Other recurring annual fees / modules',renewal:'Contracted year-two price',hours:'Internal transition hours',hourly:'Internal hourly cost'};
 const money=n=>n===null?'Pending confirmation':n.toLocaleString('en-US',{style:'currency',currency:'USD'});
@@ -14,7 +14,10 @@ function run(focus=false){if(!form.reportValidity())return;try{
  const recurrence=`(${n(r.base)} + ${n(r.perPerson)} × ${n(r.people)}) × 12 + ${n(r.taxAnnual)} + ${n(r.otherAnnual)}`;
  const yearTwoFormula=r.renewalMode==='known_total'?`Year two = quoted recurring annual total ${n(r.renewal)} = ${money(r.yearTwo)}`:r.renewalMode==='increase_percent'?`Year two = (${recurrence}) × (1 + ${n(r.renewal)} ÷ 100) = ${money(r.yearTwo)}`:`Year two = (${recurrence}) + ${n(r.renewal)} annual increase = ${money(r.yearTwo)}`;
  const view=presentQuote(r);
+ const example=window.PayrollInputs.example;
+ const exampleNotice=example==='gusto-simple'?'Published-price example — not your quote.':example?'Edited example — verify remaining assumptions against your quote.':'';
  out.replaceChildren(node('h3','Your annual cost'));
+ if(example){out.append(node('p',exampleNotice));const source=node('p','Original example: base $49/month + $6/person/month; five people is an illustrative headcount, not a real-company record. ');const link=node('a','Official rates · checked 2026-10-23');link.href='https://gusto.com/product/pricing';source.append(link);out.append(source);}
  const cashLabel=view.cashComplete?'Cash outlay — first year':'Cash outlay — first year (confirmed subtotal)';
  const dl=node('dl');row(dl,cashLabel,view.cash===null?cashPrompt:money(view.cash));row(dl,'Internal cost — transition time',r.internal===null?internalPrompt:money(r.internal));row(dl,'First-year total',r.firstYear===null?'Pending confirmation':money(r.firstYear));
  if(view.waiting)out.append(node('p',cashPrompt),node('p',internalPrompt));else out.append(dl);
@@ -32,7 +35,7 @@ function run(focus=false){if(!form.reportValidity())return;try{
  if(view.pending.length){const list=node('ul');for(const key of view.pending)list.append(node('li',form.querySelector('label[for="'+key+'"]').textContent+' — Pending confirmation'));out.append(list);}else out.append(node('p','No blank inputs. Confirm these terms in writing before signing.'));
  if(!view.waiting)out.append(node('p','Unconfirmed amounts remain pending. They are not treated as zero.'));
  const date=new Date().toLocaleDateString('en-CA');
- window.PayrollInputs.commit({title:'Your annual cost',waiting:view.waiting,emptyMessage,annualBreakdown:true,monthly:r.firstYear===null?null:r.firstYear/12,annual:r.firstYear,people:r.people,incomplete:r.pending.length>0,items:view.waiting?[]:[[cashLabel,view.cash??cashPrompt],['Internal cost — transition time',r.internal??internalPrompt],['First-year total',r.firstYear??'Pending confirmation']],formula:view.waiting?'':'First year: '+formula,scope:view.waiting?'':(view.cashComplete?'':'Cash is a confirmed subtotal; unconfirmed fees remain on the checklist. ')+'Cash outlay is paid to the provider. Internal cost is your own transition time, not a provider charge.',reviewLabel:view.waiting?'Your quote':'Your quote · Calculated '+date});
+ window.PayrollInputs.commit({example:!!example,exampleNotice,cash:view.cash,baseMonthly:r.monthly,title:'Your annual cost',waiting:view.waiting,emptyMessage,annualBreakdown:true,monthly:r.firstYear===null?null:r.firstYear/12,annual:r.firstYear,people:r.people,incomplete:r.pending.length>0,items:view.waiting?[]:[[cashLabel,view.cash??cashPrompt],['Internal cost — transition time',r.internal??internalPrompt],['First-year total',r.firstYear??'Pending confirmation']],formula:view.waiting?'':'First year: '+formula,scope:view.waiting?'':(example?exampleNotice+' Original public rates checked 2026-10-23; five people is illustrative. ':'')+(view.cashComplete?'':'Cash is a confirmed subtotal; unconfirmed fees remain on the checklist. ')+'Cash outlay is paid to the provider. Internal cost is your own transition time, not a provider charge.',reviewLabel:view.waiting?'Your quote':'Your quote · Calculated '+date});
  mountTakeaway({form,out,result:r,view,cashLabel});
  inputStates();if(focus)out.focus();
 }catch(error){out.textContent=error.message;}}

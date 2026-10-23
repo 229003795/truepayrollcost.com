@@ -26,3 +26,8 @@ main#main{width:min(1200px,calc(100% - 64px))}body:has(.hero) main#main{width:au
  #quote-takeaway th{width:72%;font-weight:400;text-transform:none;letter-spacing:normal}#quote-takeaway td{width:28%;text-align:right}
  #quote-takeaway ul{margin:0;padding:0;list-style:none}#quote-takeaway li{font:9pt/1.2 Arial,sans-serif;margin:1mm 0;break-inside:avoid}
 }
+
+.quote-home{--ink:#263747;--muted:#66727c;--paper:#fafbfc;--lime:#dbe8f3;font-family:Arial,system-ui,sans-serif}
+.quote-home .hero h1{font-family:Arial,system-ui,sans-serif!important;font-size:clamp(30px,3vw,42px)!important;font-weight:600;line-height:1.16!important;letter-spacing:-1px}
+.quote-home .result-ticket{box-shadow:none;border-radius:10px}.quote-home .result-ticket:before{display:none}.quote-home .ticket-value{letter-spacing:-1px;font-family:Arial,system-ui,sans-serif}.quote-home .ticket-lines div{display:block;padding:9px 0;border-bottom:1px solid #e3e7eb}.quote-home .ticket-lines div:last-child{border-bottom:0}.quote-home .ticket-lines dt{font-size:11px}.quote-home .ticket-lines dd{font-size:21px;line-height:1.4;overflow-wrap:anywhere}.quote-home .ticket-scope{font-size:11px}.quote-home .sample-source{display:inline-block;font-size:11px;margin-top:8px}.quote-home .sample-source[hidden]{display:none}
+@media(max-width:700px){.quote-home .hero>div:first-child{display:contents}.quote-home .hero>.result-ticket{order:2}.quote-home .hero .eyebrow{order:0}.quote-home .hero h1{order:1;margin:0}.quote-home .hero .lead{order:3}.quote-home .hero .btn{order:4}.quote-home .hero .subnote{order:5}.quote-home .hero{gap:16px}.quote-home .ticket-actions{margin-top:14px}.quote-home .ticket-lines dd{font-size:18px}}

@@ -7,7 +7,7 @@ const storage=new Map();
 function page(path, search='', initial={}, blocked=false){
   const fields=path==='/'?['people','base','perPerson','oneTime','taxAnnual','otherAnnual','renewal','renewalMode','hours','hourly']:path.includes('quickbooks')?['people','broker','hsa','fsa','dc','commuter']:['people','plan','scope','runs','gm','gy','gs','am','ap','ae','ay','as','matched'];
   const elements=Object.fromEntries(fields.map(name=>[name,{type:name==='matched'?'checkbox':'number',tagName:'INPUT',min:'0',max:'',step:['people','runs','broker','hsa','fsa','dc','commuter'].includes(name)?'1':'0.01',value:initial[name]??'',checked:false}]));
-  for(const [name, options] of Object.entries({plan:['simple','plus','premium'],scope:['single','multi'],renewalMode:['increase_amount','increase_percent','known_total']}))if(elements[name])Object.assign(elements[name],{tagName:'SELECT',options:options.map(value=>({value})),value:initial[name]??options[0]});
+  for(const [name, options] of Object.entries({plan:['simple','plus','premium'],scope:['single','multi'],renewalMode:['increase_amount','increase_percent','known_total']}))if(elements[name])Object.assign(elements[name],{tagName:'SELECT',type:'select-one',options:options.map(value=>({value})),value:initial[name]??options[0]});
   const notices=[],events={},form={before:n=>notices.push(n),elements:{namedItem:n=>elements[n]},addEventListener:(name,fn)=>events[name]=fn},hints=[],location={pathname:path,search,href:'https://truepayrollcost.com'+path+search};
   const context={URL,URLSearchParams,location,window:{},localStorage:{getItem:k=>{if(blocked)throw Error('blocked');return storage.get(k)},setItem:(k,v)=>{if(blocked)throw Error('blocked');storage.set(k,v)}},history:{replaceState:(_a,_b,url)=>{location.href=String(url)}},document:{querySelector:s=>s==='#cost-form, #calc'?form:{after:n=>hints.push(n)},createElement:()=>({append(){}})}};
   vm.runInNewContext(source,context);
@@ -36,4 +36,14 @@ test('annual fees and renewal basis survive URL sharing without filling an unkno
 
 test('old monthly-add-on links ask for reconciliation rather than silently dropping a fee',()=>{
  storage.clear();const a=page('/','?calc=1&people=5&quote_monthly_extras=10');assert.equal(a.elements.otherAnnual.value,'');assert.equal(a.notices.length,1);assert.match(a.notices[0].textContent,/has not been included automatically/);
+});
+
+test('new visitors get a labelled public-price cash example, never invented internal costs',()=>{
+ storage.clear();const a=page('/');assert.equal(a.elements.base.value,'49');assert.equal(a.elements.perPerson.value,'6');assert.equal(a.elements.people.value,'5');assert.equal(a.elements.hours.value,'');assert.equal(a.elements.hourly.value,'');assert.equal(a.elements.taxAnnual.value,'');assert.equal(a.context.window.PayrollInputs.example,'gusto-simple');a.commit();
+ const url=new URL(a.context.location.href);assert.equal(url.searchParams.get('quote_example'),'gusto-simple');assert.equal(page('/',url.search).context.window.PayrollInputs.example,'gusto-simple');
+ a.elements.base.value='55';a.events.input();a.commit();assert.equal(a.context.window.PayrollInputs.example,'edited');assert.equal(page('/').elements.base.value,'55');
+});
+test('explicit blank shared URLs and existing saved inputs are never replaced by defaults',()=>{
+ storage.clear();const blank=page('/','?calc=1');assert.equal(blank.elements.base.value,'');assert.equal(blank.context.window.PayrollInputs.example,'');blank.commit();assert.equal(page('/').elements.base.value,'');
+ storage.clear();const saved=page('/','',{base:'72',perPerson:'9',people:'8'});saved.commit();const restored=page('/');assert.equal(restored.elements.base.value,'72');assert.equal(restored.elements.people.value,'8');assert.equal(restored.context.window.PayrollInputs.example,'');
 });

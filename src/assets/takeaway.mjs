@@ -9,7 +9,8 @@ function buildDocument(){
  const basis=form.elements.namedItem('renewalMode').selectedOptions[0].textContent;
  const rows=view.waiting?[]:[['Monthly platform + people',money(r.monthly)],[cashLabel,money(view.cash)],['Internal cost — transition time',money(r.internal)],['First-year total',money(r.firstYear)]];
  const pending=inputs.filter(input=>input.value==='Pending confirmation').map(input=>input.name);
- const notes='Source: your entered quote and your own internal estimates. Blank fields are unconfirmed, not zero. Cash subtotal excludes unconfirmed charges. Internal cost is your own time, not a provider charge.';
+ const example=window.PayrollInputs.example;
+ const notes=(example?'Published-price example, not your quote. Original rates: Gusto Simple $49/month + $6/person/month; https://gusto.com/product/pricing; checked 2026-10-23. Five people is illustrative, not a real-company record. ':'')+'Source: your entered quote and your own internal estimates. Blank fields are unconfirmed, not zero. Cash subtotal excludes unconfirmed charges. Internal cost is your own time, not a provider charge.';
  const text=['True Payroll Cost — Quote & confirmation checklist','Generated: '+date,...rows.map(([name,value])=>name+': '+value),...(view.waiting?['To see cash outlay, enter the monthly base fee, monthly per-person fee and headcount.','To see internal cost, enter transition hours and hourly cost.']:[]),'Entered quote & assumptions',...inputs.map(input=>input.name+': '+input.value),'Year-two price basis: '+basis,'Items to confirm before signing',...(pending.length?pending.map(name=>'[ ] '+name):['No blank inputs. Confirm these terms in writing before signing.']),notes,'truepayrollcost.com'].join('\n');
  const sheet=el('section');sheet.id='quote-takeaway';sheet.setAttribute('aria-label','Printable quote and confirmation checklist');
  sheet.append(el('h1','Quote & confirmation checklist'),el('p','True Payroll Cost · Generated: '+date));
