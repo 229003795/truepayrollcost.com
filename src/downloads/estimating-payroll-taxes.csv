@@ -1,0 +1,19 @@
+tax_year,illustrative_people,annual_taxable_wages_per_person,employer_social_security_formula,employer_medicare_formula,fica_per_person_usd,team_fica_subtotal_usd,scope,checked_date
+2026,5,40000,min(40000;184500) * 0.062,40000 * 0.0145,3060.0,15300.0,"Employer FICA only; illustrative covered wages, excludes FUTA/state/local/software",2026-10-23
+2026,5,50000,min(50000;184500) * 0.062,50000 * 0.0145,3825.0,19125.0,"Employer FICA only; illustrative covered wages, excludes FUTA/state/local/software",2026-10-23
+2026,5,200000,min(200000;184500) * 0.062,200000 * 0.0145,14339.0,71695.0,"Employer FICA only; illustrative covered wages, excludes FUTA/state/local/software",2026-10-23
+
+source,purpose
+https://www.irs.gov/taxtopics/tc751,Employer FICA rates
+https://www.ssa.gov/faqs/en/questions/KA-02387.html,2026 Social Security cap
+https://www.irs.gov/taxtopics/tc759,FUTA credit and rate conditions
+
+field_to_confirm,your_input
+Tax year and employee coverage,
+Employee Social Security taxable wages,
+Employee Medicare taxable wages,
+Year-to-date wages before current payroll,
+FUTA applicability and credit reduction,
+State unemployment rate from agency notice,
+State taxable wage base and assessments,
+Local employer taxes and other contributions,
