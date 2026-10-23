@@ -7,7 +7,7 @@ const money=n=>n===null?'Pending confirmation':n.toLocaleString('en-US',{style:'
 const n=v=>v===null?'[pending]':String(v);
 const node=(tag,text)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;return el;};
 function inputStates(){for(const key of Object.keys(labels)){const blank=form.elements.namedItem(key).value==='';const status=document.querySelector('#'+key+'-state');status.textContent=blank?'Pending confirmation':'Entered';status.dataset.pending=String(blank);}}
-function row(dl,label,value){const div=node('div');if(label==='First-year total')div.className='annual-total';div.append(node('dt',label),node('dd',value));dl.append(div);}
+function row(dl,label,value){const div=node('div');if(label==='First-year total')div.className='annual-total';const amount=node('dd',value);if(value.startsWith('$'))amount.className='is-number';div.append(node('dt',label),amount);dl.append(div);}
 function run(focus=false){if(!form.reportValidity())return;try{
  const input=Object.fromEntries([...firstYearFields,'renewal'].map(key=>{const raw=form.elements.namedItem(key).value;return [key,raw===''?null:Number(raw)];}));input.renewalMode=form.elements.namedItem('renewalMode').value;
  const r=calculate(input),formula=`(${n(r.base)} + ${n(r.perPerson)} × ${n(r.people)}) × 12 + ${n(r.oneTime)} + ${n(r.taxAnnual)} + ${n(r.otherAnnual)} + (${n(r.hours)} × ${n(r.hourly)}) = ${money(r.firstYear)}`;
@@ -31,7 +31,7 @@ function run(focus=false){if(!form.reportValidity())return;try{
  if(r.renewal!==null)out.append(node('p',yearTwoFormula));
  if(r.twoYears!==null)out.append(node('p','Two years = '+money(r.firstYear)+' + '+money(r.yearTwo)+' = '+money(r.twoYears)));
  if(!view.waiting)out.append(node('p','Cash outlay is paid to the provider. Internal cost values your own transition time; it is not a provider charge.'));
- out.append(node('h3','Items to confirm before signing'));
+ const checklistHeading=node('h3','Items to confirm before signing');checklistHeading.id='confirmation-checklist';out.append(checklistHeading);
  if(view.pending.length){const list=node('ul');for(const key of view.pending)list.append(node('li',form.querySelector('label[for="'+key+'"]').textContent+' — Pending confirmation'));out.append(list);}else out.append(node('p','No blank inputs. Confirm these terms in writing before signing.'));
  if(!view.waiting)out.append(node('p','Unconfirmed amounts remain pending. They are not treated as zero.'));
  const date=new Date().toLocaleDateString('en-CA');

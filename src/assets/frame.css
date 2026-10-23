@@ -1,0 +1,104 @@
+/* Shared site frame. Layout owns navigation and presentation, never calculator values. */
+:root{--frame-ink:#233548;--frame-muted:#667586;--frame-line:#dce3ea;--frame-paper:#f5f7fa;--frame-accent:#245d82}
+body{font-family:Inter,Arial,system-ui,sans-serif}
+.site-header{background:#fff!important;border-bottom:1px solid var(--frame-line)!important;position:sticky;top:0;backdrop-filter:none!important;z-index:20}
+.site-header .site-header-inner{width:min(1200px,calc(100% - 48px));display:flex;justify-content:space-between;align-items:center;padding:17px 0;gap:24px}
+.site-header .brand{color:var(--frame-ink);font-size:17px;font-weight:700;letter-spacing:-.4px;gap:10px}
+.site-header .brand-mark{background:var(--frame-ink);color:#fff;width:32px;height:32px;border-radius:7px}
+.site-header .brand small{display:block;font-size:10px!important;letter-spacing:.35px;font-weight:400;line-height:1.6;color:var(--frame-muted)}
+.site-header nav{display:flex;gap:5px;flex-wrap:wrap;align-items:center;width:auto;overflow:visible}
+.site-header nav a{font-size:12px;padding:7px 11px;color:#506170;white-space:nowrap;text-decoration:none;border-radius:5px;min-height:34px;display:flex;align-items:center}
+.site-header nav a:hover,.site-header nav a[aria-current=page]{color:#203b52;background:#edf2f6}
+.site-footer{background:#edf1f5!important;color:#536373;border-top:1px solid #d3dce5;padding:42px 0 18px!important;margin-top:0}
+.site-footer .container{width:min(1200px,calc(100% - 48px))}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:36px;padding-bottom:32px}
+.footer-brand{font-size:17px;font-weight:700;color:#26394d;text-decoration:none;letter-spacing:-.4px}
+.footer-about p{font-size:12px;line-height:1.8;max-width:35ch;margin:12px 0 0}
+.footer-about .footer-audience{font-size:11px;color:#6c7a88}
+.site-footer nav{display:flex;flex-direction:column;align-items:flex-start;gap:8px;font-size:12px;overflow:visible}
+.site-footer nav h2{font-family:Arial,system-ui,sans-serif;font-weight:700;letter-spacing:.3px;text-transform:uppercase;font-size:10px!important;line-height:1.5;margin:3px 0 8px;color:#526574}
+.site-footer nav a{font-size:12px;line-height:1.6;padding:0;border-radius:0;white-space:normal;text-decoration:none;color:#536373}
+.site-footer nav a:hover{color:#163e60;background:none;text-decoration:underline}
+.footer-meta{border-top:1px solid #d4dde6;padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:10px;color:#6a7988}
+/* Homepage: the calculator precedes explanatory material. */
+.quote-home{background:var(--frame-paper);color:var(--frame-ink);--ink:#233548;--muted:#667586;--paper:#f5f7fa;--line:#dce3ea;--lime:#dceaf3}
+.quote-home .container{width:min(1200px,calc(100% - 48px))}
+.quote-home .hero{padding:42px 0 38px;gap:72px;grid-template-columns:1.05fr 1fr;align-items:center}
+.quote-home .hero h1{font-family:Arial,system-ui,sans-serif!important;font-size:clamp(30px,3.2vw,44px)!important;font-weight:600;letter-spacing:-1.3px;line-height:1.15!important;max-width:550px}
+.quote-home .hero .eyebrow{font-size:10px;letter-spacing:1.2px;color:#6d7e8d}
+.quote-home .hero .lead{font-size:16px;line-height:1.8;color:#5b6e7e;max-width:51ch}
+.quote-home .hero .subnote{font-size:11px!important;max-width:54ch;line-height:1.8}
+.quote-home .hero .btn{background:transparent;color:#245d82;box-shadow:none;border:0;padding:4px 0;min-height:38px;text-decoration:underline;text-underline-offset:5px;font-size:13px}
+.quote-home .hero .btn:hover{transform:none;box-shadow:none;color:#173f60}
+.quote-home .result-ticket{background:#fff;border:1px solid #d7e0e8;border-radius:12px;padding:24px;box-shadow:0 4px 18px #18304705}
+.quote-home .result-ticket:before{display:none}
+.quote-home .ticket-top{padding-bottom:12px}.quote-home .ticket-brand{font-size:9px;color:#566b7c;letter-spacing:.8px}.quote-home .ticket-status{background:#eef3f7;color:#526b7f;font-size:9px;letter-spacing:.4px}
+.quote-home .ticket-title{font-size:12px;color:#52687a;font-weight:500;line-height:1.65;margin:12px 0 3px}
+.quote-home .ticket-value{display:none}.quote-home .ticket-sub{font-size:11px;margin:0 0 8px;line-height:1.7}
+.quote-home .sample-source{font-size:10px;margin:0 0 10px;color:#5f778a}
+.quote-home .ticket-lines{padding:0;border:1px solid #dce4ec;border-radius:7px;overflow:hidden}
+.quote-home .ticket-lines div{display:block;padding:12px 16px;background:#fff;border:0;border-bottom:1px solid #e2e8ee}
+.quote-home .ticket-lines div:last-child{border-bottom:0;background:#f1f5f9}
+.quote-home .ticket-lines dt{font-size:10px;line-height:1.5;color:#657788}
+.quote-home .ticket-lines dd{font-size:14px;line-height:1.55;color:#536a7c;margin:5px 0 0;font-weight:500;letter-spacing:0}
+.quote-home .ticket-lines dd.is-number{font-size:32px;line-height:1.2;color:#24394d;letter-spacing:-.6px;font-weight:650;font-variant-numeric:tabular-nums}
+.quote-home .ticket-lines div:last-child dd.is-number{font-size:36px;color:#245d82}
+.quote-home .ticket-formula{font-size:10px;line-height:1.7;margin:10px 0;color:#506a80}
+.quote-home .ticket-scope{font-size:10px;line-height:1.65;color:#728291}
+.quote-home .ticket-actions{display:none}.quote-home .ticket-foot{margin-top:10px;font-size:9px}
+.quote-home section{padding:44px 0;border-color:#dce3ea}
+.quote-home section h2{font:600 27px/1.3 Arial,system-ui,sans-serif!important;letter-spacing:-.65px;margin:0 0 14px}
+.quote-home section .eyebrow{margin:0 0 7px;font-size:10px;letter-spacing:1px;color:#708294}
+.quote-home .section-intro{font-size:14px;color:#647788;line-height:1.8;margin:0 0 26px;max-width:74ch}
+.quote-home #worksheet{background:#fff;border-top:1px solid #dce3ea;border-bottom:1px solid #dce3ea}
+.quote-home .calculator-layout{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:start}
+.quote-home .fields{display:block}.quote-home .field-group{border:1px solid #dce3ea;border-radius:8px;background:#fff;padding:18px 20px 20px;margin:0 0 20px;min-width:0}
+.quote-home .field-group legend{font-size:12px;font-weight:650;padding:0 7px;color:#314e65}
+.quote-home .group-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}
+.quote-home .field-group:first-child .group-fields{grid-template-columns:repeat(3,minmax(0,1fr))}
+.quote-home label{font-size:12px;line-height:1.6;color:#3d5467;font-weight:600}
+.quote-home input,.quote-home select{min-height:46px;border:1px solid #c6d2df;background:#fff;box-shadow:none;border-radius:5px;padding:10px 11px;color:#263c50;font-size:16px;font-variant-numeric:tabular-nums}
+.quote-home input:focus,.quote-home select:focus{border-color:#356988;box-shadow:0 0 0 3px #e4eef5;outline:none}
+.quote-home .quote-field small{font-size:11px!important;line-height:1.7;color:#6c7c8b;margin-top:7px}
+.quote-home .quote-field .input-state{display:inline-block;font-size:10px!important;background:#f0f4f7;color:#627484;border-radius:3px;padding:2px 6px;margin-top:6px}
+.quote-home .quote-field .input-state[data-pending=true]{background:#fbf3e5;color:#856c44}
+.quote-home .hint{color:#70818f;font-size:11px;line-height:1.7}
+.quote-home #cost-form button[type=submit]{background:#245d82;color:#fff;border:1px solid #245d82;padding:13px 22px;min-height:48px;font-size:13px;font-weight:600;box-shadow:none;border-radius:6px}
+.quote-home #cost-form button[type=submit]:hover{background:#194967;transform:none;box-shadow:none}
+.quote-home .formula{background:#f6f8fa;border-color:#dce3ea;font-size:11px!important;color:#60758a;line-height:1.9!important}
+.quote-home #cost-result{background:#f7f9fb;border:1px solid #dce3ea;padding:24px;border-radius:9px;color:#263d52;overflow:hidden}
+.quote-home #cost-result h3{font-size:15px;line-height:1.5;color:#314e65;font-weight:650;letter-spacing:-.2px;margin:0 0 14px}
+.quote-home #cost-result h3:not(:first-child){border-top:1px solid #d8e1e9;padding-top:22px;margin-top:22px}
+.quote-home #cost-result dl{border:1px solid #d8e2eb;border-radius:6px;overflow:hidden;background:#fff}
+.quote-home #cost-result dl div{padding:15px 18px;border-bottom:1px solid #e0e7ed}
+.quote-home #cost-result dl div:last-child{border-bottom:0;background:#edf3f8}
+.quote-home #cost-result dt{font-size:11px;color:#6b7e8e;line-height:1.6}
+.quote-home #cost-result dd{font-size:14px;color:#546e83;line-height:1.6;font-weight:500;margin:5px 0 0;overflow-wrap:anywhere}
+.quote-home #cost-result dd.is-number{font-size:31px;line-height:1.25;color:#263d52;font-weight:650;font-variant-numeric:tabular-nums}
+.quote-home #cost-result .annual-total dd.is-number{font-size:36px;color:#245d82}
+.quote-home #cost-result p{font-size:11px;line-height:1.85;color:#657b8e;margin:12px 0}
+.quote-home #cost-result a{color:#315c7c}.quote-home #cost-result ul{padding:0;margin:0;list-style:none}
+.quote-home #cost-result li{padding:10px 0 10px 19px;border-bottom:1px solid #e1e7ed;font-size:12px;line-height:1.7;color:#496175;position:relative}
+.quote-home #cost-result li:before{content:'□';position:absolute;left:0;top:10px;color:#8c9baa}
+.quote-home .takeaway-actions{border-top:1px solid #dce3ea;padding-top:18px;margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.quote-home .takeaway-actions button{background:#fff;border:1px solid #afc0cf;color:#315774;border-radius:5px;min-height:46px;padding:10px;font-size:11px;font-weight:600;line-height:1.6;box-shadow:none}
+.quote-home .takeaway-actions button:hover{transform:none;background:#eaf1f6;box-shadow:none}
+.quote-home .takeaway-actions p,.quote-home .takeaway-actions textarea{grid-column:1/-1}
+.quote-home .share-hint{font-size:10px;color:#6c7e8e}
+.quote-home .grid3{gap:16px}.quote-home .card{background:transparent;border:0;border-left:2px solid #dbe4eb;border-radius:0;padding:4px 20px;box-shadow:none}
+.quote-home .card .number{font-size:9px;color:#8393a1;letter-spacing:1px;margin-bottom:10px}.quote-home .card h3{font-size:16px;color:#314e65}.quote-home .card p{font-size:12px;line-height:1.85;color:#6a7d8c}
+.quote-home .table-wrap,.quote-home .comparison{border-color:#dce3ea;border-radius:7px;box-shadow:none}
+.quote-home th{background:#edf2f6!important;color:#60778a!important}.quote-home td{font-size:12px;line-height:1.8;color:#526b7e}.quote-home tbody tr:nth-child(even){background:#f7f9fb}.quote-home tbody tr:hover{background:#f1f5f8}
+.quote-home .split{gap:56px}.quote-home .split p,.quote-home .split li{font-size:13px;line-height:1.9;color:#61798c}
+.quote-home .quote{background:#edf2f6;border-color:#a9bdce;font-size:13px}
+.quote-home button:hover,.quote-home .btn:hover{transform:none}.quote-home .result-ticket.updated{animation:none}
+#worksheet,#costs,#sources,#switching,#method,#privacy,#confirmation-checklist{scroll-margin-top:100px}
+@media(max-width:900px){.footer-grid{grid-template-columns:1.4fr 1fr;gap:30px}.quote-home .hero{gap:30px}.quote-home .calculator-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}.quote-home .field-group:first-child .group-fields{grid-template-columns:1fr}.quote-home .group-fields{grid-template-columns:1fr}}
+@media(max-width:700px){.site-header .site-header-inner{width:calc(100% - 32px);gap:10px;padding:12px 0;flex-direction:row;flex-wrap:wrap}.site-header .brand{font-size:16px}.site-header .brand small{font-size:9px!important}.site-header nav{width:100%;justify-content:space-between;gap:3px}.site-header nav a{font-size:11px;padding:5px 8px;min-height:32px}.site-footer{padding-top:30px!important}.site-footer .container,.quote-home .container{width:calc(100% - 32px)}.footer-grid{grid-template-columns:1fr 1fr;gap:26px 20px}.footer-about{grid-column:1/-1}.site-footer nav a{font-size:11px}.footer-meta{font-size:9px;gap:8px;flex-direction:column}.quote-home .hero{display:grid;gap:16px;padding:26px 0 28px;grid-template-columns:1fr}.quote-home .hero>div:first-child{display:contents}.quote-home .hero h1{font-size:30px!important;letter-spacing:-.8px;order:1;margin:0}.quote-home .hero .eyebrow{order:0;margin:0}.quote-home .hero>.result-ticket{order:2}.quote-home .hero .lead{order:3;margin:0;font-size:13px;line-height:1.85}.quote-home .hero .btn{order:4;justify-self:start}.quote-home .hero .subnote{order:5;margin:0}.quote-home .result-ticket{padding:18px}.quote-home .ticket-title{font-size:11px}.quote-home .ticket-lines div{padding:10px 13px}.quote-home .ticket-lines dd.is-number{font-size:30px}.quote-home .ticket-lines dd{font-size:12px}.quote-home .ticket-formula{font-size:9px}.quote-home .ticket-scope{font-size:9px}.quote-home .ticket-foot{font-size:9px}.quote-home .sample-source{font-size:9px}.quote-home section{padding:30px 0}.quote-home section h2{font-size:23px!important}.quote-home .calculator-layout{grid-template-columns:1fr;gap:25px}.quote-home .group-fields,.quote-home .field-group:first-child .group-fields{grid-template-columns:1fr}.quote-home .field-group{padding:16px}.quote-home #cost-result{padding:20px}.quote-home .takeaway-actions{grid-template-columns:1fr}.quote-home .split{gap:28px}.quote-home .grid3{gap:22px}#worksheet,#costs,#sources,#switching,#method,#privacy,#confirmation-checklist{scroll-margin-top:130px}}
+@media print{.site-header,.site-footer{display:none!important}}
+
+html{scroll-padding-top:100px}
+#worksheet,#costs,#sources,#switching,#method,#privacy,#confirmation-checklist,.quote-home form{scroll-margin-top:0}
+@media(max-width:700px){html{scroll-padding-top:130px}}
+
+@media print{#quote-takeaway h1{font:700 17pt/1.2 Arial,sans-serif!important}#quote-takeaway h2{font:700 11pt/1.2 Arial,sans-serif!important;margin:4mm 0 2mm!important}#quote-takeaway p{font:9pt/1.25 Arial,sans-serif!important}#quote-takeaway th,#quote-takeaway td{padding:1.3mm 0!important;font:9pt/1.2 Arial,sans-serif!important;letter-spacing:normal!important;text-transform:none!important;background:white!important}}
