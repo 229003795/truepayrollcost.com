@@ -44,6 +44,6 @@ test('new visitors get a labelled public-price cash example, never invented inte
  a.elements.base.value='55';a.events.input();a.commit();assert.equal(a.context.window.PayrollInputs.example,'edited');assert.equal(page('/').elements.base.value,'55');
 });
 test('explicit blank shared URLs and existing saved inputs are never replaced by defaults',()=>{
- storage.clear();const blank=page('/','?calc=1');assert.equal(blank.elements.base.value,'');assert.equal(blank.context.window.PayrollInputs.example,'');blank.commit();assert.equal(page('/').elements.base.value,'');
+ storage.clear();const blank=page('/','?calc=1');assert.equal(blank.elements.base.value,'');assert.equal(blank.context.window.PayrollInputs.example,'');blank.commit();const returning=page('/');assert.equal(returning.elements.base.value,'49');assert.equal(returning.context.window.PayrollInputs.example,'gusto-simple');
  storage.clear();const saved=page('/','',{base:'72',perPerson:'9',people:'8'});saved.commit();const restored=page('/');assert.equal(restored.elements.base.value,'72');assert.equal(restored.elements.people.value,'8');assert.equal(restored.context.window.PayrollInputs.example,'');
 });

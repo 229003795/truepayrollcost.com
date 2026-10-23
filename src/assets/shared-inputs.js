@@ -43,7 +43,7 @@
     }
   }
   let example = route === '/' ? ((fromURL ? params.get('quote_example') : stored.quote_example) || '') : '';
-  if(route === '/' && !fromURL && Object.keys(stored).length === 0 && entries.filter(([field])=>field.type==='number').every(([field])=>field.value==='')) {
+  if(route === '/' && !fromURL && entries.filter(([field])=>field.type==='number').every(([field])=>field.value==='')) {
     form.elements.namedItem('base').value='49';form.elements.namedItem('perPerson').value='6';form.elements.namedItem('people').value='5';example='gusto-simple';
   }
   if(route === '/') {

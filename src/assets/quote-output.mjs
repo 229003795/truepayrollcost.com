@@ -1,5 +1,5 @@
 export const cashPrompt='To see cash outlay, enter the monthly base fee, monthly per-person fee and headcount.';
-export const internalPrompt='To see internal cost, enter transition hours and hourly cost.';
+export const internalPrompt='Enter your hourly cost to calculate the total. Transition hours are also required.';
 export const emptyMessage=cashPrompt+' '+internalPrompt;
 export const inputOrder=['base','perPerson','people','oneTime','taxAnnual','otherAnnual','renewal','hours','hourly'];
 export function presentQuote(result){
