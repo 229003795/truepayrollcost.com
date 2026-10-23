@@ -156,3 +156,6 @@ html{scroll-padding-top:100px}
 .quote-home .ticket-top{gap:12px;flex-wrap:wrap}
 @media(max-width:900px){.quote-home .field-group:first-child .group-fields{grid-template-columns:1fr}}
 }
+
+/* Result-first order; pending text remains smaller than calculated amounts. */
+@media screen{.quote-home .ticket-lines dd.is-number,.quote-home .ticket-lines div:last-child dd.is-number,.quote-home #cost-result dd.is-number,.quote-home #cost-result .annual-total dd.is-number{color:#233548}.quote-home .ticket-lines dd:not(.is-number),.quote-home #cost-result dd:not(.is-number){font-size:16px;line-height:1.5}}
