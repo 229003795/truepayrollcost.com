@@ -17,7 +17,7 @@ function run(focus=false){if(!form.reportValidity())return;try{
  const example=window.PayrollInputs.example;
  const exampleNotice=example==='gusto-simple'?'Published-price example — not your quote.':example?'Edited example — verify remaining assumptions against your quote.':'';
  out.replaceChildren(node('h3','Your annual cost'));
- if(example){out.append(node('p',exampleNotice));const source=node('p','Original example: base $49/month + $6/person/month; five people is an illustrative headcount, not a real-company record. ');const link=node('a','Official rates · checked 2026-10-23');link.href='https://gusto.com/product/pricing';source.append(link);out.append(source);}
+ if(example){out.append(node('p',exampleNotice));const source=node('p','Original example: base $49/month + $6/person/month; five people is an illustrative headcount, not a real-company record. ');const link=node('a','Gusto official pricing page · checked 2026-10-23');link.href='https://gusto.com/product/pricing';source.append(link);out.append(source);}
  const cashLabel=example==='gusto-simple'?'Cash outlay — first year (Example subtotal)':view.cashComplete?'Cash outlay — first year':'Cash outlay — first year (confirmed subtotal)';
  const dl=node('dl');row(dl,cashLabel,view.cash===null?cashPrompt:money(view.cash));row(dl,'Internal cost — transition time',r.internal===null?internalPrompt:money(r.internal),r.internal===null);row(dl,'First-year total',r.firstYear===null?'Pending confirmation':money(r.firstYear));
  if(view.waiting)out.append(node('p',cashPrompt),node('p',internalPrompt));else out.append(dl);

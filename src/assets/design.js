@@ -8,7 +8,7 @@
   const ticket=el('aside','result-ticket');ticket.setAttribute('aria-label','Shareable payroll cost result');
   const top=el('div','ticket-top');top.append(el('span','ticket-brand','≋ True Payroll Cost'));const status=el('span','ticket-status','Your scenario');top.append(status);
   const title=el('div','ticket-title'),value=el('div','ticket-value'),sub=el('p','ticket-sub'),lines=el('dl','ticket-lines'),formula=el('p','ticket-formula'),scope=el('p','ticket-scope'),actions=el('div','ticket-actions'),foot=el('div','ticket-foot');
-  const sampleSource=el('a','sample-source','Public rates · checked 2026-10-23');sampleSource.href='https://gusto.com/product/pricing';sampleSource.hidden=true;
+  const sampleSource=el('a','sample-source','Gusto official pricing page · checked 2026-10-23');sampleSource.href='https://gusto.com/product/pricing';sampleSource.hidden=true;
   const copy=el('button','','Copy result link ↗'),save=el('button','secondary','Save result image ↓');copy.type=save.type='button';actions.append(copy,save);const adjust=el('a','','Adjust inputs ↗');adjust.href='#'+form.id;foot.append(el('span','','Rates reviewed Oct 22, 2026'),adjust);ticket.append(top,title,value,sub,sampleSource,lines,formula,scope,actions,foot);
   if(route==='/'){document.querySelector('.hero-note').replaceWith(ticket);}else{const main=document.querySelector('main'),intro=el('div','comparison-hero'),words=el('div','hero-copy');for(const node of [...main.children].slice(0,3))words.append(node);intro.append(words,ticket);main.prepend(intro);}
   let current=null;
