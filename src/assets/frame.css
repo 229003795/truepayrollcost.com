@@ -134,7 +134,7 @@ html{scroll-padding-top:100px}
 .quote-home .hero .eyebrow,.quote-home section .eyebrow,
 .quote-home .ticket-brand,.quote-home .ticket-status,.quote-home .ticket-foot,
 .quote-home .quote-field .input-state,.quote-home .card .number{font-size:14px!important;color:#4b5c6b;line-height:1.5}
-.quote-home .hero .subnote,.quote-home .ticket-sub,.quote-home .sample-source,
+.quote-home .hero .subnote,.quote-home .hero .ticket-title,.quote-home .ticket-sub,.quote-home .sample-source,
 .quote-home .ticket-lines dt,.quote-home .ticket-formula,.quote-home .ticket-scope,
 .quote-home .hero #preset-notice,.quote-home .hero .payroll-presets>p,
 .quote-home .quote-field small,.quote-home .hint,.quote-home .formula,
