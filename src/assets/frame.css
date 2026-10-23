@@ -125,3 +125,19 @@ html{scroll-padding-top:100px}
 @media(max-width:700px){.quote-home .hero{gap:10px;padding:18px 0 24px}.quote-home .hero>div:first-child{padding:0}.quote-home .hero h1{font-size:25px!important;letter-spacing:-.6px}.quote-home .hero .result-ticket{padding:12px}.quote-home .hero .ticket-brand,.quote-home .hero .ticket-status{font-size:8px}.quote-home .hero .preset-buttons .btn{font-size:11px;padding:6px}.quote-home .hero .payroll-presets{margin-bottom:8px}.quote-home .hero .ticket-lines dd.is-number{font-size:36px}.quote-home .hero .ticket-lines dd{font-size:11px}.quote-home .hero .ticket-lines div{padding:8px 10px}.quote-home .hero .ticket-formula{margin:7px 0}.quote-home .hero .ticket-scope{margin:5px 0}.quote-home .hero .ticket-foot{margin-top:6px}}
 
 @media(max-width:700px){.quote-home .hero .sample-source{display:block;min-height:0;padding:0;line-height:1.5;margin:0 0 6px}.quote-home .hero .ticket-sub{line-height:1.5;margin:0 0 6px}.quote-home .hero .ticket-title{line-height:1.5;margin:6px 0 2px}}
+
+/* Readability only: retain body size, layout, and result-number hierarchy. */
+@media screen {
+.quote-home .hero h1{letter-spacing:-.5px}
+.site-header .brand small,.site-footer nav h2,.footer-meta,.footer-about .footer-audience{font-size:12px!important;color:#4b5c6b}
+.quote-home .hero .eyebrow,.quote-home section .eyebrow,
+.quote-home .hero .subnote,.quote-home .ticket-brand,.quote-home .ticket-status,
+.quote-home .ticket-sub,.quote-home .sample-source,.quote-home .ticket-lines dt,
+.quote-home .ticket-formula,.quote-home .ticket-scope,.quote-home .ticket-foot,
+.quote-home .hero #preset-notice,.quote-home .hero .payroll-presets>p,
+.quote-home .quote-field .input-state,.quote-home .hint,.quote-home .formula,
+.quote-home #cost-result dt,.quote-home #cost-result p,.quote-home .share-hint,
+.quote-home .card .number,.quote-home .preset-evidence{font-size:12px!important;color:#4b5c6b}
+.quote-home .quote-field small{font-size:13px!important;color:#4b5c6b}
+.quote-home .quote-field .input-state[data-pending=true]{color:#705834}
+}
