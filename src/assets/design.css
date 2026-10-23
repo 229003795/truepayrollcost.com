@@ -9,3 +9,20 @@ main#main{width:min(1200px,calc(100% - 64px))}body:has(.hero) main#main{width:au
 .quote-field small{display:block;font-size:11px!important;font-weight:400;line-height:1.65;margin-top:8px}.quote-field select{margin:6px 0}.quote-field .input-state{font-weight:650;color:#3b6b48}.quote-field .input-state[data-pending=true]{color:#865e20}#cost-result>h3:not(:first-child){margin-top:28px}#cost-result li{font-size:13px;color:#e7eddf}
 
 #cost-result dl div:last-child dd{font-size:25px;color:inherit}#cost-result dl .annual-total dd{font-size:36px;color:var(--lime)}
+#quote-takeaway{display:none}.takeaway-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.takeaway-actions button{min-height:44px}.takeaway-actions [role=status],.takeaway-actions textarea{flex-basis:100%;width:100%}
+@media print{
+ @page{size:auto;margin:12mm}
+ body.quote-print-ready{background:white!important;color:#111!important;margin:0!important;padding:0!important}
+ body.quote-print-ready>:not(#quote-takeaway){display:none!important}
+ body.quote-print-ready>#quote-takeaway{display:block!important;width:100%;max-width:none;margin:0;padding:0;font:10pt/1.25 Arial,sans-serif;color:#111;background:white;border:0;break-inside:avoid}
+ #quote-takeaway *{color:#111!important;background:white!important;box-shadow:none!important;text-shadow:none!important}
+ #quote-takeaway h1{font:700 17pt/1.2 Arial,sans-serif;margin:0 0 5mm}
+ #quote-takeaway h2{font:700 11pt/1.2 Arial,sans-serif;margin:4mm 0 2mm}
+ #quote-takeaway p{font:9pt/1.25 Arial,sans-serif;margin:2mm 0}
+ #quote-takeaway dl{margin:3mm 0}#quote-takeaway dl>div{display:flex;justify-content:space-between;border-bottom:1px solid #ccc;padding:1.3mm 0}
+ #quote-takeaway dt,#quote-takeaway dd{font:700 10pt/1.2 Arial,sans-serif;margin:0}
+ #quote-takeaway table{width:100%;min-width:0;border-collapse:collapse;table-layout:fixed;margin:0}
+ #quote-takeaway th,#quote-takeaway td{font:9pt/1.2 Arial,sans-serif;border-bottom:1px solid #ddd;padding:1.3mm 0;text-align:left;overflow-wrap:anywhere}
+ #quote-takeaway th{width:72%;font-weight:400;text-transform:none;letter-spacing:normal}#quote-takeaway td{width:28%;text-align:right}
+ #quote-takeaway ul{margin:0;padding:0;list-style:none}#quote-takeaway li{font:9pt/1.2 Arial,sans-serif;margin:1mm 0;break-inside:avoid}
+}

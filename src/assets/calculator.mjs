@@ -1,5 +1,6 @@
 import {calculate,firstYearFields} from './cost.mjs?v=20261023-quote1';
 import {presentQuote,emptyMessage,cashPrompt,internalPrompt} from './quote-output.mjs?v=20261023-output2';
+import {mountTakeaway} from './takeaway.mjs?v=20261023-takeaway1';
 const form=document.querySelector('#cost-form'),out=document.querySelector('#cost-result');
 const labels={base:'Monthly base / platform fee',perPerson:'Monthly per-person fee',people:'Billable people',oneTime:'One-time setup / implementation fee',taxAnnual:'Tax filing / year-end fees per year',otherAnnual:'Other recurring annual fees / modules',renewal:'Contracted year-two price',hours:'Internal transition hours',hourly:'Internal hourly cost'};
 const money=n=>n===null?'Pending confirmation':n.toLocaleString('en-US',{style:'currency',currency:'USD'});
@@ -28,10 +29,11 @@ function run(focus=false){if(!form.reportValidity())return;try{
  if(r.twoYears!==null)out.append(node('p','Two years = '+money(r.firstYear)+' + '+money(r.yearTwo)+' = '+money(r.twoYears)));
  if(!view.waiting)out.append(node('p','Cash outlay is paid to the provider. Internal cost values your own transition time; it is not a provider charge.'));
  out.append(node('h3','Items to confirm before signing'));
- if(view.pending.length){const list=node('ul');for(const key of view.pending)list.append(node('li',labels[key]+' — Pending confirmation'));out.append(list);}else out.append(node('p','No blank inputs. Confirm these terms in writing before signing.'));
+ if(view.pending.length){const list=node('ul');for(const key of view.pending)list.append(node('li',form.querySelector('label[for="'+key+'"]').textContent+' — Pending confirmation'));out.append(list);}else out.append(node('p','No blank inputs. Confirm these terms in writing before signing.'));
  if(!view.waiting)out.append(node('p','Unconfirmed amounts remain pending. They are not treated as zero.'));
  const date=new Date().toLocaleDateString('en-CA');
  window.PayrollInputs.commit({title:'Your annual cost',waiting:view.waiting,emptyMessage,annualBreakdown:true,monthly:r.firstYear===null?null:r.firstYear/12,annual:r.firstYear,people:r.people,incomplete:r.pending.length>0,items:view.waiting?[]:[[cashLabel,view.cash??cashPrompt],['Internal cost — transition time',r.internal??internalPrompt],['First-year total',r.firstYear??'Pending confirmation']],formula:view.waiting?'':'First year: '+formula,scope:view.waiting?'':(view.cashComplete?'':'Cash is a confirmed subtotal; unconfirmed fees remain on the checklist. ')+'Cash outlay is paid to the provider. Internal cost is your own transition time, not a provider charge.',reviewLabel:view.waiting?'Your quote':'Your quote · Calculated '+date});
+ mountTakeaway({form,out,result:r,view,cashLabel});
  inputStates();if(focus)out.focus();
 }catch(error){out.textContent=error.message;}}
 form.addEventListener('input',inputStates);form.addEventListener('change',inputStates);form.addEventListener('submit',event=>{event.preventDefault();run(true);});
