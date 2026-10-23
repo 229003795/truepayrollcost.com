@@ -77,16 +77,16 @@
   form.addEventListener('input', () => {
     hint.hidden = true;
     const values = {};
-    if(route==='/'){if(example)example='edited';window.PayrollInputs.example=example;values.quote_example=example;}
+    if(route==='/'){if(example&&!example.startsWith('edited:'))example='edited:'+example;window.PayrollInputs.example=example;values.quote_example=example;}
     for (const [el, canonical] of entries) if (valid(el, value(el))) values[canonical] = value(el);
     write(values);
   });
   form.addEventListener('change', () => {
     hint.hidden = true;
     const values = {};
-    if(route==='/'){if(example)example='edited';window.PayrollInputs.example=example;values.quote_example=example;}
+    if(route==='/'){if(example&&!example.startsWith('edited:'))example='edited:'+example;window.PayrollInputs.example=example;values.quote_example=example;}
     for (const [el, canonical] of entries) if (valid(el, value(el))) values[canonical] = value(el);
     write(values);
   });
-  window.PayrollInputs = {commit, fromURL, example};
+  window.PayrollInputs = {commit, fromURL, example, setExample(marker){example=marker;window.PayrollInputs.example=marker;}};
 })();

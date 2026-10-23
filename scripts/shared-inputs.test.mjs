@@ -41,9 +41,13 @@ test('old monthly-add-on links ask for reconciliation rather than silently dropp
 test('new visitors get a labelled public-price cash example, never invented internal costs',()=>{
  storage.clear();const a=page('/');assert.equal(a.elements.base.value,'49');assert.equal(a.elements.perPerson.value,'6');assert.equal(a.elements.people.value,'5');assert.equal(a.elements.hours.value,'');assert.equal(a.elements.hourly.value,'');assert.equal(a.elements.taxAnnual.value,'');assert.equal(a.context.window.PayrollInputs.example,'gusto-simple');a.commit();
  const url=new URL(a.context.location.href);assert.equal(url.searchParams.get('quote_example'),'gusto-simple');assert.equal(page('/',url.search).context.window.PayrollInputs.example,'gusto-simple');
- a.elements.base.value='55';a.events.input();a.commit();assert.equal(a.context.window.PayrollInputs.example,'edited');assert.equal(page('/').elements.base.value,'55');
+ a.elements.base.value='55';a.events.input();a.commit();assert.equal(a.context.window.PayrollInputs.example,'edited:gusto-simple');assert.equal(page('/').elements.base.value,'55');
 });
 test('explicit blank shared URLs and existing saved inputs are never replaced by defaults',()=>{
  storage.clear();const blank=page('/','?calc=1');assert.equal(blank.elements.base.value,'');assert.equal(blank.context.window.PayrollInputs.example,'');blank.commit();const returning=page('/');assert.equal(returning.elements.base.value,'49');assert.equal(returning.context.window.PayrollInputs.example,'gusto-simple');
  storage.clear();const saved=page('/','',{base:'72',perPerson:'9',people:'8'});saved.commit();const restored=page('/');assert.equal(restored.elements.base.value,'72');assert.equal(restored.elements.people.value,'8');assert.equal(restored.context.window.PayrollInputs.example,'');
+});
+
+test('a selected preset and edited source survive URL restoration',()=>{
+ storage.clear();const a=page('/');a.context.window.PayrollInputs.setExample('preset:patriot-full-service');a.elements.base.value='37';a.elements.perPerson.value='5';a.commit();const restored=page('/',new URL(a.context.location.href).search);assert.equal(restored.context.window.PayrollInputs.example,'preset:patriot-full-service');assert.equal(restored.elements.base.value,'37');restored.events.input();restored.commit();assert.equal(page('/',new URL(restored.context.location.href).search).context.window.PayrollInputs.example,'edited:preset:patriot-full-service');
 });

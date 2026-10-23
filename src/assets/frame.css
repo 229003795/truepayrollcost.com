@@ -102,3 +102,5 @@ html{scroll-padding-top:100px}
 @media(max-width:700px){html{scroll-padding-top:130px}}
 
 @media print{#quote-takeaway h1{font:700 17pt/1.2 Arial,sans-serif!important}#quote-takeaway h2{font:700 11pt/1.2 Arial,sans-serif!important;margin:4mm 0 2mm!important}#quote-takeaway p{font:9pt/1.25 Arial,sans-serif!important}#quote-takeaway th,#quote-takeaway td{padding:1.3mm 0!important;font:9pt/1.2 Arial,sans-serif!important;letter-spacing:normal!important;text-transform:none!important;background:white!important}}
+
+.preset-buttons{display:flex;flex-wrap:wrap;gap:.5rem}.preset-buttons button{min-height:44px;padding:.65rem .85rem;white-space:normal}.preset-buttons [aria-pressed="true"]{outline:2px solid var(--frame-accent);outline-offset:2px}.preset-evidence{display:block;font-size:.78rem;color:var(--frame-muted);margin-top:.35rem}.payroll-presets{margin:1rem 0}.payroll-presets .hint:empty{display:none}
