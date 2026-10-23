@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {estimate} from '../src/assets/payroll-tax.mjs';
+test('individual caps distinguish equal company payroll totals',()=>{assert.equal(estimate([{people:5,social:50000,medicare:50000}]).total,19125);assert.equal(estimate([{people:1,social:250000,medicare:250000}]).total,15064);});
+test('mixed groups and different wage bases reconcile',()=>{const r=estimate([{people:1,social:250000,medicare:250000},{people:1,social:50000,medicare:60000}]);assert.equal(r.ss,14539);assert.equal(r.med,4495);assert.equal(r.total,19034);});
+test('unknown is withheld, zero is explicit, invalid headcount is rejected',()=>{assert.equal(estimate([{people:5,social:'',medicare:50000}]),null);assert.equal(estimate([{people:1,social:0,medicare:0}]).total,0);assert.throws(()=>estimate([{people:1.5,social:50000,medicare:50000}]));assert.equal(estimate([]),null);});

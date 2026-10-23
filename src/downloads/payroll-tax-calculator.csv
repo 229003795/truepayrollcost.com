@@ -1,0 +1,8 @@
+2026 employer FICA illustrative example,Checked 2026-10-23
+people,annual_ss_wages_each,annual_medicare_wages_each,ss_tax,medicare_tax,fica_subtotal
+5,50000,50000,15500,3625,19125
+formula,5 * (min(50000;184500) * 0.062 + 50000 * 0.0145)
+FUTA/state/local,Pending confirmation
+Official rates,https://www.irs.gov/taxtopics/tc751
+Official cap,https://www.ssa.gov/faqs/en/questions/KA-02387.html
+Confirm,Tax year; coverage; taxable wage bases; FUTA; assigned state rate and base; local taxes
