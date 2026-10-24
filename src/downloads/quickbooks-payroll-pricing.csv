@@ -1,0 +1,40 @@
+Section,Item,Formula or question,Example amount USD,Your written answer,Checked date,Source
+
+Scenario,5 constant billable employees,3*(44+6.5*5)+9*(88+6.5*5),1314.0,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Scenario,10 constant billable employees,3*(44+6.5*10)+9*(88+6.5*10),1704.0,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Scenario,20 constant billable employees,3*(44+6.5*20)+9*(88+6.5*20),2484.0,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Five-person example,First three months,(44+6.5*5)*3,229.5,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Five-person example,Next nine months,(88+6.5*5)*9,1084.5,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Five-person example,First-year subscription subtotal,229.5+1084.5,1314,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Five-person example,Regular-price year,(88+6.5*5)*12,1446,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Five-person example,Promotion annualization shortfall,1314-(44+6.5*5)*12,396,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Five-person example,Five employees then six,1314+6*6.5,1353,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Exact product,Payroll-only or Workforce Payroll + Simple Start bundle?,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Offer dates,Confirm eligibility and regular-price start date.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Billable headcount,Confirm active employees and billing-period handling.,,,2026-10-24,https://quickbooks.intuit.com/learn-support/en-us/help-article/intuit-pricing/understand-per-employee-fee-quickbooks-online-payroll/L4HoTz4o6_US_en_US
+
+Pending confirmation,Setup / implementation,Included or separately charged? State written amount.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Annual filing fees,Included or separately charged? Do not duplicate included services.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Other modules / annual fees,State scope and separately billed amounts.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Sales tax,Confirm applicability and amount.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Renewal price,State contracted future rate or mark pending.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Transition hours,Enter your own documented hours.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
+Pending confirmation,Internal hourly cost,Enter your own documented hourly rate.,,,2026-10-24,https://quickbooks.intuit.com/payroll/pricing/
+
