@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {lunchMinutes,lunchCsv} from '../src/assets/lunch-core.mjs';
+const day={start:'2026-10-26T08:30',out:'2026-10-26T12:00',back:'2026-10-26T12:30',end:'2026-10-26T17:00'};
+test('unknown meal never silently deducted',()=>{const r=lunchMinutes(day);assert.equal(r.elapsed,510);assert.equal(r.excluded,480);assert.equal(r.paid,null);assert.match(lunchCsv(day,r,'2026-10-26'),/Pending confirmation/);});
+test('reviewed unpaid and worked meal retain distinct totals',()=>{const v={...day,state:'CA',duties:'relieved',review:'yes',clock:'yes',treatment:'unpaid'};assert.equal(lunchMinutes(v).paid,480);assert.equal(lunchMinutes({...v,duties:'work'}).paid,510);assert.equal(lunchMinutes({...v,review:''}).paid,null);});
+test('explicit overnight dates; reject reversed meal',()=>{const r=lunchMinutes({...day,start:'2026-10-26T22:00',out:'2026-10-27T02:00',back:'2026-10-27T02:30',end:'2026-10-27T06:00'});assert.equal(r.excluded,450);assert.match(lunchMinutes({...day,back:'2026-10-26T11:30'}).error,/Clock times/);});
+test('clock uncertainty prevents a reported paid total; CSV quotes arbitrary input',()=>{const v={...day,treatment:'paid',clock:'',state:'CA",test'};const r=lunchMinutes(v);assert.equal(r.paid,null);assert.match(lunchCsv(v,r,'2026-10-26'),/CA"",test/);});
