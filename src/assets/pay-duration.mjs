@@ -1,0 +1,8 @@
+import{calculatePay,money,payCsv}from'./pay-duration-core.mjs';
+const form=document.querySelector('#pay-form'),output=document.querySelector('#pay-result');
+const read=()=>[...form.querySelectorAll('fieldset')].map(f=>Object.fromEntries([...f.querySelectorAll('input')].map(x=>[x.dataset.field,x.value])));
+function render(){const rows=read(),r=calculatePay(rows);output.replaceChildren();const p=document.createElement('p'),b=document.createElement('strong');b.textContent=r.cents===null?'Pending confirmation':money(r.cents);p.append(b,document.createTextNode(' — entered straight-time wage subtotal'));output.append(p);
+ const q=document.createElement('p');q.textContent=r.issues.length?r.issues.join('; '):!r.used?'Enter hours, minutes and a rate in at least one row.':r.minutes+' exact minutes; sum of minute × rate-cent numerators = '+r.numerator+'; divide by 60 and round the final subtotal to cents.';output.append(q);
+ const scope=document.createElement('p');scope.textContent='Overtime, other pay, taxes and deductions: not determined. This is not take-home pay or a complete payroll total.';output.append(scope);return r;}
+form.addEventListener('submit',e=>{e.preventDefault();render();});form.addEventListener('input',render);
+document.querySelector('#pay-csv').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([payCsv(read(),render(),new Date().toISOString().slice(0,10))],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='pay-hours-minutes-and-checklist.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});render();

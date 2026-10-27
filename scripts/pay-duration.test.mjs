@@ -1,0 +1,6 @@
+import test from'node:test';import assert from'node:assert/strict';import{calculatePay,payCsv}from'../src/assets/pay-duration-core.mjs';
+const row=(hours,minutes,rate)=>({hours,minutes,rate});
+test('exact original monetary cases',()=>{assert.equal(calculatePay([row('7','30','20')]).cents,15000);assert.equal(calculatePay([row('1','59','20'),row('1','45','20')]).cents,7467);assert.equal(calculatePay(Array(3).fill(row('8','1','25'))).cents,60125);assert.equal(calculatePay([row('7','30','20'),row('2','15','24')]).cents,20400);});
+test('unknown and zero stay distinct; minutes invalid rejected',()=>{assert.equal(calculatePay([row('7','30','')]).cents,null);assert.equal(calculatePay([row('0','0','0')]).cents,0);assert.equal(calculatePay([row('7','60','20')]).cents,null);assert.equal(calculatePay([row('7.5','0','20')]).cents,null);assert.equal(calculatePay([]).cents,null);});
+test('fractional cents round once, not per row',()=>{assert.equal(calculatePay([row('0','1','1'),row('0','1','1'),row('0','1','1')]).cents,5);});
+test('CSV preserves exact minutes and uncertainty',()=>{let rows=[row('1','59','20'),row('1','45','20')];assert.match(payCsv(rows,calculatePay(rows),'2026-10-27'),/74.67/);rows=[row('7','30','')];assert.match(payCsv(rows,calculatePay(rows),'2026-10-27'),/Pending confirmation/);});
