@@ -9,3 +9,6 @@ Implemented in isolated work/pay-release-20261027, protecting dirty old checkout
 Tests4passed covering original monetary cases15000/7467/60125/20400cents; blank vs zero; invalidminutes; exact final rounding; CSV uncertainty.
 Existing external Chrome:default150,edited119+105minutes gives74.67; actual820byte CSV read from Downloads, rows and numerator match. Clearing a used rate yieldsPending confirmation.390px mobile no document overflow and all inputs within viewport. No console errors observed.
 Git auto deployment;production verification follows. NoGSC request or sitemap resubmission. Nopercenturl change. This record is not user acceptance.
+
+## Production verified
+Published commit 8caea4c203d1b5c232eb29307a8710164fe63a8c. Page200,13385bytes; canonical exact; two script modules and989byteSVG200; three FAQs; noChinese. Family link1. Sitemap11including newURL. ExistingChrome live two-rate case:585minutes,1224000numerator,$204.00. Actual downloaded821byteCSV agrees,generated2026-10-27. No console errors observed. NoGSC actions. This is today's single new page; user review pending.
