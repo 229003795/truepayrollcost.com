@@ -1,0 +1,2 @@
+# Paychex access note editorial correction — 2026-10-27
+User requested removal of machine IP region and Cloudflare Error1009 quotation from public article. Changed only the Access note paragraph, retaining text-rendering proxy retrieval of original paychex.com text and upstream /payroll/pricing404, with checked date. Prices/formulas/CSV/SVG/Square unchanged. Build13pages. Verify public paragraph after Git auto deployment. Next10:00 how-much-does-payroll-cost; no republishing completed vendor pages.
