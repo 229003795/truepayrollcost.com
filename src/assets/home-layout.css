@@ -1,0 +1,32 @@
+/* Homepage layout only: preserve all content, rates and calculator behavior. */
+@media screen and (min-width:901px){
+ body.quote-home .hero{grid-template-columns:minmax(0,1fr);gap:24px;padding:28px 0 32px}
+ body.quote-home .hero>div:first-child{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:40px;row-gap:10px;padding:0}
+ body.quote-home .hero .eyebrow{grid-column:1/-1;margin:0}
+ body.quote-home .hero h1{grid-column:1;grid-row:2/4;margin:0;max-width:none}
+ body.quote-home .hero .lead{grid-column:2;grid-row:2;margin:0;max-width:none}
+ body.quote-home .hero .subnote{grid-column:2;grid-row:3;margin:0;max-width:none}
+ body.quote-home .hero .result-ticket{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;row-gap:8px;width:100%;padding:20px 24px}
+ body.quote-home .hero .ticket-top{grid-column:1/-1;grid-row:1;margin:0}
+ body.quote-home .hero .payroll-presets{grid-column:1;grid-row:2;margin:0}
+ body.quote-home .hero .ticket-lines{grid-column:2;grid-row:2/7;margin:0;align-self:start}
+ body.quote-home .hero .ticket-title{grid-column:1;grid-row:3;margin:0}
+ body.quote-home .hero .ticket-sub{grid-column:1;grid-row:4;margin:0}
+ body.quote-home .hero .sample-source{grid-column:1;grid-row:5;margin:0}
+ body.quote-home .hero .ticket-formula{grid-column:1;grid-row:6;margin:0}
+ body.quote-home .hero .hero-primary{grid-column:2;grid-row:7;align-self:start}
+ body.quote-home .hero #preset-notice{grid-column:1;grid-row:7;margin:0}
+ body.quote-home .hero .ticket-scope{grid-column:1/-1;grid-row:8;margin:0}
+ body.quote-home .hero .ticket-foot{grid-column:1/-1;grid-row:9;margin:0}
+ body.quote-home #cost-result{position:sticky;top:108px;max-height:calc(100dvh - 128px);overflow:auto;overscroll-behavior:auto;scrollbar-gutter:stable}
+}
+@media screen and (min-width:701px) and (max-width:900px){
+ body.quote-home .hero{grid-template-columns:1fr;gap:20px}
+ body.quote-home .hero>div:first-child{padding:0}
+ body.quote-home .hero .lead,body.quote-home .hero .subnote{max-width:none}
+ body.quote-home .calculator-layout{grid-template-columns:1fr}
+}
+@media screen and (max-width:700px){
+ body.quote-home #cost-result{position:static;max-height:none;overflow:visible}
+}
+@media print{body.quote-home #cost-result{position:static;max-height:none;overflow:visible}}
