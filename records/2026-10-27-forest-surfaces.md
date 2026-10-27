@@ -4,3 +4,5 @@ Only screen color.css and shell cache versionforest1. Hero background extends vi
 Existing external Chrome inspected desktop1280 andmobile390 screenshots of homepage and input region. 13routes×320/390/430/1280=52checks: no document overflow, all linkforest1, all headers rgb23,63,53. Evidence forest-checks.json.
 Calculated contrast: hero body9.50;hero support7.92;result label9.03;white result11.67;body9.42;support white6.12;support mint5.48;CTA7.17;selected9.63. These are color-pair checks, not a whole-site accessibility certification.
 Build13pages. Publish selected files via existing Git→Cloudflare Pages; confirm live before reporting complete. No new page, GSC or percenturl action.
+
+Production f1b33ad:13/13HTTP200 withforest1. ExistingChrome390 live header/hero/result rgb23,63,53,whitecard,inputsection rgb237,244,240;948white amount. QuickBooks preset click still1314;nooverflow. Viewport reset and tabs preserved.
