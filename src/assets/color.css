@@ -6,7 +6,7 @@
  body main p,body main li,body .article p,body .article li,body.quote-home .hero .lead,body.quote-home .section-intro,body.quote-home .card p,body.quote-home .split p,body.quote-home .split li{color:var(--read-body)}
  body main .eyebrow,body.quote-home .hero .eyebrow,body.quote-home section .eyebrow,body.quote-home .card .number,body main figcaption,body main .figure-hint{color:var(--read-muted)}
  body main a:not(.btn):not(.hero-primary){color:var(--read-accent)}
- body main a:not(.btn):not(.hero-primary):hover{color:#173d52}
+ body main a:not(.btn):not(.hero-primary):hover{color:#174b3a}
  body .site-header{background:#fdfdfb!important;border-color:var(--read-line)!important}
  body .site-header .brand,body .footer-brand{color:var(--read-ink)}
  body .site-header .brand-mark{background:#303c45;color:#fff}
@@ -60,4 +60,61 @@
  body.quote-home .ticket-lines dd:not(.is-number),body.quote-home #cost-result dd:not(.is-number){color:var(--read-muted)}
  body.quote-home .ticket-lines dd a,body.quote-home #cost-result dd a{color:var(--read-accent)}
  body.quote-home .quote-field .input-state[data-pending=true]{color:#6d5934}
+}
+
+/* Brand surfaces: forest green frame, white working area, mint supporting panels. */
+@media screen{
+ :root{--read-paper:#ffffff;--read-surface:#ffffff;--read-soft:#edf4f0;--read-ink:#203b33;--read-body:#384a43;--read-muted:#53665e;--read-line:#d4e0d8;--read-accent:#23624e;--read-accent-soft:#e4f0e9;--frame-ink:#203b33;--frame-muted:#53665e;--frame-line:#d4e0d8;--frame-paper:#ffffff;--frame-accent:#23624e}
+ body,body.quote-home{background:#fff;--ink:#203b33;--muted:#53665e;--paper:#fff;--line:#d4e0d8;--lime:#e4f0e9}
+ body .site-header{background:#173f35!important;border-color:#36594f!important}
+ body .site-header .brand{color:#fff}
+ body .site-header .brand-mark{background:#d9eee0;color:#173f35}
+ body .site-header .brand small{color:#d1e0d8!important}
+ body .site-header nav a{color:#e0eae4}
+ body .site-header nav a:hover,body .site-header nav a[aria-current=page]{background:#30564a;color:#fff}
+ body.quote-home .hero{position:relative;background:#173f35;box-shadow:0 0 0 100vmax #173f35;clip-path:inset(0 -100vmax)}
+ body.quote-home .hero h1{color:#fff}
+ body.quote-home .hero>.hero-copy h1{color:#fff}
+ body.quote-home .hero>div:first-child .eyebrow{color:#c8dfd0}
+ body.quote-home .hero .lead{color:#e1eae4}
+ body.quote-home .hero .subnote{color:#c7d9ce!important}
+ body main .result-ticket,body main .hero-note,body main fieldset,body.quote-home .field-group{background:#fff;border-color:#d4e0d8}
+ body.quote-home .hero .result-ticket{border-color:#d4e0d8}
+ body main .ticket-status{background:#e6f1e9;color:#395a49}
+ body.quote-home .hero .preset-buttons .btn{background:#f5f8f5;color:#304d40;border-color:#c4d6c9}
+ body.quote-home .hero .preset-buttons .btn[aria-pressed=true]{background:#deede2;color:#173f35;border-color:#557e65;outline-color:#557e65}
+ body main .btn,body main button.btn,body.quote-home #cost-form button[type=submit],body.quote-home .hero .hero-primary{background:#23624e;border-color:#23624e;color:#fff}
+ body main .btn:hover,body main button.btn:hover,body.quote-home #cost-form button[type=submit]:hover,body.quote-home .hero .hero-primary:hover{background:#174b3a;color:#fff}
+ body main .btn.secondary,body main .ticket-actions .secondary,body.quote-home .takeaway-actions button{background:#fff;color:#23624e;border-color:#abc6b6}
+ body main .btn.secondary:hover,body.quote-home .takeaway-actions button:hover{background:#e4f0e9;color:#174b3a}
+ body main input,body main select{border-color:#afc2b7;accent-color:#23624e}
+ body main input:focus,body main select:focus{border-color:#4d8065;outline-color:#4d8065;box-shadow:0 0 0 3px #deede3}
+ body main label,body main legend,body.quote-home label,body.quote-home .field-group legend{color:#304b3f}
+ body.quote-home .ticket-lines{border-color:#cbdcd1}
+ body.quote-home .hero .ticket-lines div:first-child{background:#173f35;border-color:#173f35}
+ body.quote-home .hero .ticket-lines div:first-child dt{color:#d4e7da}
+ body.quote-home .hero .ticket-lines div:first-child dd,body.quote-home .hero .ticket-lines div:first-child dd.is-number{color:#fff}
+ body.quote-home .hero .ticket-lines div:first-child dd a{color:#e3f3e8}
+ body.quote-home .ticket-lines div:last-child{background:#e7f1ea}
+ body.quote-home #worksheet{background:#edf4f0;border-color:#d4e0d8}
+ body.quote-home #cost-result{background:#fff;border-color:#c6d9cc}
+ body.quote-home #cost-result dl div:first-child{background:#173f35;border-color:#173f35}
+ body.quote-home #cost-result dl div:first-child dt{color:#d4e7da}
+ body.quote-home #cost-result dl div:first-child dd,body.quote-home #cost-result dl div:first-child dd.is-number{color:#fff}
+ body.quote-home #cost-result dl div:first-child dd a{color:#e3f3e8}
+ body.quote-home #cost-result dl div:last-child{background:#e7f1ea}
+ body.quote-home .formula,body main .formula,body main .summary,body main .answer,body main .quote,body main .callout{background:#edf4f0;border-color:#c6d9cc}
+ body.quote-home .card{background:#f6f9f6;border-color:#d4e0d8}
+ body.quote-home #sources,body.quote-home #privacy{background:#f3f7f3}
+ body main #hours-result,body main #pay-result,body main #tax-result,body main .output,body main output#result{background:#e8f2eb;border-color:#bed3c5}
+ body main th,body.quote-home th{background:#e6f0e8!important;color:#365442!important;border-color:#d4e0d8}
+ body main tbody tr:nth-child(even),body.quote-home tbody tr:nth-child(even){background:#f6f9f6}
+ body main tbody tr:hover,body.quote-home tbody tr:hover{background:#eaf3ec}
+ body main tbody tr.total-row,body main tbody tr.total-row td{background:#deede2;border-color:#bfd5c5}
+ body .site-footer{background:#173f35!important;color:#d0e0d6;border-color:#36594f}
+ body .footer-brand{color:#fff}
+ body .site-footer nav a,body .site-footer nav h2,body .footer-about p,body .footer-about .footer-audience,body .footer-meta{color:#d0e0d6!important}
+ body .site-footer nav a:hover{color:#fff}
+ body .site-footer nav,body .footer-meta{border-color:#426456}
+ body :focus-visible{outline-color:#709d80}
 }

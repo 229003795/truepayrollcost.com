@@ -1,0 +1,470 @@
+[
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": "rgb(23, 63, 53)",
+    "overflow": false,
+    "palette": true,
+    "path": "/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-pricing/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-vs-quickbooks/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/adp-vs-gusto/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-next-day-pay-cost/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/estimating-payroll-taxes/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/payroll-tax-calculator/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/quickbooks-payroll-pricing/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/calculator-for-payroll-hours/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/time-card-calculator-with-lunch/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/pay-calculator-hours-and-minutes/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/paychex-pricing/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/square-payroll-pricing/",
+    "width": 320
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": "rgb(23, 63, 53)",
+    "overflow": false,
+    "palette": true,
+    "path": "/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-pricing/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-vs-quickbooks/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/adp-vs-gusto/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-next-day-pay-cost/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/estimating-payroll-taxes/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/payroll-tax-calculator/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/quickbooks-payroll-pricing/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/calculator-for-payroll-hours/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/time-card-calculator-with-lunch/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/pay-calculator-hours-and-minutes/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/paychex-pricing/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/square-payroll-pricing/",
+    "width": 390
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": "rgb(23, 63, 53)",
+    "overflow": false,
+    "palette": true,
+    "path": "/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-pricing/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-vs-quickbooks/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/adp-vs-gusto/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-next-day-pay-cost/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/estimating-payroll-taxes/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/payroll-tax-calculator/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/quickbooks-payroll-pricing/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/calculator-for-payroll-hours/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/time-card-calculator-with-lunch/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/pay-calculator-hours-and-minutes/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/paychex-pricing/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/square-payroll-pricing/",
+    "width": 430
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": "rgb(23, 63, 53)",
+    "overflow": false,
+    "palette": true,
+    "path": "/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-pricing/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-vs-quickbooks/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/adp-vs-gusto/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/gusto-next-day-pay-cost/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/estimating-payroll-taxes/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/payroll-tax-calculator/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/quickbooks-payroll-pricing/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/calculator-for-payroll-hours/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/time-card-calculator-with-lunch/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/pay-calculator-hours-and-minutes/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/paychex-pricing/",
+    "width": 1280
+  },
+  {
+    "body": "rgb(255, 255, 255)",
+    "header": "rgb(23, 63, 53)",
+    "hero": null,
+    "overflow": false,
+    "palette": true,
+    "path": "/square-payroll-pricing/",
+    "width": 1280
+  }
+]
