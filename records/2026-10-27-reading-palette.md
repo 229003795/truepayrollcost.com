@@ -1,0 +1,5 @@
+# Reading palette — October 27, 2026
+User requested more professional, less tiring colors. Replaced competing saturated blue-gray/green/cream UI treatments with one neutral palette: paper#f7f7f4, white surface, graphite#292e34 headings/numbers, body#3d444b, helper#59636b, line#d7dcdf, limited blue#285b75 for links/actions/selection. Pending keeps muted amber; unknown remains unknown.
+Only new screen-only color.css and shared shell cache version20261027-color1. No font size, layout, article, formula, calculator, CSV or diagram content edited. Existing mobile alignment retained. Print styles unaffected. No webfonts, imagery or animation introduced.
+Calculated contrast via sRGB relative luminance: body/paper9.20;helper/white6.14;helper/result5.50;white/button7.39;link/paper6.88;pending5.84. These exceed4.5 but do not promise medical relief or universal comfort.
+Build13pages. Existing Chrome checked13routes on390mobile and1280desktop; no document overflow; consistent body palette. Homepage screenshot inspected both. Detailed results records/2026-10-27-color-checks.json. Verify actual live color1 deployment before reporting completion.
