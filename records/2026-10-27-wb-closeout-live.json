@@ -1,0 +1,37 @@
+[
+  {
+    "path": "/paychex-pricing/",
+    "status": 200,
+    "bytes": 21628
+  },
+  {
+    "path": "/square-payroll-pricing/",
+    "status": 200,
+    "bytes": 19597
+  },
+  {
+    "path": "/assets/square-annual-cost.svg",
+    "status": 200,
+    "bytes": 850
+  },
+  {
+    "path": "/assets/paychex-quote-units.svg",
+    "status": 200,
+    "bytes": 2612
+  },
+  {
+    "path": "/downloads/paychex-pricing-checklist.csv",
+    "status": 200,
+    "bytes": 3183
+  },
+  {
+    "path": "/downloads/square-payroll-cost-worksheet.csv",
+    "status": 200,
+    "bytes": 717
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "bytes": 1455
+  }
+]
