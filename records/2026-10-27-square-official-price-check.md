@@ -8,7 +8,9 @@ Page: /square-payroll-pricing/ (batch 1, item 2 of `2026-10-27-vendor-cost-batch
 region block this time — contrast Paychex, which returned Error 1009 to this machine's IP. Cross-checked
 against `squareup.com/us/en/payroll`, `squareup.com/us/en/compare/square-vs-gusto`, and six independent
 review/roundup sources (NerdWallet, Forbes Advisor, Merchant Maverick, Rankite, Onfolio, Bluecloud CPA)
-— **all agree** on the figures below as of September–October 2026.
+— **all agree** on the $35 + $6 rate card as of September–October 2026. The add-on lines were read from
+Square's own pages (including `https://squareup.com/us/en/payroll/retirement-benefits` and
+`https://squareup.com/us/en/payroll/workers-compensation`), not from the review sources.
 
 ## Judgment criterion (from the user)
 
@@ -32,11 +34,31 @@ Source: `https://squareup.com/us/en/payroll/pricing` (and corroborating Square p
 | Contract / commitment | **No long-term contract** |
 | Digital W-2/1099 delivery | Included |
 
-Add-ons (from Merchant Maverick; presented as separate, **not** included):
+Add-ons and other separately charged lines (read from Square's own pages on 2026-10-27; presented as separate,
+**not** included in the $35 + $6 rate card):
 
-- 401(k) retirement: **$49/month + $8/employee**
-- Time tracking: **$2.50–$4.00/month per person**
-- Health insurance, workers' compensation, paid amendment services: **varies / add-on**
+- 401(k) retirement: **$125/mo + $8 per participating employee** — **Vestwell's** plan price, shown on Square's
+  own 401(k) page (`https://squareup.com/us/en/payroll/retirement-benefits`): "Their most popular plan is $125/mo +
+  $8 per participating employee", and participants pay an annual account fee starting at 0.2%. The unit is per
+  **participating** employee (those enrolled in the plan), not per employee on payroll. Square's page also
+  carries the disclosure that "Square is not a client of Vestwell. Vestwell pays a fee for each 401(k) and SEP
+  IRA client referred by Square, as outlined in our written solicitation arrangement with Square." Annualize:
+  **($125 + $8×participating employees) × 12.**
+- Time tracking: **Included** in full-service payroll — Square's pricing page lists "Timecard import — Included"
+  and "Scheduling (up to 10 days out) — Included" in the full-service plan (scheduling is not included in
+  contractor-only). Square publishes **no** separate per-person time-tracking charge, so it is not a budget line.
+- Workers' compensation: **no published price — quoted on request**
+  (`https://squareup.com/us/en/payroll/workers-compensation`): "Answer a few simple questions about your business
+  and get a quote in one business day"; "Premiums adjust automatically based on payroll employee data"; "Individual
+  rates and savings vary and are subject to change."
+- Health insurance: **no published price** — Square offers a medical, dental and vision plan but publishes no
+  dollar amount and no per-employee fee. Quoted on request.
+- Paid amendment services: **add-on with no published price**. Quoted on request.
+- Paper W-2 / 1099 copies: **$3 per mailed form per year** (opt-in, published by Square).
+
+Provenance note: an earlier version of this list took the 401(k) and time-tracking prices from a third-party
+review rather than from Square. Those figures were not Square-published prices and are withdrawn — the values
+above come from Square's own pages and are the only ones this site may use.
 
 ## Outdated figure note
 
@@ -59,8 +81,9 @@ Contractor-only, N: **$6×N×12 = $72×N per year.** Paper W-2/1099: **+$3 × fo
 
 Paychex (checked 2026-10-27) publishes **no rate card**; its own stated market range is **$30–$100 per
 employee per month** for outsourced payroll → **$360–$1,200 per employee per year**, or **$360N–$1,200N
-total per year** for N people. Square's published totals sit at or below the bottom of that band at
-every headcount shown (e.g., 10 people: Square **$1,140** vs Paychex stated **$3,600–$12,000**).
+total per year** for N people. Square's published total sits **inside** that band at one person
+(Square **$492** vs Paychex stated **$360–$1,200**) and **below the band's low end from five people up**
+(e.g., 10 people: Square **$1,140** vs Paychex stated **$3,600–$12,000**).
 **Caveat:** Paychex's band is a market-range statement, not a Paychex quote; only a written Paychex
 quote can say what Paychex would actually charge the same ten people.
 
@@ -71,15 +94,22 @@ May claim, as dated official facts:
 1. Square publishes full-service payroll at **$35/mo + $6/person/mo** (2026-10-27).
 2. Tax filings (federal + state) and multistate are **included**; paper W-2/1099 is **$3/form/year** opt-in.
 3. The annualized totals above, as arithmetic from the published rates.
-4. Square's published totals vs Paychex's stated range, **with the quote-vs-range caveat**.
+4. Square's published totals vs Paychex's stated range, **with the quote-vs-range caveat** — inside the band
+   at one person, below the band's low end from five people up.
+5. Add-on positions, each with its provenance: 401(k) via partner **Vestwell** at **$125/mo + $8 per
+   participating employee** (participants' annual account fee starting at 0.2%); timecard import and
+   scheduling **included** in full-service payroll; workers' compensation, health insurance and paid
+   amendment services **quoted on request**.
 
 May NOT claim:
 
 - Any Square setup fee, implementation charge, or renewal change (not published; confirm in writing).
-- That Square is "cheaper than a Paychex quote" — only that it is cheaper than Paychex's **stated
-  range**, which is not a quote.
+- That Square is "cheaper than a Paychex quote" — only the band comparison: **inside** Paychex's **stated
+  range** at one person, **below its low end** from five people up. The range is not a quote.
 - A promotional / intro discount on the official pricing page (none shown); referral "first month free"
   offers appear off-page and are unverified.
+- Any per-person time-tracking fee as a Square price — Square publishes no such charge, and a third-party
+  review's fee for it is not a Square price and is not budgeted.
 
 ## Related
 
