@@ -1,0 +1,67 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/gusto-pricing/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/gusto-vs-quickbooks/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/adp-vs-gusto/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/gusto-next-day-pay-cost/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/estimating-payroll-taxes/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/payroll-tax-calculator/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/quickbooks-payroll-pricing/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/calculator-for-payroll-hours/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/time-card-calculator-with-lunch/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/pay-calculator-hours-and-minutes/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/paychex-pricing/",
+    "status": 200,
+    "mobile3": true
+  },
+  {
+    "path": "/square-payroll-pricing/",
+    "status": 200,
+    "mobile3": true
+  }
+]
