@@ -1,0 +1,112 @@
+.figure-hint{display:none}
+/* Shared mobile layout. Screen only: no rates, calculations or print changes. */
+@media screen and (max-width:700px){
+ :root{--mobile-gutter:16px;--mobile-gap:24px}
+ body{background:#f5f7fa;color:#233548}
+ body .container,body main#main.article,body .site-header .site-header-inner,body .site-footer .container{width:calc(100% - 32px);max-width:100%;margin-left:auto;margin-right:auto}
+ body main#main:not(.article){max-width:100%}
+ body main#main.article{padding-top:24px;padding-bottom:40px}
+ body .site-header .site-header-inner{display:flex;flex-wrap:wrap;gap:10px;padding:12px 0 8px;align-items:center}
+ body .site-header .brand{min-width:0;gap:10px;letter-spacing:0;font-size:16px}
+ body .site-header .brand-mark{flex:0 0 32px;width:32px;height:32px}
+ body .site-header .brand-mark svg{display:block;width:22px;height:22px}
+ body .site-header nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;gap:4px;overflow:visible}
+ body .site-header nav a{justify-content:center;text-align:center;font-size:13px;min-height:40px;padding:8px 2px}
+ body main h1,body main .comparison-hero h1,body.quote-home .hero h1{font-size:30px!important;line-height:1.2!important;letter-spacing:0;overflow-wrap:normal;word-break:normal;margin:8px 0 20px}
+ body main h2{font-size:24px!important;line-height:1.3!important;margin:32px 0 14px;letter-spacing:0}
+ body main h3{font-size:19px;line-height:1.4;letter-spacing:0}
+ body main .eyebrow{font-size:12px!important;letter-spacing:.5px;line-height:1.6;overflow-wrap:normal}
+ body main p,body main li{line-height:1.65;word-break:normal}
+ body main article>p{margin-bottom:20px}
+ body main ul,body main ol{padding-left:22px}
+ body main li{padding-left:2px;margin-bottom:10px}
+ body main .comparison-hero{gap:24px}
+ body main .card,body main .summary,body main .answer,body main .result-ticket{border-radius:8px;box-shadow:none}
+ body main .card{padding:16px}
+ body main fieldset{min-width:0;margin:0 0 20px;border:1px solid #ccd6df;border-radius:8px;background:#fff;padding:16px}
+ body main legend{padding:0 6px;font-size:15px;font-weight:600;line-height:1.5;color:#314e65}
+ body main input:not([type=checkbox]),body main select{box-sizing:border-box;width:100%;max-width:100%;min-width:0;min-height:46px;font-size:16px;line-height:1.4;padding:10px 12px;border-radius:5px}
+ body main label{font-size:15px;line-height:1.5;min-width:0}
+ body main label:has(>input[type=checkbox]){display:flex;align-items:flex-start;gap:10px;line-height:1.5;font-weight:500}
+ body main label>input[type=checkbox]{display:inline-block;flex:0 0 20px;width:20px;height:20px;min-height:20px;margin:2px 0 0;padding:0;accent-color:#245d82}
+ body main .hours-shift>label:has(input[type=number]){grid-column:1/-1}
+ body main .hours-grid,body main .pay-grid{gap:0}
+ body main .hours-shift p{border-top:1px solid #dce3ea;padding-top:12px;font-size:15px}
+ body main form>p:has(>button){display:flex;flex-direction:column;gap:10px;align-items:stretch}
+ body main form>p>button,body main a.btn[download]{width:100%;min-height:48px;text-align:center;white-space:normal;margin:0;padding:12px 14px;font-size:15px;line-height:1.5}
+ body main #hours-result,body main #pay-result,body main #tax-result{padding:16px;border:1px solid #ccd6df;border-radius:8px;margin:24px 0}
+ body main .formula{padding:16px;line-height:1.7!important;overflow-wrap:normal;word-break:normal}
+ body main .comparison,body main .table-wrap{width:100%;max-width:100%;margin:24px 0;border:1px solid #d1dbe4;border-radius:8px;background:#fff;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+ body main table{min-width:600px;max-width:none}
+ body main th,body main td{padding:12px!important;font-size:14px!important;line-height:1.6;letter-spacing:0!important;text-transform:none;word-break:normal;overflow-wrap:normal;vertical-align:top}
+ body main td:first-child{width:auto}
+ body main table:not(:has(tr>:nth-child(3))){min-width:0;width:100%;table-layout:fixed}
+ body main table:not(:has(tr>:nth-child(3))) tr>:first-child{width:42%}
+ body main table:not(:has(tr>:nth-child(3))) th,body main table:not(:has(tr>:nth-child(3))) td{overflow-wrap:break-word}
+ body main figure{margin:24px 0!important;max-width:100%}
+ body main .figure-scroll{overflow-x:auto;overscroll-behavior-x:contain;border:1px solid #d1dbe4;border-radius:8px;background:#fff;-webkit-overflow-scrolling:touch}
+ body main .figure-scroll img{display:block;width:640px!important;min-width:640px;max-width:none!important;height:auto}
+ body main .figure-scroll:focus-visible{outline:2px solid #245d82;outline-offset:3px}
+ body main figcaption{margin:10px 0 0;font-size:14px;line-height:1.6;color:#566777}
+ body main .figure-hint{display:block;font-size:12px;font-weight:600;color:#526777;margin-bottom:8px}
+ body main .callout,body main .quote{padding:16px;margin:24px 0}
+ body main .callout p:last-child{margin-bottom:0}
+ body.quote-home .hero{padding:24px 0;gap:24px}
+ body.quote-home .hero .result-ticket{padding:16px;width:100%;min-width:0}
+ body.quote-home .hero .ticket-top{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding-bottom:12px;margin-bottom:14px}
+ body.quote-home .hero .ticket-brand,body.quote-home .hero .ticket-status{letter-spacing:.3px;line-height:1.5;font-size:12px!important}
+ body.quote-home .hero .payroll-presets{margin:0 0 16px}
+ body.quote-home .hero .preset-buttons{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ body.quote-home .hero .preset-buttons .btn{justify-self:stretch;align-self:stretch;width:100%;min-width:0;min-height:58px;padding:10px 8px;font-size:14px;line-height:1.4;text-align:center;overflow-wrap:normal;letter-spacing:0}
+ body.quote-home .hero .ticket-lines{margin:0 0 16px;width:100%}
+ body.quote-home .hero .ticket-lines div{padding:14px 12px}
+ body.quote-home .hero .ticket-lines dd{margin-top:8px;overflow-wrap:normal;word-break:normal}
+ body.quote-home .hero .ticket-lines dd.is-number{font-size:36px;line-height:1.15;letter-spacing:-.5px}
+ body.quote-home .hero .ticket-lines dd:not(.is-number){font-size:15px;line-height:1.55}
+ body.quote-home .hero .hero-primary{justify-self:stretch;width:100%;min-height:48px;padding:12px;margin:12px 0;font-size:16px}
+ body.quote-home .ticket-formula{font-family:Arial,system-ui,sans-serif;overflow-wrap:normal;word-break:normal}
+ body.quote-home .ticket-foot{flex-direction:column;align-items:flex-start;gap:8px;border-top:1px solid #dce3ea;padding-top:12px}
+ body.quote-home section{padding:32px 0}
+ body.quote-home section h2{margin-top:0}
+ body.quote-home .field-group{padding:16px;margin:0 0 24px}
+ body.quote-home .quote-field .input-state{max-width:100%;padding:4px 7px;font-weight:500}
+ body.quote-home .quote-field small,body.quote-home .sample-source,body.quote-home #cost-result p{overflow-wrap:normal;word-break:normal}
+ body.quote-home .preset-evidence{margin-top:10px}
+ body.quote-home .preset-evidence a{overflow-wrap:anywhere}
+ body.quote-home #cost-result{padding:16px;min-width:0}
+ body.quote-home #cost-result dl div{padding:14px 12px}
+ body.quote-home #cost-result li{padding:12px 0;margin:0}
+ body.quote-home #cost-result li:before{content:none}
+ body.quote-home .takeaway-actions{gap:10px}
+ body.quote-home .takeaway-actions button{width:100%;min-height:48px;padding:12px;font-size:15px}
+ body .site-footer .footer-grid{grid-template-columns:1fr;gap:24px}
+ body .site-footer nav{gap:10px;padding-top:20px;border-top:1px solid #d1dbe4}
+ body .site-footer nav h2{margin:0 0 2px;font-size:13px!important}
+ body .site-footer nav a{padding:2px 0;min-height:28px}
+ body .site-footer .footer-about p{max-width:none;margin-top:10px}
+ body .site-footer .footer-meta{padding-top:16px;gap:8px;line-height:1.6}
+}
+@media screen and (max-width:350px){body.quote-home .hero .preset-buttons{grid-template-columns:1fr}body main .hours-shift{grid-template-columns:1fr}body main .hours-shift>*{grid-column:1!important}}
+
+@media screen and (max-width:700px){
+ body:not(.quote-home) main#main{width:calc(100% - 32px);max-width:100%;margin-left:auto;margin-right:auto}
+ body main .result-ticket:before{display:none}
+ body main .ticket-top{flex-wrap:wrap;align-items:flex-start;gap:8px;padding-bottom:12px}
+ body main .ticket-brand,body main .ticket-status{font-size:12px!important;letter-spacing:.3px;line-height:1.5;white-space:normal}
+ body main .ticket-title{font-size:15px;line-height:1.5;margin-top:16px}
+ body main .ticket-value{font-size:46px;line-height:1.15;letter-spacing:-.5px}
+ body main .ticket-value span,body main .ticket-sub,body main .ticket-scope,body main .ticket-formula{font-size:14px!important;line-height:1.6;font-family:Arial,system-ui,sans-serif;letter-spacing:0;overflow-wrap:normal}
+ body main .ticket-lines div{align-items:flex-start;gap:12px;padding:10px 0}
+ body main .ticket-lines dt,body main .ticket-lines dd{font-size:14px;line-height:1.5;min-width:0}
+ body main .ticket-lines dd{white-space:nowrap}
+ body.quote-home .hero .ticket-lines dd{white-space:normal}
+ body main .ticket-foot{font-size:13px;line-height:1.6;flex-wrap:wrap;gap:10px}
+ body main .ticket-actions{gap:10px;flex-wrap:wrap}
+ body main .ticket-actions button{font-size:14px;min-height:48px;padding:10px 12px}
+}
+
+@media screen and (max-width:700px){
+ body:not(.quote-home) main#main .container{width:100%;max-width:100%;margin-left:0;margin-right:0}
+ body main .note,body main .source,body main small{font-size:14px!important;line-height:1.6}
+ body main .inputs{grid-template-columns:minmax(0,1fr);gap:20px}
+}
