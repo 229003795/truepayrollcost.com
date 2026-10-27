@@ -1,29 +1,29 @@
-﻿Section,Item,Formula or question,Example amount USD,Your written answer,Checked date,Source
-Official range,Paychex market range per employee per month,Paychex stated range (not a quote),30.00-100.00,,2026-10-27,https://www.paychex.com/articles/payroll-taxes/payroll-costs-for-small-businesses
-Official range,Paychex single-employee monthly range,Paychex stated range (not a quote),30.00-100.00,,2026-10-27,https://www.paychex.com/articles/payroll-taxes/payroll-for-one-employee
-Official range,Paychex total cost multiplier of base pay,base pay * 1.25 to 1.4,1.25-1.40,,2026-10-27,https://www.paychex.com/articles/payroll-taxes/payroll-costs-for-small-businesses
-Quote component,Selected Paychex Flex tier,Basic / Foundations / Advanced / Complete,,,2026-10-27,https://www.paychex.com/payroll/compare-payroll-solutions
-Quote component,Base monthly fee,quoted base * chargeable months,,,2026-10-27,
-Quote component,Per-employee monthly rate,quoted rate * billable people * months,,,2026-10-27,
-Quote component,Per-employee annual rate,quoted rate * billable people,,,2026-10-27,
-Quote component,Per-payroll or per-submission charge,rate * expected payroll runs,,,2026-10-27,
-Quote component,Pay frequency multiplier,weekly / biweekly / monthly,,,2026-10-27,
-Quote component,Direct deposit charge,flat or per-payment,,,2026-10-27,
-Quote component,Tax filing service charge,annual or per-run,,,2026-10-27,
-Quote component,Implementation or setup fee,one-time amount,,,2026-10-27,
-Quote component,Year-end forms charge,annual amount,,,2026-10-27,
-Quote component,HR or benefits modules,monthly per tier,,,2026-10-27,
-Quote component,On-demand or instant pay,flat per transaction,,,2026-10-27,
-Comparable,SurePayroll small business base,29.00,,2026-10-27,https://www.surepayroll.com/pricing
-Comparable,SurePayroll per worker,7.00,,2026-10-27,https://www.surepayroll.com/pricing
-Comparable,SurePayroll multi-state add-on,9.99,,2026-10-27,https://www.surepayroll.com/pricing
-Comparable,SurePayroll year-end forms base,50.00,,2026-10-27,https://www.surepayroll.com/pricing
-Comparable,SurePayroll year-end forms per form,5.00,,2026-10-27,https://www.surepayroll.com/pricing
-Scenario,10 billable people at the low end of Paychex's stated range,10 * 30 * 12,3600.00,,2026-10-27,
-Scenario,10 billable people at the high end of Paychex's stated range,10 * 100 * 12,12000.00,,2026-10-27,
-Scenario,One employee at the low end of the stated single-employee range,1 * 30 * 12,360.00,,2026-10-27,
-Scenario,One employee at the high end of the stated single-employee range,1 * 100 * 12,1200.00,,2026-10-27,
-Scenario,Base pay 30.00 per hour at the stated multiplier range,3000 * 1.25 to 3000 * 1.4,3750.00-4200.00,,2026-10-27,
-Internal cost,Your own reconciliation and training time,your hourly cost * your hours,,,2026-10-27,
-Internal cost,Old provider overlap,confirmed billing period,,,2026-10-27,
-Internal cost,External migration work,agreed scope,,,2026-10-27,
+﻿Section,Item,Formula or question,Example amount USD,Your written answer,Checked date,Source
+Official range,Paychex market range per employee per month,Paychex stated range (not a quote),30.00-100.00,,2026-10-27,https://www.paychex.com/articles/payroll-taxes/payroll-costs-for-small-businesses
+Official range,Paychex single-employee monthly range,Paychex stated range (not a quote),30.00-100.00,,2026-10-27,https://www.paychex.com/articles/payroll-taxes/payroll-for-one-employee
+Official range,Paychex total cost multiplier of base pay,base pay * 1.25 to 1.4,1.25-1.40,,2026-10-27,https://www.paychex.com/articles/payroll-taxes/payroll-costs-for-small-businesses
+Quote component,Selected Paychex Flex tier,Basic / Foundations / Advanced / Complete,,,2026-10-27,https://www.paychex.com/payroll/compare-payroll-solutions
+Quote component,Base monthly fee,quoted base * chargeable months,,,2026-10-27,
+Quote component,Per-employee monthly rate,quoted rate * billable people * months,,,2026-10-27,
+Quote component,Per-employee annual rate,quoted rate * billable people,,,2026-10-27,
+Quote component,Per-payroll or per-submission charge,rate * expected payroll runs,,,2026-10-27,
+Quote component,Pay frequency multiplier,weekly / biweekly / monthly,,,2026-10-27,
+Quote component,Direct deposit charge,flat or per-payment,,,2026-10-27,
+Quote component,Tax filing service charge,annual or per-run,,,2026-10-27,
+Quote component,Implementation or setup fee,one-time amount,,,2026-10-27,
+Quote component,Year-end forms charge,annual amount,,,2026-10-27,
+Quote component,HR or benefits modules,monthly per tier,,,2026-10-27,
+Quote component,On-demand or instant pay,flat per transaction,,,2026-10-27,
+Comparable,SurePayroll small business base,Published unit price,29.00,,2026-10-27,https://www.surepayroll.com/pricing
+Comparable,SurePayroll per worker,Published unit price,7.00,,2026-10-27,https://www.surepayroll.com/pricing
+Comparable,SurePayroll multi-state add-on,Published unit price,9.99,,2026-10-27,https://www.surepayroll.com/pricing
+Comparable,SurePayroll year-end forms base,Published unit price,50.00,,2026-10-27,https://www.surepayroll.com/pricing
+Comparable,SurePayroll year-end forms per form,Published unit price,5.00,,2026-10-27,https://www.surepayroll.com/pricing
+Scenario,10 billable people at the low end of Paychex's stated range,10 * 30 * 12,3600.00,,2026-10-27,
+Scenario,10 billable people at the high end of Paychex's stated range,10 * 100 * 12,12000.00,,2026-10-27,
+Scenario,One employee at the low end of the stated single-employee range,1 * 30 * 12,360.00,,2026-10-27,
+Scenario,One employee at the high end of the stated single-employee range,1 * 100 * 12,1200.00,,2026-10-27,
+Scenario,Base pay 30.00 per hour at the stated multiplier range,30 * 1.25 to 30 * 1.4,37.50-42.00,,2026-10-27,https://www.paychex.com/articles/payroll-taxes/payroll-costs-for-small-businesses
+Internal cost,Your own reconciliation and training time,your hourly cost * your hours,,,2026-10-27,
+Internal cost,Old provider overlap,confirmed billing period,,,2026-10-27,
+Internal cost,External migration work,agreed scope,,,2026-10-27,
