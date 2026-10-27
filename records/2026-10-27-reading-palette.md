@@ -3,3 +3,5 @@ User requested more professional, less tiring colors. Replaced competing saturat
 Only new screen-only color.css and shared shell cache version20261027-color1. No font size, layout, article, formula, calculator, CSV or diagram content edited. Existing mobile alignment retained. Print styles unaffected. No webfonts, imagery or animation introduced.
 Calculated contrast via sRGB relative luminance: body/paper9.20;helper/white6.14;helper/result5.50;white/button7.39;link/paper6.88;pending5.84. These exceed4.5 but do not promise medical relief or universal comfort.
 Build13pages. Existing Chrome checked13routes on390mobile and1280desktop; no document overflow; consistent body palette. Homepage screenshot inspected both. Detailed results records/2026-10-27-color-checks.json. Verify actual live color1 deployment before reporting completion.
+
+Production cfa0d35 verified:13/13pages HTTP200 linking color1 stylesheet. Live Chrome390px body rgb247,247,244; text41,46,52;lead61,68,75;action40,91,117;948example retained;no overflow. Viewport reset.
