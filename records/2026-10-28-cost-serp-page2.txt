@@ -1,0 +1,249 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChA8egQIBhAE
+  - combobox "Search": how much does a payroll service cost how much does a payroll service cost
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+- 'button "Google Account: Gang Chen (chegrogo@gmail.com)"':
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sa=N&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QufJlY6zJud3Z__pVf55T9h1SQFki2XCYpJtchR_BvDOKWh4dKJPb3wwTxoGKFGBD5Hz4rVnlMOjyeHyTpyhkBJoePX05A0HMICyxCfDsivf2kPnqIKkJfbgm3d2MihBtaax5x2ACiTYfnu_Tbvacjc69p0gVgFors74nk9TYTDYwV3Uw&vsint=&aep=1&ntc=1&cs=0&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDYnw56BAgPEAM
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?sa=N&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QufJlY6zJud3Z__pVf55T9h1SQFki2XCYpJtchR_BvDOKWh4dKJPb3wwTxoGKFGBD5Hz4rVnlMOjyeHyTpyhkBJoePX05A0HMICyxCfDsivf2kPnqIKkJfbgm3d2MihBtaax5x2ACiTYfnu_Tbvacjc69p0gVgFors74nk9TYTDYwV3Uw&q=how+much+does+a+payroll+service+cost&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChC0qAt6BAgVEAE
+      - generic: Images
+    - link "Forums":
+      - /url: /search?sa=N&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QufJlY6zJud3Z__pVf55T9h1SQFki2XCYpJtchR_BvDOKWh4dKJPb3wwTxoGKFGBD5Hz4rVnlMOjyeHyTpyhkBJoePX05A0HMICyxCfDsivf2kPnqIKkJfbgm3d2MihBtaax5x2ACiTYfnu_Tbvacjc69p0gVgFors74nk9TYTDYwV3Uw&q=how+much+does+a+payroll+service+cost&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChCzqAt6BAgUEAE
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?sa=N&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QufJlY6zJud3Z__pVf55T9h1SQFki2XCYpJtchR_BvDOKWh4dKJPb3wwTxoGKFGBD5Hz4rVnlMOjyeHyTpyhkBJoePX05A0HMICyxCfDsivf2kPnqIKkJfbgm3d2MihBtaax5x2ACiTYfnu_Tbvacjc69p0gVgFors74nk9TYTDYwV3Uw&q=how+much+does+a+payroll+service+cost&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Videos":
+      - /url: /search?sa=N&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QufJlY6zJud3Z__pVf55T9h1SQFki2XCYpJtchR_BvDOKWh4dKJPb3wwTxoGKFGBD5Hz4rVnlMOjyeHyTpyhkBJoePX05A0HMICyxCfDsivf2kPnqIKkJfbgm3d2MihBtaax5x2ACiTYfnu_Tbvacjc69p0gVgFors74nk9TYTDYwV3Uw&q=how+much+does+a+payroll+service+cost&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChC0qAt6BAgSEAE
+      - generic: Videos
+    - link "News":
+      - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=how+much+does+a+payroll+service+cost&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QufJlY6zJud3Z__pVf55T9h1SQFki2XCYpJtchR_BvDOKWh4dKJPb3wwTxoGKFGBD5Hz4rVnlMOjyeHyTpyhkBJoePX05A0HMICyxCfDsivf2kPnqIKkJfbgm3d2MihBtaax5x2ACiTYfnu_Tbvacjc69p0gVgFors74nk9TYTDYwV3Uw&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDSlAl6BAgREAE
+      - generic: News
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "How Much Does a Payroll Service Cost for Your Small ... 1-800Accountant https://1800accountant.com › blog › payroll-services-for...":
+    - /url: https://1800accountant.com/blog/payroll-services-for-small-business-cost
+    - heading "How Much Does a Payroll Service Cost for Your Small ..." [level=3]
+    - generic: 1-800Accountant
+    - generic: https://1800accountant.com › blog › payroll-services-for...
+  - button "About this result":
+  - generic: Oct 7, 2026 —
+  - text: Most
+  - emphasis: payroll
+  - text: services
+  - emphasis: charge
+  - text: a monthly base
+  - emphasis: fee
+  - text: of $20 to $200 plus a per-employee, per-pay-period
+  - emphasis: fee
+  - text: .
+  - emphasis: Payroll
+  - text: software (QuickBooks, ...
+  - link "Read more":
+    - /url: https://1800accountant.com/blog/payroll-services-for-small-business-cost#:~:text=Most%20payroll%20services%20charge%20a,Payroll%20software%20(QuickBooks%2C
+  - 'link "Payroll service cost in 2025: A guide Oyster HR https://www.oysterhr.com › library › payroll-services-cost"':
+    - /url: https://www.oysterhr.com/library/payroll-services-cost
+    - 'heading "Payroll service cost in 2025: A guide" [level=3]'
+    - generic: Oyster HR
+    - generic: https://www.oysterhr.com › library › payroll-services-cost
+  - button "About this result":
+  - generic: Oct 31, 2025 —
+  - text: Payroll service costs start at
+  - emphasis: around $39 per month
+  - text: ", but it varies according to your needs—how many employees you have, how often you pay them, ..."
+  - link "Read more":
+    - /url: https://www.oysterhr.com/library/payroll-services-cost#:~:text=Payroll%20service%20costs%20start%20at,services%20you%20might%20opt%20into.
+  - 'link "Payroll Services Cost: Pricing, Fees & Worth It? - Sage HCM Criterion HCM https://hcm.sage.com › blog › cost-of-payroll-service"':
+    - /url: https://hcm.sage.com/blog/cost-of-payroll-service
+    - 'heading "Payroll Services Cost: Pricing, Fees & Worth It? - Sage HCM" [level=3]'
+    - generic: Criterion HCM
+    - generic: https://hcm.sage.com › blog › cost-of-payroll-service
+  - button "About this result":
+  - text: On average, outsourced payroll services cost a base fee of
+  - emphasis: around $50 to $80 per month
+  - text: ", plus $6 to $12 per employee per month (PEPM). For a company with 20 ..."
+  - link "Read more":
+    - /url: https://hcm.sage.com/blog/cost-of-payroll-service#:~:text=On%20average%2C%20outsourced%20payroll%20services,%242%2C040%20to%20%243%2C840%20per%20year.
+  - img "Rated 4.4 out of 5, (21) user reviews":
+    - text: "4.4"
+    - text: (21)
+  - link "How Much Does a Payroll Service Cost? YouTube · CSI Accounting 1.2K+ views · 3 years ago":
+    - /url: https://www.youtube.com/watch?v=Qus-fSaGVKg
+    - heading "How Much Does a Payroll Service Cost?" [level=3]
+    - generic: YouTube · CSI Accounting
+    - generic: 1.2K+ views · 3 years ago
+  - button "About this result":
+  - button "How Much Does a Payroll Service Cost? by CSI Accounting on YouTube. Play on Google. 2:59":
+    - generic: 2:59
+  - generic: If you're looking for a payroll service, there are many factors that will influence the cost. Watch this video to learn what those factors ...
+  - button "6 key moments in this video":
+    - generic: 6 key moments in this video
+  - link "Small Business Payroll Pricing | SurePayroll By Paychex SurePayroll https://www.surepayroll.com › pricing":
+    - /url: https://www.surepayroll.com/pricing
+    - heading "Small Business Payroll Pricing | SurePayroll By Paychex" [level=3]
+    - generic: SurePayroll
+    - generic: https://www.surepayroll.com › pricing
+  - button "About this result":
+  - text: First state included.
+  - emphasis: Multi-state payroll for $9.99/month
+  - text: . Monthly Subscription. $29.00. $7 x 0 workers.
+  - link "Read more":
+    - /url: https://www.surepayroll.com/pricing#:~:text=Does%20SurePayroll%20handle%20W%2D2s%20and
+  - link "How Much Do Payroll Services Cost? Business.com https://www.business.com › ... › Business Payments":
+    - /url: https://www.business.com/articles/how-much-payroll-services-cost/
+    - heading "How Much Do Payroll Services Cost?" [level=3]
+    - generic: Business.com
+    - generic: https://www.business.com › ... › Business Payments
+  - button "About this result":
+  - generic: May 18, 2026 —
+  - text: Base fees typically range from $
+  - emphasis: 20 to $150 per month
+  - text: ", while per-employee fees generally run $2 to $15 per month. For example, QuickBooks Payroll ..."
+  - link "Read more":
+    - /url: https://www.business.com/articles/how-much-payroll-services-cost/#:~:text=Base%20fees%20typically%20range%20from,QuickBooks%20Payroll%20charges%20the%20following%3A
+  - link "5 Best Cheap Payroll Services of 2026 CNBC https://www.cnbc.com › CNBC Select › Small Business":
+    - /url: https://www.cnbc.com/select/cheapest-payroll-services/
+    - heading "5 Best Cheap Payroll Services of 2026" [level=3]
+    - generic: CNBC
+    - generic: https://www.cnbc.com › CNBC Select › Small Business
+  - button "About this result":
+  - text: Cost. $
+  - emphasis: 19.99 per month + $4 per employee
+  - text: (without tax filing); $29.99 per month + $5 per employee (full service); offers a 6-month free trial · Benefits ...
+  - link "Read more":
+    - /url: https://www.cnbc.com/select/cheapest-payroll-services/#:~:text=Cost,offers%20a%206%2Dmonth%20free%20trial&text=Benefits%20Administration
+  - link "How Much Does Payroll Outsourcing Cost? A Breakdown ... Complete Payroll Solutions https://www.completepayrollsolutions.com › blog › outs...":
+    - /url: https://www.completepayrollsolutions.com/blog/outsourced-payroll-cost
+    - heading "How Much Does Payroll Outsourcing Cost? A Breakdown ..." [level=3]
+    - generic: Complete Payroll Solutions
+    - generic: https://www.completepayrollsolutions.com › blog › outs...
+  - button "About this result":
+  - generic: Apr 12, 2022 —
+  - text: While pricing depends on a number of factors, you can generally expect to pay
+  - emphasis: about $200-$250 per employee per year
+  - text: . Here, we'll breakdown ...
+  - link "Read more":
+    - /url: https://www.completepayrollsolutions.com/blog/outsourced-payroll-cost#:~:text=While%20pricing%20depends%20on%20a,what's%20behind%20this%20figure%2C%20including%3A
+  - link "Gusto Pricing, Plans & Fees (2026) Gusto https://gusto.com › product › pricing":
+    - /url: https://gusto.com/product/pricing
+    - heading "Gusto Pricing, Plans & Fees (2026)" [level=3]
+    - generic: Gusto
+    - generic: https://gusto.com › product › pricing
+  - button "About this result":
+  - emphasis: Simple, transparent pricing
+  - text: ; simple. Run basic payroll in one state. $49 ; plus. Confidently pay a mixed workforce and expand in new states. $80 ; premium. A ...
+  - link "Read more":
+    - /url: https://gusto.com/product/pricing#:~:text=Simple%2C%20transparent%20pricing&text=simple,%2449%2Fmo&text=plus,%2480%2Fmo&text=premium,HR%20guidance%2C%20and%20financial%20tools.
+  - link "Understanding Payroll Costs for Small Businesses Paychex https://www.paychex.com › Paychex WORX":
+    - /url: https://www.paychex.com/articles/payroll-taxes/payroll-costs-for-small-businesses
+    - heading "Understanding Payroll Costs for Small Businesses" [level=3]
+    - generic: Paychex
+    - generic: https://www.paychex.com › Paychex WORX
+  - button "About this result":
+  - generic: Feb 27, 2025 —
+  - text: Businesses can expect to spend
+  - emphasis: between $30 and $100 per employee per month
+  - text: "with a payroll service provider. Direct deposit: There may be a cost ..."
+  - link "Read more":
+    - /url: https://www.paychex.com/articles/payroll-taxes/payroll-costs-for-small-businesses#:~:text=Businesses%20can%20expect%20to%20spend,There%20may%20be%20a%20cost
+  - heading "People also search for" [level=2]
+  - link "How much does a payroll service cost per month":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=How+much+does+a+payroll+service+cost+per+month&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECDMQAQ
+    - generic: How much does a payroll service cost per month
+  - link "How much does payroll cost for one employee":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=How+much+does+payroll+cost+for+one+employee&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECDYQAQ
+    - generic: How much does payroll cost for one employee
+  - link "Cost of payroll services for small business":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=Cost+of+payroll+services+for+small+business&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECDgQAQ
+    - generic: Cost of payroll services for small business
+  - link "How much does a payroll service cost in california":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=How+much+does+a+payroll+service+cost+in+california&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECD0QAQ
+    - generic: How much does a payroll service cost in california
+  - link "How much does ADP payroll cost per month":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=How+much+does+ADP+payroll+cost+per+month&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECDcQAQ
+    - generic: How much does ADP payroll cost per month
+  - link "ADP payroll cost for 1 employee":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=ADP+payroll+cost+for+1+employee&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECC8QAQ
+    - generic: ADP payroll cost for 1 employee
+  - link "How much does ADP payroll cost for small business":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=How+much+does+ADP+payroll+cost+for+small+business&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECDUQAQ
+    - generic: How much does ADP payroll cost for small business
+  - link "How much do accountants charge for payroll services":
+    - /url: /search?sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&q=How+much+do+accountants+charge+for+payroll+services&sa=X&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDVAnoECDQQAQ
+    - generic: How much do accountants charge for payroll services
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - heading "Previous" [level=2]:
+      - link "Previous":
+        - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=0&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDx0wN6BAgpEAI
+        - generic: Previous
+    - link "Page 1":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=0&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEAQ
+      - text: "1"
+    - text: "2"
+    - link "Page 3":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=20&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEAc
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=30&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEAk
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=40&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEAs
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=50&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEA0
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=60&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEA8
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=70&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEBE
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=80&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEBM
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=90&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDy0wN6BAgpEBU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=how+much+does+a+payroll+service+cost&sca_esv=1f6cf4881239c4ae&hl=en&gl=us&pws=0&biw=1710&bih=533&sxsrf=APpeQnsmvLCNeVuQpMfJkflSFvpfRcnwog:1793170379857&ei=y5vhauboM9j21e8PraTPkAc&start=20&sa=N&sstk=AS6-VmJ2H_NYBk9kZIiOY4deZSfhoePXFL5c39knM82NIL1zt91HP-Or3bu7wjYasLAKLc2gq5co4XWwD87S7aE485tCYZG5rDn_opkXq2HHBQcdo0BodsLpCNDucxlmRgUk&ved=2ahUKEwim-oyckNyXAxVYe_UHHS3SE3I4ChDw0wN6BAgpEBc
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are not personalized
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

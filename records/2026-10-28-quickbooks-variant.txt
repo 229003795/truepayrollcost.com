@@ -1,0 +1,557 @@
+- main:
+  - navigation "Main":
+    - link "QuickBooks":
+      - /url: https://quickbooks.intuit.com/
+      - img "QuickBooks"
+    - list:
+      - link "Products & Services":
+        - /url: "#"
+        - generic: Products & Services
+      - link "Plans & Pricing":
+        - /url: https://quickbooks.intuit.com/pricing/
+        - generic: Plans & Pricing
+      - link "Top features":
+        - /url: "#"
+        - generic: Top features
+      - link "Business types":
+        - /url: "#"
+        - generic: Business types
+      - link "Resources":
+        - /url: "#"
+        - generic: Resources
+    - list:
+      - 'link "Talk to Sales: 1-888-326-9737"':
+        - /url: "#"
+        - generic: "Talk to Sales: 1-888-326-9737"
+    - button "Sign in":
+      - generic: Sign in
+  - navigation "Main":
+    - generic "Menu bar":
+      - heading "Manage your team Run payroll" [level=5]:
+        - list:
+          - link "Manage your team":
+            - /url: https://quickbooks.intuit.com/team-management/
+          - listitem: Run payroll
+      - button "Overview":
+        - link "Overview":
+          - /url: https://quickbooks.intuit.com/payroll/
+          - generic: Overview
+      - button "Features":
+        - generic: Features
+      - link "See plans":
+        - /url: https://quickbooks.intuit.com/payroll/pricing/
+        - generic: See plans
+  - heading "Bundle payroll, HR, and bookkeeping" [level=1]
+  - paragraph: Boost efficiency with tools that work together to manage your team and business.
+  - paragraph: Buy now & save 50% for 3 months*
+  - generic: "1"
+  - generic: Pick a payroll plan
+  - generic: "2"
+  - generic: Add accounting
+  - generic: "3"
+  - generic: Checkout
+  - generic: Workforce Payroll
+  - generic: Pay your team and get payroll taxes done for you.
+  - text: $50
+  - generic: + $7/employee
+  - text: $25
+  - generic: /mo
+  - generic: + $7/employee/mo
+  - generic: 50% off for 3 months*
+  - button "Add to plan Workforce Payroll":
+    - generic: Add to plan
+  - generic: "Key apps included:"
+  - generic: Payroll
+  - generic: Team
+  - generic: Intuit Intelligence
+  - list:
+    - button "Tracks down hours, scans for anomalies and gets payroll ready":
+      - generic: Tracks down hours, scans for anomalies and gets payroll ready
+  - generic: Take care of payday
+  - list:
+    - button "Full service payroll"
+    - button "Auto payroll"
+    - button "1099 E-File"
+    - button "Expert product support"
+    - button "Next-day direct deposit"
+  - generic: Team management tools
+  - list:
+    - button "Document upload and sharing"
+    - button "Employee data management"
+    - button "Employee portal"
+    - button "Background checks via Checkr"
+  - generic: Take care of your team
+  - list:
+    - button "Health benefits for your team"
+    - button "401(k) plans"
+    - button "Workers’ comp administration"
+  - generic: Take care of tracking time
+  - list:
+    - button
+  - generic: Workforce Premium
+  - generic: FAVORITE
+  - generic: All-in-one payroll, time tracking, and HR tools.
+  - text: $88
+  - generic: + $13/employee
+  - text: $44
+  - generic: /mo
+  - generic: + $13/employee/mo
+  - generic: 50% off for 3 months*
+  - button "Add to plan Workforce Premium":
+    - generic: Add to plan
+  - generic: "Key apps included:"
+  - generic: Payroll
+  - generic: Team
+  - generic: Time
+  - generic: Intuit Intelligence
+  - list:
+    - button "Tracks down hours, scans for anomalies, and gets payroll ready":
+      - generic: Tracks down hours, scans for anomalies, and gets payroll ready
+    - generic: with Payroll AI
+    - button "Expert review of your payroll setup":
+      - generic: Expert review of your payroll setup
+  - generic: Take care of payday
+  - list:
+    - button "Full service payroll"
+    - button "Auto payroll"
+    - button "1099 E-File"
+    - button "Expert product support"
+    - button "Same-day direct deposit"
+    - button "Expert setup review"
+  - generic: Team management tools
+  - list:
+    - button "Document upload and sharing"
+    - button "Advanced employee data management"
+    - button "Employee portal"
+    - button "Background checks via Checkr"
+    - button "Company documents center"
+    - button "Hiring & onboarding"
+    - button "Time off management"
+    - button "Automated HR workflows (5)"
+    - button "Recruiting"
+    - button "Manager role"
+    - button "HR resource center & handbook creator"
+    - button "Automated I-9"
+  - generic: Take care of your team
+  - list:
+    - button "Health benefits for your team"
+    - button "401(k) plans"
+    - button "Workers’ comp administration"
+    - button "Benefits administration"
+  - generic: Take care of tracking time
+  - list:
+    - button "Workforce app"
+    - button "Create schedules"
+    - button "Customize reports"
+    - button "See who's working"
+  - generic: Workforce Elite
+  - generic: The complete workforce platform, with experts in your corner.
+  - text: $134
+  - generic: + $17/employee
+  - text: $67
+  - generic: /mo
+  - generic: + $17/employee/mo
+  - generic: 50% off for 3 months*
+  - button "Add to plan Workforce Elite":
+    - generic: Add to plan
+  - generic: "Key apps included:"
+  - generic: Payroll
+  - generic: Team
+  - generic: Time
+  - generic: Intuit Intelligence
+  - list:
+    - button "Tracks down hours, scans for anomalies, and gets payroll ready":
+      - generic: Tracks down hours, scans for anomalies, and gets payroll ready
+    - generic: with Payroll AI
+    - button "An expert sets up your payroll for you, so you know it's done right":
+      - generic: An expert sets up your payroll for you, so you know it's done right
+  - generic: Take care of payday
+  - list:
+    - button "Full service payroll"
+    - button "Auto payroll"
+    - button "1099 E-File"
+    - button "Expert product support"
+    - button "Same-day direct deposit"
+    - button "Expert setup"
+    - button "Tax penalty protection"
+  - generic: Team management tools
+  - list:
+    - button "Document upload and sharing"
+    - button "Advanced employee data management"
+    - button "Employee portal"
+    - button "Background checks via Checkr"
+    - button "Company documents center"
+    - button "Hiring & onboarding"
+    - button "Time off management"
+    - button "Automated HR workflows (unlimited)"
+    - button "Recruiting"
+    - button "Manager role"
+    - button "HR resource center & handbook creator"
+    - button "Automated I-9"
+    - button "Performance management"
+    - button "Personal HR advisor"
+  - generic: Take care of your team
+  - list:
+    - button "Health benefits for your team"
+    - button "401(k) plans"
+    - button "Workers’ comp administration"
+    - button "Benefits administration"
+  - generic: Take care of tracking time
+  - list:
+    - button "Workforce app"
+    - button "Create schedules"
+    - button "Customize reports"
+    - button "See who's working"
+    - button "Geofencing"
+    - button "Track mileage"
+    - button "Project activity feed"
+    - button "Project estimates vs actuals"
+  - button "Important pricing details and product information"
+  - heading "Already use QuickBooks? Just add payroll." [level=2]
+  - heading "QuickBooks Workforce" [level=3]:
+    - text: QuickBooks
+    - text: Workforce
+  - heading "Payroll is included with all QuickBooks Workforce plans. Simply sign in to QuickBooks and add Workforce or call 1‑888‑857‑3710." [level=6]
+  - link "Sign in":
+    - /url: https://app.qbo.intuit.com/app/login?pagereq=addpayroll%3Fpc_upsell_ipd_ap%3DQBOPIPDHarmEmpMenu
+    - generic: Sign in
+  - heading "QuickBooks Desktop Payroll" [level=3]:
+    - text: QuickBooks
+    - text: Desktop Payroll
+  - heading "Activate payroll by calling 800‑466‑1412 or learn more about Desktop Payroll options." [level=6]
+  - link "Explore options":
+    - /url: https://quickbooks.intuit.com/desktop/enterprise/payroll/
+    - generic: Explore options
+  - paragraph: PAYROLL AI
+  - paragraph:
+    - text: Take the prep out
+    - text: of payroll
+  - paragraph: Your Payroll AI proactively collects time and attendance data from your employees, spots inconsistencies, and texts your admin updates—letting you run payroll from anywhere.
+  - link "Explore Intuit AI agents":
+    - /url: https://quickbooks.intuit.com/ai-accounting/
+    - generic: Explore Intuit AI
+  - img "Notification from Payroll Agent that it has completed collecting employee’s hours"
+  - heading "One place for benefits" [level=2]
+  - paragraph: All QuickBooks Workforce plans come with access to employee benefits. A happy team supports a growing business. Attract and retain the best workers with competitive benefits.
+  - img "Allstate logo"
+  - heading "Healthcare packages" [level=3]
+  - paragraph: Prioritize your team’s wellbeing with affordable packages that include medical, dental, and vision insurance by Allstate.**
+  - link "Explore health packages":
+    - /url: https://quickbooks.intuit.com/payroll/health-benefits/
+    - paragraph: Explore health packages
+  - img "Vestwell logo"
+  - heading "401(k) plans" [level=3]
+  - paragraph: Retain top talent with an affordable plan from QuickBooks 401(k) by Vestwell. Match contributions and help employees save for their future.**
+  - link "Explore 401(k) packages":
+    - /url: https://qbo.intuit.com/app/benefits/
+    - paragraph: Explore 401(k) packages
+  - img "Next logo"
+  - heading "Workers’ comp" [level=3]
+  - paragraph: Stay compliant by connecting a policy by Next.** Pay as you go, simplify annual audits, and get automatic calculations.**
+  - link "Get a quote":
+    - /url: https://quickbooks.intuit.com/payroll/workers-compensation/
+    - paragraph: Get a quote
+  - img "Mineral logo"
+  - heading "HR advisor" [level=3]
+  - paragraph: Talk to a certified HR advisor by Mineral to stay compliant, hire and onboard your team quickly and scale with confidence.**
+  - link "Find HR support":
+    - /url: https://quickbooks.intuit.com/payroll/hr-services/
+    - paragraph: Find HR support
+  - heading "Frequently asked questions" [level=2]
+  - button "What types of businesses use QuickBooks Workforce?":
+    - generic: What types of businesses use QuickBooks Workforce?
+  - region "What types of businesses use QuickBooks Workforce?"
+  - button "Is time tracking included with QuickBooks Workforce?":
+    - generic: Is time tracking included with QuickBooks Workforce?
+  - region "Is time tracking included with QuickBooks Workforce?"
+  - button "What reports can I run in Workforce?":
+    - generic: What reports can I run in Workforce?
+  - region "What reports can I run in Workforce?"
+  - button "Is it easy to switch from my current payroll provider?":
+    - generic: Is it easy to switch from my current payroll provider?
+  - region "Is it easy to switch from my current payroll provider?"
+  - button "Can I get help setting up payroll?":
+    - generic: Can I get help setting up payroll?
+  - region "Can I get help setting up payroll?"
+  - button "What does Payroll AI do?":
+    - generic: What does Payroll AI do?
+  - region "What does Payroll AI do?"
+  - button "How do I know if my employee should get a Form 1099 or a Form W-2?":
+    - generic: How do I know if my employee should get a Form 1099 or a Form W-2?
+  - region "How do I know if my employee should get a Form 1099 or a Form W-2?"
+  - contentinfo:
+    - generic: Products
+    - link "Accounting software":
+      - /url: https://quickbooks.intuit.com/accounting/
+      - generic: Accounting software
+    - link "QuickBooks Capital":
+      - /url: https://quickbooks.intuit.com/business-banking/loans/
+      - generic: QuickBooks Capital
+    - link "Checks & supplies":
+      - /url: https://intuitmarket.intuit.com/
+      - generic: Checks & supplies
+    - link "QuickBooks Desktop":
+      - /url: https://quickbooks.intuit.com/desktop/
+      - generic: QuickBooks Desktop
+    - link "QuickBooks Enterprise":
+      - /url: https://quickbooks.intuit.com/desktop/enterprise/
+      - generic: QuickBooks Enterprise
+    - link "QuickBooks Essentials":
+      - /url: https://quickbooks.intuit.com/online/essentials/
+      - generic: QuickBooks Essentials
+    - link "Bookkeeper services":
+      - /url: https://quickbooks.intuit.com/live/
+      - generic: Bookkeeper services
+    - link "QuickBooks Online":
+      - /url: https://quickbooks.intuit.com/online/
+      - generic: QuickBooks Online
+    - link "QuickBooks Online Advanced":
+      - /url: https://quickbooks.intuit.com/online/advanced/
+      - generic: QuickBooks Online Advanced
+    - link "Online Payments":
+      - /url: https://quickbooks.intuit.com/payments/
+      - generic: Online Payments
+    - link "Payroll":
+      - /url: https://quickbooks.intuit.com/payroll/
+      - generic: Payroll
+    - link "Contractor Payments":
+      - /url: https://quickbooks.intuit.com/payroll/contractor-payments/
+      - generic: Contractor Payments
+    - link "Mobile point of sale":
+      - /url: https://quickbooks.intuit.com/payments/in-person-payments/
+      - generic: Mobile point of sale
+    - link "QuickBooks Solopreneur":
+      - /url: https://quickbooks.intuit.com/solopreneur/
+      - generic: QuickBooks Solopreneur
+    - link "Time tracking":
+      - /url: https://quickbooks.intuit.com/time-tracking/
+      - generic: Time tracking
+    - link "See All Products":
+      - /url: https://quickbooks.intuit.com/products/
+      - generic: See All Products
+    - generic: Features
+    - link "Mobile app":
+      - /url: https://quickbooks.intuit.com/accounting/mobile/
+      - generic: Mobile app
+    - link "Financial reporting":
+      - /url: https://quickbooks.intuit.com/accounting/reporting/
+      - generic: Financial reporting
+    - link "Bill management":
+      - /url: https://quickbooks.intuit.com/accounting/manage-bills/
+      - generic: Bill management
+    - link "Bookkeeping":
+      - /url: "https://quickbooks.intuit.com/accounting/ "
+      - generic: Bookkeeping
+    - link "Cash flow management":
+      - /url: https://quickbooks.intuit.com/money/cash-flow-management/
+      - generic: Cash flow management
+    - link "Cloud accounting":
+      - /url: https://quickbooks.intuit.com/accounting/cloud-accounting/
+      - generic: Cloud accounting
+    - link "Direct deposit":
+      - /url: https://quickbooks.intuit.com/payroll/direct-deposit/
+      - generic: Direct deposit
+    - link "Employee timesheets":
+      - /url: https://quickbooks.intuit.com/time-tracking/time-overview/
+      - generic: Employee timesheets
+    - link "Estimates software":
+      - /url: https://quickbooks.intuit.com/accounting/estimates-proposals/
+      - generic: Estimates software
+    - link "Tracking expenses":
+      - /url: https://quickbooks.intuit.com/accounting/track-expenses/
+      - generic: Tracking expenses
+    - link "Inventory management":
+      - /url: https://quickbooks.intuit.com/accounting/inventory/
+      - generic: Inventory management
+    - link "Invoicing software":
+      - /url: https://quickbooks.intuit.com/accounting/invoicing/
+      - generic: Invoicing software
+    - link "Mileage tracker":
+      - /url: https://quickbooks.intuit.com/accounting/mileage/
+      - generic: Mileage tracker
+    - link "Business checking account":
+      - /url: https://quickbooks.intuit.com/payments/quickbooks-checking/
+      - generic: Business checking account
+    - link "QuickBooks Integrations":
+      - /url: https://quickbooks.intuit.com/online/integrations/
+      - generic: QuickBooks Integrations
+    - link "Sales tax software":
+      - /url: https://quickbooks.intuit.com/accounting/sales-tax/
+      - generic: Sales tax software
+    - link "Tax deductions":
+      - /url: https://quickbooks.intuit.com/accounting/tax-deductions/
+      - generic: Tax deductions
+    - link "Multiple users":
+      - /url: https://quickbooks.intuit.com/accounting/multiple-users/
+      - generic: Multiple users
+    - link "Mailchimp Integration":
+      - /url: https://quickbooks.intuit.com/mailchimp/
+      - generic: Mailchimp Integration
+    - generic: Resources
+    - link "Learn & Support":
+      - /url: https://quickbooks.intuit.com/learn-support/en-us/
+      - generic: Learn & Support
+    - link "Product support":
+      - /url: https://quickbooks.intuit.com/learn-support/help/en-us/contact-us/
+      - generic: Product support
+    - link "Tutorials":
+      - /url: https://quickbooks.intuit.com/learn-support/tutorials/
+      - generic: Tutorials
+    - link "Blog":
+      - /url: "https://quickbooks.intuit.com/r/ "
+      - generic: Blog
+    - link "Free invoice generator":
+      - /url: https://quickbooks.intuit.com/invoice-generator/
+      - generic: Free invoice generator
+    - link "Accountants near you":
+      - /url: https://quickbooks.intuit.com/find-an-accountant/
+      - generic: Accountants near you
+    - link "Invoice templates":
+      - /url: https://quickbooks.intuit.com/payments/invoicing/templates/
+      - generic: Invoice templates
+    - link "Payments cost calculator":
+      - /url: https://quickbooks.intuit.com/payments/cost-calculator/
+      - generic: Payments cost calculator
+    - link "Paycheck calculator":
+      - /url: https://quickbooks.intuit.com/payroll/paycheck-calculator/
+      - generic: Paycheck calculator
+    - link "Sales tax calculator":
+      - /url: https://quickbooks.intuit.com/accounting/sales-tax/calculator/
+      - generic: Sales tax calculator
+    - link "Product License Agreement":
+      - /url: https://quickbooks.intuit.com/software-licenses/
+      - generic: Product License Agreement
+    - link "Contact us":
+      - /url: https://quickbooks.intuit.com/contact/
+      - generic: Contact us
+    - link "QuickBooks Apps":
+      - /url: https://quickbooks.intuit.com/app/apps/home/
+      - generic: QuickBooks Apps
+    - link "Compare other software":
+      - /url: https://quickbooks.intuit.com/online/compare/
+      - generic: Compare other software
+    - link "What's new":
+      - /url: https://quickbooks.intuit.com/online/whats-new/
+      - generic: What's new
+    - generic: Partners
+    - link "For accountants":
+      - /url: https://quickbooks.intuit.com/accountants/
+      - generic: For accountants
+    - link "For developers":
+      - /url: https://developer.intuit.com/app/developer/homepage
+      - generic: For developers
+    - link "For franchises":
+      - /url: https://erp.intuit.com/custom-erp/
+      - generic: For franchises
+    - link "For business affiliates":
+      - /url: https://quickbooks.intuit.com/partners/referrals/
+      - generic: For business affiliates
+    - link "For solution providers":
+      - /url: https://quickbooks.intuit.com/qsp/
+      - generic: For solution providers
+    - link "Find a partner":
+      - /url: https://quickbooks.intuit.com/partners/
+      - generic: Find a partner
+    - generic: More from Intuit
+    - link "TurboTax Online 2025-2026":
+      - /url: https://turbotax.intuit.com/personal-taxes/online/
+      - generic: TurboTax Online 2025-2026
+    - link "TurboTax Login":
+      - /url: https://myturbotax.intuit.com/
+      - generic: TurboTax Login
+    - link "File taxes online":
+      - /url: https://turbotax.intuit.com/
+      - generic: File taxes online
+    - link "Free tax filing":
+      - /url: https://turbotax.intuit.com/personal-taxes/online/free-edition.jsp
+      - generic: Free tax filing
+    - link "Free tax calculator":
+      - /url: https://turbotax.intuit.com/tax-tools/calculators/taxcaster/
+      - generic: Free tax calculator
+    - link "Find a local tax expert":
+      - /url: https://turbotax.intuit.com/local-tax-experts/how-it-works/
+      - generic: Find a local tax expert
+    - link "Intuit Business Credit Card":
+      - /url: https://www.intuit.com/credit-card/
+      - generic: Intuit Business Credit Card
+    - paragraph: "Call Sales: 1-888-326-9737"
+    - paragraph:
+      - link "Sitemap":
+        - /url: https://quickbooks.intuit.com/sitemap/
+        - generic: Sitemap
+    - button "Select Country": Select Country
+    - link "intuit":
+      - /url: https://www.intuit.com/
+      - img "intuit"
+    - link "TurboTax":
+      - /url: https://turbotax.intuit.com/
+      - img "TurboTax"
+    - link "Credit Karma":
+      - /url: https://www.creditkarma.com/
+      - img "Credit Karma"
+    - link "QuickBooks":
+      - /url: https://quickbooks.intuit.com/
+      - img "QuickBooks"
+    - link "Mailchimp":
+      - /url: https://www.mailchimp.com/
+      - img "Mailchimp"
+    - link "About Intuit":
+      - /url: https://www.intuit.com/company/
+      - generic: About Intuit
+    - link "Join Our Team":
+      - /url: https://www.intuit.com/careers/
+      - generic: Join Our Team
+    - link "Press":
+      - /url: https://www.intuit.com/company/press-room/
+      - generic: Press
+    - link "Affiliates and Partners":
+      - /url: https://www.intuit.com/partners/
+      - generic: Affiliates and Partners
+    - link "Terms of Service":
+      - /url: https://www.intuit.com/legal/terms/
+      - generic: Terms of Service
+    - link "Licenses":
+      - /url: https://www.intuit.com/legal/licenses/
+      - generic: Licenses
+    - link "Accessibility":
+      - /url: https://www.intuit.com/accessibility/
+      - generic: Accessibility
+    - paragraph: © 2026 Intuit Inc. All rights reserved.
+    - paragraph: Intuit, QuickBooks, QB, TurboTax, Credit Karma, and Mailchimp are registered trademarks of Intuit Inc.
+    - paragraph:
+      - text: Money movement services are provided by Intuit Payments Inc., licensed as a Money Transmitter by the New York State Department of Financial Services. For details about our money transmission licenses, or for Texas customers with complaints about our service, please
+      - link "click here.":
+        - /url: https://www.intuit.com/legal/licenses/payment-licenses/
+    - paragraph:
+      - text: By accessing and using this page you agree to the
+      - link "Website Terms of Service.":
+        - /url: https://accounts.intuit.com/terms-of-service
+    - link "About cookies":
+      - /url: https://security.intuit.com/intuit-cookie-policy/
+      - generic: About cookies
+    - link "Manage cookies |":
+      - /url: "javascript:(function(){\n  if (typeof OneTrust !== 'undefined' && typeof OneTrust.ToggleInfoDisplay === 'function') {\n    OneTrust.ToggleInfoDisplay();\n  } else {\n    intuit_gdpr.showCookiePreference();\n  }\n})();"
+      - generic: Manage cookies
+      - text: "|"
+    - link "Legal":
+      - /url: https://www.intuit.com/legal/
+      - generic: Legal
+    - link "Privacy |":
+      - /url: https://www.intuit.com/privacy/
+      - generic: Privacy
+      - text: "|"
+    - link "Security |":
+      - /url: https://security.intuit.com/
+      - generic: Security
+      - text: "|"
+    - link "TRUSTe":
+      - /url: https://privacy.trustarc.com/privacy-seal/validation?rid=ab182efc-5237-493d-8952-9295f7f3800b
+      - img "TRUSTe"
+  - button "talk to sales":
+    - generic: Talk to sales
+- alert
+- iframe [name="survey-iframe-SI_b9JqcViSHgBURE1"]
+- button "close":
+  - img "close"
+- img "Feedback"
+- generic: "Essential, Enhanced Experience & Product Improvement These first-party cookies are set by Intuit or one of our service providers; you cannot turn these off. These cookies enable the site to function as intended, including: basic functionality (for example, your ability to log into your Intuit account or add items to your cart for purchase); remember your preferences (for example, your preferred language or login credentials); provide you personalized content when viewing our site; and, allow us to evaluate your use and navigation of the site to fix bugs and improve the overall experience for you and others. A single cookie may be used for one or all of these purposes. Third-Party Advertisement Yes We leverage advertising trackers across our sites to improve our marketing and advertising activities. These trackers may share some limited personal information with third-party platforms where we may display advertisements or run marketing campaigns. You may choose to turn these trackers off. You will still see Intuit advertisements when you opt-out, but these ads may not be tailored to your interests. This preference applies to your experience on our .intuit sites, once you create or login to your Intuit account, you may be prompted to choose again."

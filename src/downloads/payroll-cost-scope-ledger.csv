@@ -1,0 +1,17 @@
+﻿Section,Cost line,Formula or unit,Illustrated annual USD,Your annual amount USD,Confirmation,Evidence URL or quote reference,Checked or generated date,Responsible person,Scope note
+Example,Square five-person subscription,(35+6*5)*12,780,,Example,https://squareup.com/us/en/payroll,2026-10-28,,Not your confirmed bill
+Example,Gusto Simple subscription,(49+6*5)*12,948,,One-state plan,https://gusto.com/product/pricing,2026-10-28,,Not your confirmed bill
+Example,Changing billed headcount,(35+6*5)*6+(35+6*10)*6,960,,Synthetic headcount schedule,https://squareup.com/us/en/payroll,2026-10-28,,Not your confirmed bill
+Example,Gross wages,5*30000,150000,,Synthetic wage assumption,,2026-10-28,,Not your confirmed bill
+Example,Known wages plus subscription,150000+780,150780,,Incomplete subtotal; employer taxes/benefits pending,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Package and billable people,Exact package; billed people by month,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Base subscription,Sum base charges for actual months,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Per-person charges,Sum monthly rate times billed people,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Setup,One-time amount,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Annual forms,Annual amount or Included,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Modules and extras,Quoted rate times periods,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Gross wages,Before employee deductions,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Employer taxes,Actual applicable employer liabilities,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Benefits and insurance,Employer-funded amounts,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Internal administration,Documented hours times hourly cost,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
+Fillable ledger,Renewal,Effective date and normal rate,,,Pending confirmation,,2026-10-28,,Not your confirmed bill
