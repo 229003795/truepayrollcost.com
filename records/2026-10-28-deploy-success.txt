@@ -1,0 +1,117 @@
+生产
+部署详细信息
+
+Deployment ID: d2274d5d-dfc3-4593-8910-86a9162e2362
+
+Deployment URL: https://d2274d5d.truepayrollcost.pages.dev
+
+别名：
+truepayrollcost.com
+管理部署
+存储库：
+229003795/truepayrollcost.com
+分支：
+main
+13afb0c
+Publish payroll cost scope guide with changing-headcount ledger
+状态：
+success
+3:22PM October 28, 2026
+持续时间：
+13s
+›
+构建设置
+0
+构建日志
+函数
+重定向
+标头
+构建日志
+initialize
+3s
+clone repo
+1s
+build
+4s
+deploy
+5s
+复制日志
+下载日志
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+2026-10-28T07:22:04.506996Z	Cloning repository...
+2026-10-28T07:22:05.093661Z	From https://github.com/229003795/truepayrollcost.com
+2026-10-28T07:22:05.093955Z	 * branch            13afb0cb9907be5884eafe7a194062f959a17745 -> FETCH_HEAD
+2026-10-28T07:22:05.094013Z	
+2026-10-28T07:22:05.111724Z	HEAD is now at 13afb0c Publish payroll cost scope guide with changing-headcount ledger
+2026-10-28T07:22:05.111963Z	
+2026-10-28T07:22:05.148393Z	
+2026-10-28T07:22:05.148693Z	Using v2 root directory strategy
+2026-10-28T07:22:05.161123Z	Success: Finished cloning repository files
+2026-10-28T07:22:06.558951Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-10-28T07:22:06.5594Z	
+2026-10-28T07:22:06.665137Z	No Wrangler configuration file found. Continuing.
+2026-10-28T07:22:06.896008Z	Detected the following tools from environment: npm@10.9.9, nodejs@22.23.4
+2026-10-28T07:22:06.896424Z	Installing project dependencies: npm install --progress=false
+2026-10-28T07:22:07.814538Z	
+2026-10-28T07:22:07.815198Z	up to date in 480ms
+2026-10-28T07:22:07.850549Z	Executing user command: npm run build
+2026-10-28T07:22:08.084591Z	
+2026-10-28T07:22:08.084866Z	> truepayrollcost.com@1.0.0 build
+2026-10-28T07:22:08.084969Z	> node scripts/build.mjs
+2026-10-28T07:22:08.085041Z	
+2026-10-28T07:22:08.215437Z	Built 14 published page(s), robots.txt, and sitemap.xml.
+2026-10-28T07:22:08.234611Z	Finished
+2026-10-28T07:22:08.782155Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-10-28T07:22:08.782552Z	
+2026-10-28T07:22:08.888247Z	No Wrangler configuration file found. Continuing.
+2026-10-28T07:22:08.888766Z	Note: No functions dir at /functions found. Skipping.
+2026-10-28T07:22:08.888862Z	Validating asset output directory
+2026-10-28T07:22:10.034095Z	Deploying your site to Cloudflare's global network...
+2026-10-28T07:22:10.51865Z	Parsed 4 valid header rules.
+2026-10-28T07:22:11.769283Z	Uploading... (50/55)
+2026-10-28T07:22:12.252325Z	Uploading... (52/55)
+2026-10-28T07:22:12.301324Z	Uploading... (54/55)
+2026-10-28T07:22:12.388163Z	Uploading... (55/55)
+2026-10-28T07:22:12.388458Z	✨ Success! Uploaded 5 files (50 already uploaded) (1.32 sec)
+2026-10-28T07:22:12.388543Z	
+2026-10-28T07:22:12.811551Z	✨ Upload complete!
+2026-10-28T07:22:14.045895Z	Success: Assets published!
+2026-10-28T07:22:14.957214Z	Success: Your site was deployed!

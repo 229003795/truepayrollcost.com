@@ -1,0 +1,37 @@
+{
+  "responses": [
+    {
+      "path": "/how-much-does-payroll-cost/",
+      "status": 200,
+      "bytes": 11931
+    },
+    {
+      "path": "/assets/payroll-cost-scopes.svg",
+      "status": 200,
+      "bytes": 986
+    },
+    {
+      "path": "/downloads/payroll-cost-scope-ledger.csv",
+      "status": 200,
+      "bytes": 2219
+    },
+    {
+      "path": "/square-payroll-pricing/",
+      "status": 200,
+      "bytes": 20393
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 1564
+    },
+    {
+      "path": "/assets/design.js?v=20261027-navy1",
+      "status": 200,
+      "bytes": 8425
+    }
+  ],
+  "sitemap_count": 14,
+  "csv_rows": 17,
+  "csv_columns": 10
+}

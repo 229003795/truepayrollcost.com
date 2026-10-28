@@ -1,0 +1,54 @@
+生产
+部署详细信息
+
+Deployment ID: 83748d6d-1533-4c6c-8d2b-7bdd1e476557
+
+Deployment URL: https://83748d6d.truepayrollcost.pages.dev
+
+管理部署
+存储库：
+229003795/truepayrollcost.com
+分支：
+main
+13afb0c
+Publish payroll cost scope guide with changing-headcount ledger
+状态：
+failure
+3:04PM October 28, 2026
+持续时间：
+5m 12s
+›
+构建设置
+0
+构建日志
+函数
+重定向
+标头
+构建日志
+重试部署
+initialize
+1s
+clone repo
+5m 11s
+build
+—
+deploy
+—
+复制日志
+下载日志
+1
+2
+3
+4
+5
+6
+7
+8
+2026-10-28T06:59:00.128289Z	Cloning repository...
+2026-10-28T07:04:10.476113Z	error: RPC failed; curl 56 GnuTLS recv error (-54): Error in the pull function.
+2026-10-28T07:04:10.476814Z	error: 30 bytes of body are still expected
+2026-10-28T07:04:10.4769Z	fetch-pack: unexpected disconnect while reading sideband packet
+2026-10-28T07:04:10.476963Z	fatal: early EOF
+2026-10-28T07:04:10.477036Z	fatal: fetch-pack: invalid index-pack output
+2026-10-28T07:04:10.47711Z	
+2026-10-28T07:04:11.045377Z	Failed: error occurred while fetching repository

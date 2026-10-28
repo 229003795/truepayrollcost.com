@@ -10,7 +10,7 @@
   - button "Search by image":
 - button "Share":
 - button "Google apps":
-- 'button "Google Account: Gang Chen (chegrogo@gmail.com)"':
+- 'button "Google Account: [signed-in account identity redacted]
 - navigation:
   - list:
     - link "AI Mode":
