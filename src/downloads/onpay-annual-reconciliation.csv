@@ -1,0 +1,28 @@
+﻿section,period_or_scenario,workers,months,monthly_base_usd,monthly_person_rate_usd,other_charge_usd,subtotal_usd,status_or_action,source,checked_or_generated_date
+example,Core regular annual,5,12,49,6,,948,Example; before tax and extras,https://onpay.com/payroll/software/costs-pricing/,2026-10-29
+example,Core plus HR,5,12,64,8,,1248,Itemized rates; example,https://onpay.com/payroll/software/costs-pricing/,2026-10-29
+example,Core plus Time Tracking,5,12,64,10,,1368,Itemized rates; example,https://onpay.com/payroll/software/costs-pricing/,2026-10-29
+example,Core plus HR plus time itemized,5,12,79,12,,1668,Itemized rates; example,https://onpay.com/payroll/software/costs-pricing/,2026-10-29
+example,Core plus HR plus time bundle,5,12,70,10,,1440,Confirm eligibility and duration,https://onpay.com/payroll/software/costs-pricing/,2026-10-29
+example,Seven included workers all year,7,12,49,6,,1092,Includes two zero-pay workers; assumption,https://help.onpay.com/hc/en-us/articles/200108067-OnPay-Pricing,2026-10-29
+example_adjustment,Two additional workers for two months,2,2,0,6,,24,Add to five-worker baseline only,https://help.onpay.com/hc/en-us/articles/200108067-OnPay-Pricing,2026-10-29
+example_adjustment,Five directly mailed forms,,,,,50,50,10 USD times 5 forms; assumption,https://help.onpay.com/hc/en-us/articles/200108067-OnPay-Pricing,2026-10-29
+example_total,948 plus 24 plus 50,,,,,,1022,Known-charge subtotal; tax/extras pending,Original arithmetic,2026-10-29
+your_month,Billing period 1,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 2,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 3,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 4,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 5,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 6,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 7,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 8,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 9,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 10,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 11,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_month,Billing period 12,,,,,,,Pending confirmation; distinct included workers,,2026-10-29
+your_checklist,Selected HR/time/bundle scope,,,,,,,Pending confirmation,,2026-10-29
+your_checklist,Mailed forms count and amount,,,,,,,Pending confirmation,,2026-10-29
+your_checklist,Applicable subscription sales tax,,,,,,,Pending confirmation,,2026-10-29
+your_checklist,Other selected products,,,,,,,Pending confirmation,,2026-10-29
+your_checklist,Offer eligibility and billing dates,,,,,,,Pending confirmation,,2026-10-29
+your_checklist,Internal transition hours and hourly cost,,,,,,,Pending confirmation,,2026-10-29

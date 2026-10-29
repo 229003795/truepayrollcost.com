@@ -1,0 +1,19 @@
+{
+  "csv_rows": 28,
+  "csv_columns": 11,
+  "example_subtotals": [
+    948,
+    1248,
+    1368,
+    1668,
+    1440,
+    1092,
+    24,
+    50,
+    1022
+  ],
+  "bundle_annual_difference": 228,
+  "extra_worker_annual_difference": 144,
+  "sitemap_entries": 15,
+  "homepage_incoming_links": 1
+}
