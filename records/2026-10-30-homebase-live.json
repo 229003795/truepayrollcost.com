@@ -1,0 +1,37 @@
+{
+  "/homebase-payroll-pricing/": {
+    "status": 200,
+    "bytes": 12429,
+    "canonical": [
+      "https://truepayrollcost.com/homebase-payroll-pricing/"
+    ],
+    "amounts": true
+  },
+  "/assets/homebase-offer-threshold.svg": {
+    "status": 200,
+    "bytes": 1851
+  },
+  "/downloads/homebase-offer-ledger.csv": {
+    "status": 200,
+    "bytes": 3465,
+    "rows": 33,
+    "columns": [
+      12
+    ]
+  },
+  "/sitemap.xml": {
+    "status": 200,
+    "bytes": 1767,
+    "entries": 16,
+    "has_homebase": true
+  },
+  "/": {
+    "status": 200,
+    "bytes": 23597,
+    "incoming_links": 1
+  },
+  "/assets/design.js?v=20261027-navy1": {
+    "status": 200,
+    "bytes": 8425
+  }
+}
