@@ -1,0 +1,33 @@
+# October 30, 2026 — Homebase payroll pricing
+Round 1 day 9. Authorized user Oct27 US twelve-month keyword: homebase payroll pricing140. No volume estimated. Latest origin/main52d9c0c and live sitemap15 checked before work; no Homebase route or today's record. Isolated homebase-release-20261030 protects uncommitted old worktrees. One new article, one existing homepage contextual incoming link, one SVG and one fillable CSV.
+
+## Research: ten ordinary results individually addressed
+Signed-in existing Chrome Gang, extension instance a82e0edc-a29b-44e4-ade8-b5576defa2f0, runtime3. Google hl=en gl=us pws=0; physical US location not verified. Page one has9 ordinary results; page2 first Software Finder is10. Ads/PAA excluded. Raw SERP saved with account identity redacted.
+
+| Result | Body access and finding | Gap boundary |
+|---|---|---|
+| Homebase /pricing | Read actual browser body and monthly/annual controls. Current standard49+6, plan/location table, two offer links, own estimate tool. | Official already calculates estimates; do not claim no calculator or no clear fees. Our month-nine threshold and two-clock annual ledger are additional worked calculations. |
+| Homebase /payroll | Read official body incl FAQ: standard49+6, included services, multi-location same-EIN/schedule conditions. | Not a full offer-threshold/year forecast. No extra claims about all employment costs included. |
+| Homebase support /s/article/Homebase-Payroll-Fees | Web extraction CSS error; actual browser subsequently loads full July14,2026 fee table.200 amended/refile/cancellation filing,125 funding failure,3 print/mail filing. | Do not use SERP snippet alone or treat this as inaccessible. Article uses event quantities, not automatic annual charge. |
+| Homebase homepage | Read body through FAQ. Six-month banner, normal49+6, product testimonials and plan limits. | Banner alone does not establish synchronized free-period dates or29-total interpretation. |
+| Workstream /blog/homebase-pricing | Read substantive sections through FAQ. Already explains locations, add-ons and scope; its 45-worker example tells reader to verify rates. | Do not claim scope/add-ons are absent. No observed354-to458 threshold reconciliation or two-clock736 worked ledger. |
+| Capterra /p/153076/Homebase/pricing/ | Web fetch unsupported content-type; actual Chrome security block. No body read. | Unknown. Excluded from all absence/uniqueness claims; no replacement page substituted. |
+| Homebase /blog/payroll-cost | Read through FAQ and author. Has total-employment-cost calculations and examples, broad older ranges. | Not absence of arithmetic; use current rate/offer terms instead of importing broad ranges as present Homebase price. |
+| Homebase /blog/payroll-services-cost | Read through conclusion. Has broad ranges, older flat80 phrasing and provider comparisons. | Old narrative does not override current rate cards. No new price-history claim. |
+| PricingSaaS /companies/homebase | Read pricing history/current table/FAQ. Explicitly mentions29+6 small-team offer; mixed older table entries. | Offer discovery itself is not unique. Third-party history not published as verified history; our threshold/month arithmetic is original. |
+| Software Finder /hr/homebase-payroll | Read product/pricing/features/reviews/FAQ. Includes plan prices and older39payroll claim. | Not used for rates; no observed offer-clock/threshold ledger. No copying testimonials or recommendation text. |
+
+Ten body attempts; nine substantive bodies read, one blocked. The nine read do not establish what the blocked page contains. Sources were read via actual Chrome or web page bodies, never just titles. No exact originality percentage claimed. New substantive original work: threshold difference decomposed80+24=104;29-card misreading180 gap; independently started plan/payroll intervals736 vs894, plus downloadable monthly evidence ledger. No guarantee nobody elsewhere has ever calculated these.
+
+## Official evidence and scope
+Four retained official URLs: pricing; terms-eoy6-payroll-xs; terms-eoy6-plus; support fee table. All actually checked October30. Small-team terms initially include owner, require setup byDec15, first run Sep15–Jan20; free six months up to50paid, then29base+6subject billing <=5, >5standard49+6. Plus clock checkout vs payroll first run, new-customer path. Do not combine offers without evidence. Monthly Plus70 explicitly used; actual Annual tab separately shows56 but not silently substituted. Both sources saved; delayed DOM updates observed after click. Cookie dialog initially blocked selectors; dismissed privacy dialog (not browser tab), then tab selection worked. All tabs retained.
+
+## Inputs, math and tests
+Five regular79x12=948; six85x12=1020; five+monthlyPlus149x12=1788. Qualifying payroll five:59x6=354 after six free months. Hire sixth in month9:59x2+85x4=118+340=458, delta104=4x(20+6), decomposed80base+24person. Mistaking29aswhole gives174, misses180. Separate checkout-based clock example: six chargedPlus70periods420 +fourpayroll79periods316=736; synchronized894minus736=158. Full-period sensitivity, not proration prediction. Three amendedfilings200each=600 event example, not yearly allowance. Tax/extras unknown remain pending; wages excluded. No invented customer invoice or historical price series.
+CSV33rows incl header,12columns:12worked rows,12blankmonthly rows,8confirmation rows. Nine independent arithmetic assertions pass. Build16pages, canonical exact, English only, three FAQ, four official outbound URLs, homepageincoming1, sitemap16. New article static; shared design.js unchanged.
+
+## Release status
+Await production deployment and actual live/browser CSV checks. A commit is not publication.
+
+## Counts and next
+Authorized keyword1valid1 ->onepage. Official source candidates4/read4/qualified4used4; two of these are also SERP bodies (overlap, not extra). SERP10candidate/10attempt/9read/1blocked, no unknown page used as negative evidence. New private quotes/customer discussions0. New assets2. Remaining5authorized items:Rippling110,Patriot110,PaychexvsGusto320,QuickBooksvsADP210,homepageconditional320. Future complete packs0; <2day runway already alerted, no unchanged duplicate request. Research public sources ourselves, new direction/private leads user decides. Next08:30AsiaShanghai Rippling after actual publication verification. No second newpage same day, no GSC request/resubmit, no percenturl/archive branches. Nov18index-first cycle unchanged.

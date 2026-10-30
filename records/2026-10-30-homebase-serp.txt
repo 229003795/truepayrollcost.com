@@ -1,0 +1,367 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQPHoECAYQBA
+  - combobox "Search": homebase payroll pricing homebase payroll pricing
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+- 'button "Google Account: [redacted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_knnWYU4MUFitX9-OI9PCrsiFx17VbFCe3Sg9GGJwUXUcXTeW-gFRwxTEzOlhdciKnN4P0sDwqKpq2csxpE0qlYS2NdzBq9GzNl6h5zVclh4gCq_C50IX1t1MYETkCtE0oVMTt9-KWbf_wOsMUQv7J0PIe4h-rUs7IN25e0CzBRjT_HyplT5XZs58ZHLlBfytAYSJafA&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ2J8OegQIFBAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "News":
+      - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=homebase+payroll+pricing&tbm=nws&source=lnms&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_knnWYU4MUFitX9-OI9PCrsiFx17VbFCe3Sg9GGJwUXUcXTeW-gFRwxTEzOlhdciKnN4P0sDwqKpq2csxpE0qlYS2NdzBq9GzNl6h5zVclh4gCq_C50IX1t1MYETkCtE0oVMTt9-KWbf_wOsMUQv7J0PIe4h-rUs7IN25e0CzBRjT_HyplT5XZs58ZHLlBfytAYSJafA&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ0pQJegQIGBAB
+      - generic: News
+    - link "Forums":
+      - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_knnWYU4MUFitX9-OI9PCrsiFx17VbFCe3Sg9GGJwUXUcXTeW-gFRwxTEzOlhdciKnN4P0sDwqKpq2csxpE0qlYS2NdzBq9GzNl6h5zVclh4gCq_C50IX1t1MYETkCtE0oVMTt9-KWbf_wOsMUQv7J0PIe4h-rUs7IN25e0CzBRjT_HyplT5XZs58ZHLlBfytAYSJafA&q=homebase+payroll+pricing&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQs6gLegQIGhAB
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_knnWYU4MUFitX9-OI9PCrsiFx17VbFCe3Sg9GGJwUXUcXTeW-gFRwxTEzOlhdciKnN4P0sDwqKpq2csxpE0qlYS2NdzBq9GzNl6h5zVclh4gCq_C50IX1t1MYETkCtE0oVMTt9-KWbf_wOsMUQv7J0PIe4h-rUs7IN25e0CzBRjT_HyplT5XZs58ZHLlBfytAYSJafA&q=homebase+payroll+pricing&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_knnWYU4MUFitX9-OI9PCrsiFx17VbFCe3Sg9GGJwUXUcXTeW-gFRwxTEzOlhdciKnN4P0sDwqKpq2csxpE0qlYS2NdzBq9GzNl6h5zVclh4gCq_C50IX1t1MYETkCtE0oVMTt9-KWbf_wOsMUQv7J0PIe4h-rUs7IN25e0CzBRjT_HyplT5XZs58ZHLlBfytAYSJafA&q=homebase+payroll+pricing&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQtKgLegQIFhAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_knnWYU4MUFitX9-OI9PCrsiFx17VbFCe3Sg9GGJwUXUcXTeW-gFRwxTEzOlhdciKnN4P0sDwqKpq2csxpE0qlYS2NdzBq9GzNl6h5zVclh4gCq_C50IX1t1MYETkCtE0oVMTt9-KWbf_wOsMUQv7J0PIe4h-rUs7IN25e0CzBRjT_HyplT5XZs58ZHLlBfytAYSJafA&q=homebase+payroll+pricing&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQtKgLegQIFxAB
+      - generic: Videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- heading "AI Overview" [level=2]:
+  - strong: AI Overview
+- text: Homebase payroll costs
+- mark:
+  - strong: $39 to $49 per month
+  - text: as a base fee, plus
+  - strong: $6 per active employee
+  - text: each month
+- text: .
+- link "Homebase":
+  - /url: https://www.joinhomebase.com/pricing
+- button "Homebase (+1) - Related results":
+  - generic: Homebase
+  - generic: "+1"
+- heading "Base Payroll Add-On Pricing" [level=3]
+- list:
+  - strong: "Standard Payroll Fee:"
+  - text: $49/month base fee + $6 per active employee/month
+  - link "Homebase":
+    - /url: https://www.joinhomebase.com/payroll
+  - button "Homebase - Related results":
+    - generic: Homebase
+  - strong: "Promotional Pricing:"
+  - text: $39/month base fee + $6 per active employee/month (or introductory offers dropping the base or payroll fee for new sign-ups)
+  - link:
+    - /url: https://www.joinhomebase.com/pricing
+  - button:
+    - generic: Homebase
+    - generic: "+1"
+  - strong: "What is included:"
+  - text: Unlimited payroll runs, tax filings across all 50 states and Washington D.C., W-2s, 1099s, direct deposit, and automatic calculations from timesheets.
+  - link:
+    - /url: https://www.joinhomebase.com/payroll
+  - button:
+    - generic: Homebase
+- heading [level=3]: Homebase Scheduling & Time-Tracking Base Plans
+- text: "You must combine the payroll add-on with a Homebase scheduling and time-tracking plan (billed monthly or at a discounted annual rate per location):"
+- link:
+  - /url: https://www.joinhomebase.com/compare/homebase-vs-wheniwork
+- button:
+  - generic: Homebase
+- list:
+  - strong: "Basic:"
+  - strong: $0/month
+  - text: (1 location, up to 10 employees)
+  - link:
+    - /url: https://www.joinhomebase.com/pricing
+  - button:
+    - generic: Homebase
+  - strong: "Essentials:"
+  - strong: $24/month
+  - text: (billed annually) or
+  - strong: $30/month
+  - text: (billed monthly)
+  - link:
+    - /url: https://www.joinhomebase.com/compare/homebase-vs-wheniwork
+  - button:
+    - generic: Homebase
+  - strong: "Plus:"
+  - strong: $56/month
+  - text: (billed annually) or
+  - strong: $70/month
+  - text: (billed monthly)
+  - link:
+    - /url: https://www.joinhomebase.com/compare/homebase-vs-wheniwork
+  - button:
+    - generic: Homebase
+  - strong: "All-in-One:"
+  - strong: $96/month
+  - text: (billed annually) or
+  - strong: $120/month
+  - text: (billed monthly)
+  - link:
+    - /url: https://www.joinhomebase.com/compare/homebase-vs-wheniwork
+  - button:
+    - generic: Homebase
+- heading [level=3]: Popular Add-Ons
+- list:
+  - strong: "Tip Manager:"
+  - text: $25/month per location
+  - strong: "Task Manager:"
+  - text: $13/month per location
+  - strong: "Background Checks:"
+  - text: $30 each
+  - strong: "Hiring Assistant:"
+  - text: $99/month
+  - link:
+    - /url: https://www.joinhomebase.com/pricing
+  - button:
+    - generic: Homebase
+- text: You can explore current tiers or start a trial on the
+- link:
+  - /url: https://www.joinhomebase.com/pricing
+  - text: Official Homebase Pricing Page
+- text: or check out the
+- link:
+  - /url: https://www.joinhomebase.com/payroll
+  - text: Homebase Payroll Overview
+- text: .
+- text: If you share your
+- strong: number of employees
+- text: and
+- strong: how many locations
+- text: you run, I can help calculate your estimated total monthly cost.
+- list:
+  - link "Official Homebase Pricing | Try Homebase Free Today":
+    - /url: https://www.joinhomebase.com/pricing
+  - generic: Homebase
+  - button "About this result":
+  - generic: Official Homebase Pricing | Try Homebase Free Today
+  - generic: "Plans (monthly billed prices per location, unlimited employees unless noted): Basic $0 (1 location, max 10 employees, basic schedu..."
+  - link "Best Payroll Software for Small Businesses | Homebase":
+    - /url: https://www.joinhomebase.com/payroll
+  - generic: Homebase
+  - button "About this result":
+  - generic: Best Payroll Software for Small Businesses | Homebase
+  - generic: "Pricing: $49/month base fee plus $6 per active employee monthly, including unlimited payroll runs, tax filing, W-2s, and 1099s. Fe..."
+  - link:
+    - /url: https://www.joinhomebase.com/compare/homebase-vs-wheniwork
+  - generic: Homebase
+  - button:
+  - generic: "Homebase vs. When I Work (2026): Full Comparison"
+  - generic: Homebase pricing Homebase bills per location, with unlimited team members on all paid tiers. Basic — $0/month (1 location, up to 1...
+- button:
+  - generic: Show all
+- status
+- button:
+- button:
+- button:
+- button:
+- button:
+- button "Show more AI Overview":
+  - generic: Show more
+- main:
+  - heading "Web results" [level=2]
+  - link "Official Homebase Pricing | Try Homebase Free Today Homebase https://www.joinhomebase.com › pricing":
+    - /url: https://www.joinhomebase.com/pricing
+    - heading "Official Homebase Pricing | Try Homebase Free Today" [level=3]
+    - generic: Homebase
+    - generic: https://www.joinhomebase.com › pricing
+  - button "About this result":
+  - emphasis: Payroll
+  - text: . First 6 months free. Then $49/month base fee + $6/month per employee paid · Get 6 months free ; Tip Manager. $25/month per location · Sign up to get ...
+  - link "Read more":
+    - /url: https://www.joinhomebase.com/pricing#:~:text=Payroll,%2B%20%246%2Fmonth%20per%20employee%20paid&text=Get%206%20months%20free&text=Tip%20Manager,%2425%2Fmonth%20per%20location&text=Sign%20up%20to%20get%20started
+  - link "Best Payroll Software for Small Businesses Homebase https://www.joinhomebase.com › payroll":
+    - /url: https://www.joinhomebase.com/payroll
+    - heading "Best Payroll Software for Small Businesses" [level=3]
+    - generic: Homebase
+    - generic: https://www.joinhomebase.com › payroll
+  - button "About this result":
+  - text: Payroll pricing & features. Full-service payroll for one simple price. $
+  - emphasis: 49/month + $6 per active employee
+  - text: . That's it. Unlimited payroll runs, cancel anytime.
+  - link "Read more":
+    - /url: https://www.joinhomebase.com/payroll#:~:text=Payroll%20pricing%20%26%20features,Unlimited%20payroll%20runs%2C%20cancel%20anytime.
+  - heading "People also ask" [level=2]
+  - button "How much does payroll cost per month?":
+    - generic: How much does payroll cost per month?
+  - button "Is Homebase payroll good?":
+    - generic: Is Homebase payroll good?
+  - button "Does Homebase offer payroll services?":
+    - generic: Does Homebase offer payroll services?
+  - button "What is the cheapest payroll software to use?":
+    - generic: What is the cheapest payroll software to use?
+  - heading "Web results" [level=2]
+  - link "Homebase Payroll Fees Homebase https://support.joinhomebase.com › article › Homebase-...":
+    - /url: https://support.joinhomebase.com/s/article/Homebase-Payroll-Fees
+    - heading "Homebase Payroll Fees" [level=3]
+    - generic: Homebase
+    - generic: https://support.joinhomebase.com › article › Homebase-...
+  - button "About this result":
+  - text: If your
+  - emphasis: payroll
+  - text: correction requires amendments to multiple quarters, your
+  - emphasis: fee
+  - text: will be $200 for each filing across all impacted quarters.
+  - emphasis: Payroll
+  - text: corrections ...
+  - link "Read more":
+    - /url: https://support.joinhomebase.com/s/article/Homebase-Payroll-Fees#:~:text=If%20your%20payroll%20correction%20requires,Payroll%20corrections%20with%20Homebase%20Payroll
+  - link "Homebase | All-in-One Employee Scheduling, Time Clocks ... Homebase https://www.joinhomebase.com":
+    - /url: https://www.joinhomebase.com/
+    - heading "Homebase | All-in-One Employee Scheduling, Time Clocks ..." [level=3]
+    - generic: Homebase
+    - generic: https://www.joinhomebase.com
+  - button "About this result":
+  - emphasis: Payroll is free for up to 50 employees
+  - text: ", with $6/month per employee thereafter. If payroll is not run by 1/20/2027, the Offer does not apply and standard pricing ..."
+  - link "Read more":
+    - /url: https://www.joinhomebase.com/#:~:text=Payroll%20is%20free%20for%20up,apply%20and%20standard%20pricing%20begins.
+  - link "How Much Does Homebase Really Cost in 2026 Workstream https://www.workstream.us › blog › homebase-pricing":
+    - /url: https://www.workstream.us/blog/homebase-pricing
+    - heading "How Much Does Homebase Really Cost in 2026" [level=3]
+    - generic: Workstream
+    - generic: https://www.workstream.us › blog › homebase-pricing
+  - button "About this result":
+  - generic: Jun 17, 2026 —
+  - text: "Homebase Payroll Pricing: What to Expect for Your Hourly Workforce."
+  - emphasis: Homebase payroll can materially change the overall cost calculation
+  - text: .
+  - link "Read more":
+    - /url: https://www.workstream.us/blog/homebase-pricing#:~:text=Homebase%20Payroll%20Pricing%3A%20What%20to,change%20the%20overall%20cost%20calculation.
+  - link "Homebase Pricing 2026 Capterra https://www.capterra.com › ... › Homebase":
+    - /url: https://www.capterra.com/p/153076/Homebase/pricing/
+    - heading "Homebase Pricing 2026" [level=3]
+    - generic: Capterra
+    - generic: https://www.capterra.com › ... › Homebase
+  - button "About this result":
+  - text: The pricing
+  - emphasis: starts at $30 usage based per month
+  - text: with a free plan available. Basic. Contact vendor. Flat Rate, Per Month. Try for free.
+  - link "Read more":
+    - /url: https://www.capterra.com/p/153076/Homebase/pricing/#:~:text=The%20pricing%20starts%20at%20%2430,Try%20for%20free
+  - link "Payroll Costs Explained (2026) Homebase https://www.joinhomebase.com › Payroll":
+    - /url: https://www.joinhomebase.com/blog/payroll-cost
+    - heading "Payroll Costs Explained (2026)" [level=3]
+    - generic: Homebase
+    - generic: https://www.joinhomebase.com › Payroll
+  - button "About this result":
+  - generic: May 26, 2025 —
+  - text: "Payroll Software: $"
+  - emphasis: 20-$180 monthly base fee
+  - text: plus $4-$12 payroll service cost per employee. For a team of 10, you're looking at $60-$300 per ...
+  - link "Read more":
+    - /url: https://www.joinhomebase.com/blog/payroll-cost#:~:text=Payroll%20Software%3A%20%2420%2D%24180%20monthly%20base,looking%20at%20%2460%2D%24300%20per%20month.
+  - link "Understanding Payroll Services Costs Homebase https://www.joinhomebase.com › Payroll":
+    - /url: https://www.joinhomebase.com/blog/payroll-services-cost
+    - heading "Understanding Payroll Services Costs" [level=3]
+    - generic: Homebase
+    - generic: https://www.joinhomebase.com › Payroll
+  - button "About this result":
+  - generic: Mar 5, 2025 —
+  - text: The monthly subscription fees for most payroll services range from $
+  - emphasis: 25-$200/month
+  - text: ", depending on your provider and plan level. This covers your ..."
+  - link "Read more":
+    - /url: https://www.joinhomebase.com/blog/payroll-services-cost#:~:text=The%20monthly%20subscription%20fees%20for,payroll%20processing%20and%20tax%20calculations.
+  - 'link "Homebase Pricing: Free plan, from $24/mo | PricingSaaS pricingsaas.com https://pricingsaas.com › Companies"':
+    - /url: https://pricingsaas.com/companies/homebase
+    - 'heading "Homebase Pricing: Free plan, from $24/mo | PricingSaaS" [level=3]'
+    - generic: pricingsaas.com
+    - generic: https://pricingsaas.com › Companies
+  - button "About this result":
+  - text: "Homebase: Payroll add-on fee decreased ($49→$39/mo)."
+  - emphasis: Payroll add-on base fee decreased from $49/month to $39/month
+  - text: (per-employee fee unchanged at $6/month ...
+  - link "Read more":
+    - /url: https://pricingsaas.com/companies/homebase#:~:text=Homebase%3A%20Payroll%20add%2Don%20fee%20decreased,at%20%246%2Fmonth%20per%20employee%20paid).
+  - heading "People also search for" [level=2]
+  - link "Homebase payroll pricing per month":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Homebase+payroll+pricing+per+month&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAgsEAE
+    - generic: Homebase payroll pricing per month
+  - link "Homebase payroll reviews":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Homebase+payroll+reviews&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAhFEAE
+    - generic: Homebase payroll reviews
+  - link "Homebase payroll app":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Homebase+payroll+app&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAhEEAE
+    - generic: Homebase payroll app
+  - link "Homebase plans":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Homebase+plans&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAhCEAE
+    - generic: Homebase plans
+  - link "Homebase Basic plan":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Homebase+Basic+plan&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAg-EAE
+    - generic: Homebase Basic plan
+  - link "Time clock by Homebase app":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Time+clock+by+Homebase+app&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAg7EAE
+    - generic: Time clock by Homebase app
+  - link "Homebase payroll support phone number":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Homebase+payroll+support+phone+number&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAg2EAE
+    - generic: Homebase payroll support phone number
+  - link "Homebase Houston office address":
+    - /url: /search?sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&q=Homebase+Houston+office+address&sa=X&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ1QJ6BAguEAE
+    - generic: Homebase Houston office address
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=10&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=20&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=30&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=40&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=50&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=60&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=70&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=80&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=90&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8tMDegQIShAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=homebase+payroll+pricing&sca_esv=3cea16adf2ec4f27&hl=en&gl=us&pws=0&sxsrf=AKL5yDghydfbI0NuShZRsSZhFcV8y9o2pw:1793324234079&ei=yvTjasGoBOiO2roPha2gQQ&start=10&sa=N&sstk=AS6-VmJWd8LUzFWQsCxxzDbtI4_88OCisvursUN1n_syipsJV2lmLD3QCze5YVXffbJE0azQU7yHkhr5lP_DvUY34QhKHHvWRhyhgA&ved=2ahUKEwjBtcGvzeCXAxVoh1YBHYUWKAgQ8NMDegQIShAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are not personalized
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

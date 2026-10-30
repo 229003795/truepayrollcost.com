@@ -1,0 +1,33 @@
+﻿section,scenario_or_period,paid_employees,period_count,payroll_base_usd,person_rate_usd,plan_per_period_usd,other_usd,subtotal_usd,status,source,checked_date
+example,Standard five paid,5,12,49,6,0,,948,Payroll subtotal only,https://www.joinhomebase.com/pricing,2026-10-30
+example,Standard six paid,6,12,49,6,0,,1020,Payroll subtotal only,https://www.joinhomebase.com/pricing,2026-10-30
+example,Five paid plus monthly Plus,5,12,49,6,70,,1788,No offer applied,https://www.joinhomebase.com/pricing,2026-10-30
+example,Small offer five all six charged months,5,6,29,6,0,,354,Six free months precede; eligibility assumed,https://www.joinhomebase.com/terms-eoy6-payroll-xs,2026-10-30
+example,Growth scenario months7-8,5,2,29,6,0,,118,Six free months precede; eligibility assumed,https://www.joinhomebase.com/terms-eoy6-payroll-xs,2026-10-30
+example,Growth scenario months9-12,6,4,49,6,0,,340,Standard base after threshold,https://www.joinhomebase.com/terms-eoy6-payroll-xs,2026-10-30
+example_total,Growth payroll year,,,,,,,458,118+340; excludes plans/extras,https://www.joinhomebase.com/terms-eoy6-payroll-xs,2026-10-30
+example_difference,Growth minus five throughout,,,,,,,104,458-354 = 80 base +24 employee,https://www.joinhomebase.com/terms-eoy6-payroll-xs,2026-10-30
+example,Offset clocks Plus charged periods,,6,,,70,,420,Separate offer; no stacking,https://www.joinhomebase.com/terms-eoy6-plus,2026-10-30
+example,Offset clocks payroll charged periods,5,4,49,6,0,,316,Starts two full periods after checkout,https://www.joinhomebase.com/terms-eoy6-plus,2026-10-30
+example_total,Offset clock combined subtotal,,,,,,,736,420+316; full-period illustration,https://www.joinhomebase.com/terms-eoy6-plus,2026-10-30
+event_example,Three chargeable amended filings,,3,,,,200,600,Event scenario only; not annual allowance,https://support.joinhomebase.com/s/article/Homebase-Payroll-Fees,2026-10-30
+your_month,Invoice period 1,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 2,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 3,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 4,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 5,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 6,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 7,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 8,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 9,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 10,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 11,,,,,,,,Pending confirmation,,2026-10-30
+your_month,Invoice period 12,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,Offer identifier and eligibility including owner,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,Checkout date and Plus free end,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,First payroll date and payroll free end,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,Plan choice locations and billing commitment,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,Paid employee count at each billing,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,Offer compatibility and renewal terms,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,Tax and exceptional filing counts,,,,,,,,Pending confirmation,,2026-10-30
+your_checklist,Print/mail forms and other selected extras,,,,,,,,Pending confirmation,,2026-10-30
