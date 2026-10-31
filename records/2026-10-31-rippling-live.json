@@ -1,0 +1,51 @@
+{
+  "/rippling-payroll-pricing/": {
+    "status": 200,
+    "bytes": 11881,
+    "canonical_raw": "<link rel=\"canonical\" href=\"https://truepayrollcost.com/rippling-payroll-pricing/\">",
+    "amounts_present": true
+  },
+  "/assets/rippling-seat-reconciliation.svg": {
+    "status": 200,
+    "bytes": 2003
+  },
+  "/downloads/rippling-quote-reconciliation.csv": {
+    "status": 200,
+    "bytes": 3262,
+    "rows_including_header": 32,
+    "data_rows": 31,
+    "columns": [
+      11
+    ],
+    "header": [
+      "section",
+      "scenario_or_period",
+      "actual_users",
+      "billable_quantity",
+      "months",
+      "monthly_base_usd",
+      "person_rate_usd",
+      "subtotal_or_expression",
+      "status",
+      "source",
+      "checked_date"
+    ]
+  },
+  "/sitemap.xml": {
+    "status": 200,
+    "bytes": 1874,
+    "entries": 17,
+    "has_rippling": true
+  },
+  "/": {
+    "status": 200,
+    "bytes": 23981,
+    "incoming_link_raw": [
+      "<a href=\"/rippling-payroll-pricing/\">Rippling annual quote reconciliation</a>"
+    ]
+  },
+  "/assets/design.js?v=20261027-navy1": {
+    "status": 200,
+    "bytes": 8425
+  }
+}
