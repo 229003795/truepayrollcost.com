@@ -7,7 +7,7 @@ Object.assign(globalThis,{window,document,location:new URL('https://truepayrollc
 const store=new Map();globalThis.localStorage={getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,v)};
 globalThis.history={replaceState:(_a,_b,url)=>{globalThis.location=new URL(url)}};
 const form=document.querySelector('#cost-form');
-form.elements={namedItem:name=>form.querySelector('[name="'+name+'"]')};form.reportValidity=()=>true;form.focus=()=>{};
+form.elements={namedItem:name=>form.querySelector('[name="'+name+'"]')};form.reportValidity=()=>true;form.focus=()=>{};form.requestSubmit=()=>{if(form.reportValidity())form.dispatchEvent(new window.Event('submit',{cancelable:true}));};
 const select=form.elements.namedItem('renewalMode');let mode='increase_amount';Object.defineProperty(select,'value',{get:()=>mode,set:v=>mode=v});Object.defineProperty(select,'selectedOptions',{get:()=>[...select.querySelectorAll('option')].filter(o=>o.value===mode)});
 for(const el of document.querySelectorAll('input'))if(el.value===undefined)el.value='';
 for(const row of document.querySelectorAll('tr'))Object.defineProperty(row,'cells',{get:()=>row.children});
@@ -26,10 +26,19 @@ const submit=()=>form.dispatchEvent(new window.Event('submit',{cancelable:true})
 window.PayrollInputs.setExample('');
 for(const [key,value] of Object.entries({base:49,perPerson:6,people:5,oneTime:100,taxAnnual:60,otherAnnual:120,hours:2,hourly:25}))form.elements.namedItem(key).value=String(value);
 submit();assert.match(result().textContent,/\$1,228\.00/);assert.match(result().textContent,/\$50\.00/);assert.match(result().textContent,/\$1,278\.00/);assert.equal(document.querySelector('.ticket-missing').hidden,true);
+// Editing must remove stale amounts immediately, including invalid print paths.
+form.elements.namedItem('taxAnnual').value='60';form.dispatchEvent(new window.Event('input',{bubbles:true}));
+assert.equal(result().textContent.includes('$'),false);assert.equal(document.querySelector('#cost-result').dataset.stale,'true');
+form.reportValidity=()=>false;window.dispatchEvent(new window.Event('beforeprint'));assert.match(document.querySelector('#quote-takeaway').textContent,/Recalculate before printing/);assert.equal(document.querySelector('#quote-takeaway').textContent.includes('$'),false);form.reportValidity=()=>true;
+// Included is not a numeric zero entered by the user.
+const included=form.elements.namedItem('taxAnnualIncluded');included.checked=true;included.dispatchEvent(new window.Event('change',{bubbles:true}));assert.equal(form.elements.namedItem('taxAnnual').value,'');assert.equal(form.elements.namedItem('taxAnnual').disabled,true);assert.equal(document.querySelector('#taxAnnual-state').textContent,'Included in plan');
+submit();assert.equal(document.querySelector('#cost-result').dataset.stale,undefined);assert.equal(window.PayrollInputs.latest.cash,1168);assert.match(document.querySelector('#quote-takeaway').textContent,/Included in plan — no extra charge/);assert.ok(![...document.querySelectorAll('#cost-result li')].some(li=>li.textContent.includes('Tax filing')));
+let copied='';Object.defineProperty(globalThis,'navigator',{configurable:true,value:{clipboard:{writeText:async text=>{copied=text;}}}});document.querySelector('.takeaway-actions button').click();await Promise.resolve();assert.match(copied,/Included in plan — no extra charge/);
+included.checked=false;included.dispatchEvent(new window.Event('change',{bubbles:true}));assert.equal(form.elements.namedItem('taxAnnual').disabled,false);submit();assert.equal(document.querySelector('#taxAnnual-state').textContent,'Pending confirmation');
 for(const field of form.querySelectorAll('input'))field.value='';submit();assert.equal(result().children.length,0);assert.equal(document.querySelector('#cost-result').textContent.includes('$0'),false);
-document.querySelector('[data-payroll-preset="quickbooks-core"]').click();assert.match(result().textContent,/\$1,314\.00/);assert.match(document.querySelector('.ticket-explanation').textContent,/\$76\.50/);
+included.checked=true;included.dispatchEvent(new window.Event('change',{bubbles:true}));document.querySelector('[data-payroll-preset="quickbooks-core"]').click();assert.equal(included.checked,false);assert.equal(form.elements.namedItem('taxAnnual').disabled,false);assert.match(result().textContent,/\$1,314\.00/);assert.match(document.querySelector('.ticket-explanation').textContent,/\$76\.50/);
 document.querySelector('[data-payroll-preset="adp-run"]').click();assert.equal(result().textContent.includes('$0'),false);assert.match(document.querySelector('.ticket-status').textContent,/Quote required/);
 assert.equal(document.querySelectorAll('.provider-guides .card').length,3);
 assert.ok(document.querySelector('.provider-guides a[href="/rippling-payroll-pricing/"]'));
-console.log('DOM integration passed: default948, full1228+50=1278, empty, QuickBooks1314, ADPunknown, provider links. No browser visual rendering tested.');
+console.log('DOM integration passed: included toggle/copy/print, stale masking/invalid printing, default948, full1228+50=1278, empty, QuickBooks1314, ADPunknown, provider links. No browser visual rendering tested.');
 

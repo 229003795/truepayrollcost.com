@@ -6,7 +6,7 @@
   const route = location.pathname;
   const mapping = route === '/' ? {
     people:'people', base:'quote_monthly_base', perPerson:'quote_monthly_per_person',
-    oneTime:'quote_one_time', taxAnnual:'quote_annual_filing', otherAnnual:'quote_annual_extras', renewal:'quote_year2_value', renewalMode:'quote_year2_basis', hours:'transition_hours', hourly:'transition_hourly_cost'
+    oneTime:'quote_one_time', taxAnnual:'quote_annual_filing', taxAnnualIncluded:'quote_annual_filing_included', otherAnnual:'quote_annual_extras', renewal:'quote_year2_value', renewalMode:'quote_year2_basis', hours:'transition_hours', hourly:'transition_hourly_cost'
   } : route === '/gusto-vs-quickbooks/' ? {
     people:'people', broker:'gusto_broker_people', hsa:'gusto_hsa_people',
     fsa:'gusto_fsa_people', dc:'gusto_dc_people', commuter:'gusto_commuter_people'

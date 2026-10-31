@@ -1,17 +1,17 @@
-import {presetFor,mountPresets,promotionFor} from './presets.mjs?v=20261023-qb1';
-import {calculate,firstYearFields} from './cost.mjs?v=20261023-quote1';
+import {presetFor,mountPresets,promotionFor} from './presets.mjs?v=20261031-states1';
+import {calculate,firstYearFields} from './cost.mjs?v=20261031-states1';
 import {presentQuote,emptyMessage,cashPrompt,internalPrompt} from './quote-output.mjs?v=20261023-entry1';
-import {mountTakeaway} from './takeaway.mjs?v=20261023-presets1';
+import {mountTakeaway} from './takeaway.mjs?v=20261031-states1';
 const form=document.querySelector('#cost-form'),out=document.querySelector('#cost-result');
 const labels={base:'Monthly base / platform fee',perPerson:'Monthly per-person fee',people:'Billable people',oneTime:'One-time setup / implementation fee',taxAnnual:'Tax filing / year-end fees per year',otherAnnual:'Other recurring annual fees / modules',renewal:'Contracted year-two price',hours:'Internal transition hours',hourly:'Internal hourly cost'};
 const money=n=>n===null?'Pending confirmation':n.toLocaleString('en-US',{style:'currency',currency:'USD'});
 const n=v=>v===null?'[pending]':String(v);
 const node=(tag,text)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;return el;};
-function inputStates(){for(const key of Object.keys(labels)){const blank=form.elements.namedItem(key).value==='';const status=document.querySelector('#'+key+'-state');status.textContent=blank?(key==='hourly'?'Enter your hourly cost to calculate the total. Transition hours are also required.':'Pending confirmation'):'Entered';status.dataset.pending=String(blank);}}
+function inputStates(){for(const key of Object.keys(labels)){const blank=form.elements.namedItem(key).value==='';const status=document.querySelector('#'+key+'-state');status.textContent=key==='taxAnnual'&&form.elements.namedItem('taxAnnualIncluded').checked?'Included in plan':blank?(key==='hourly'?'Enter your hourly cost to calculate the total. Transition hours are also required.':'Pending confirmation'):'Entered';status.dataset.pending=String(blank&&!(key==='taxAnnual'&&form.elements.namedItem('taxAnnualIncluded').checked));}}
 function row(dl,label,value,action=false,pendingItems=[]){const div=node('div');if(label==='First-year total')div.className='annual-total';const amount=node('dd',label==='First-year total'&&pendingItems.length?'Pending confirmation':value);if(value.startsWith('$'))amount.className='is-number';if(action){const link=node('a',value);link.href='#hourly';link.addEventListener('click',()=>form.elements.namedItem('hourly').focus());amount.replaceChildren(link);}div.append(node('dt',label),amount);if(label==='First-year total'&&pendingItems.length){const hint=node('small','Confirm the missing inputs listed below.');hint.className='result-missing-hint';amount.append(hint);}dl.append(div);}
 function run(focus=false){if(!form.reportValidity())return;try{
- const input=Object.fromEntries([...firstYearFields,'renewal'].map(key=>{const raw=form.elements.namedItem(key).value;return [key,raw===''?null:Number(raw)];}));input.renewalMode=form.elements.namedItem('renewalMode').value;
- const r=calculate(input);const selected=presetFor(window.PayrollInputs.example),promotion=promotionFor(selected,r);if(promotion){if(r.firstYear!==null)r.firstYear-=promotion.saving;if(r.twoYears!==null)r.twoYears-=promotion.saving;}const formula=`(${n(r.base)} + ${n(r.perPerson)} × ${n(r.people)}) × 12 + ${n(r.oneTime)} + ${n(r.taxAnnual)} + ${n(r.otherAnnual)} + (${n(r.hours)} × ${n(r.hourly)}) ${promotion?' − '+money(promotion.saving)+' promotional base discount':''} = ${money(r.firstYear)}`;
+ const input=Object.fromEntries([...firstYearFields,'renewal'].map(key=>{const raw=form.elements.namedItem(key).value;return [key,raw===''?null:Number(raw)];}));input.renewalMode=form.elements.namedItem('renewalMode').value;input.taxAnnualIncluded=form.elements.namedItem('taxAnnualIncluded').checked;
+ const r=calculate(input);delete form.dataset.resultStale;delete out.dataset.stale;const selected=presetFor(window.PayrollInputs.example),promotion=promotionFor(selected,r);if(promotion){if(r.firstYear!==null)r.firstYear-=promotion.saving;if(r.twoYears!==null)r.twoYears-=promotion.saving;}const formula=`(${n(r.base)} + ${n(r.perPerson)} × ${n(r.people)}) × 12 + ${n(r.oneTime)} + ${n(r.taxAnnual)} + ${n(r.otherAnnual)} + (${n(r.hours)} × ${n(r.hourly)}) ${promotion?' − '+money(promotion.saving)+' promotional base discount':''} = ${money(r.firstYear)}`;
  const recurrence=`(${n(r.base)} + ${n(r.perPerson)} × ${n(r.people)}) × 12 + ${n(r.taxAnnual)} + ${n(r.otherAnnual)}`;
  const yearTwoFormula=r.renewalMode==='known_total'?`Year two = quoted recurring annual total ${n(r.renewal)} = ${money(r.yearTwo)}`:r.renewalMode==='increase_percent'?`Year two = (${recurrence}) × (1 + ${n(r.renewal)} ÷ 100) = ${money(r.yearTwo)}`:`Year two = (${recurrence}) + ${n(r.renewal)} annual increase = ${money(r.yearTwo)}`;
  const view=presentQuote(r);if(promotion&&view.cash!==null)view.cash-=promotion.saving;const cashEquation=promotion?money(promotion.early)+' × '+promotion.months+' + '+money(promotion.regular)+' × '+(12-promotion.months):money(r.monthly)+' × 12';
@@ -24,7 +24,7 @@ function run(focus=false){if(!form.reportValidity())return;try{
  const dl=node('dl');row(dl,cashLabel,view.cash===null?cashPrompt:money(view.cash));row(dl,'Internal cost — transition time',r.internal===null?internalPrompt:money(r.internal),r.internal===null);row(dl,'First-year total',r.firstYear===null?pendingTotal:money(r.firstYear),false,r.pending.filter(key=>key!=='renewal'));
  if(view.waiting)out.append(node('p',cashPrompt),node('p',internalPrompt));else out.insertBefore(dl,out.children[1]||null);
  if(r.monthly!==null){out.append(node('p',(promotion?'Regular monthly platform + people = ':'Monthly platform + people = ')+n(r.base)+' + '+n(r.perPerson)+' × '+n(r.people)+' = '+money(r.monthly)));
- const knownFees=['oneTime','taxAnnual','otherAnnual'].filter(key=>r[key]!==null);
+ const knownFees=['oneTime','taxAnnual','otherAnnual'].filter(key=>r[key]!==null&&!(key==='taxAnnual'&&r.taxAnnualIncluded));
  out.append(node('p',cashLabel+' = '+cashEquation+knownFees.map(key=>' + '+money(r[key])).join('')+' = '+money(view.cash)));
  if(!view.cashComplete)out.append(node('p',(unedited?'This Example subtotal uses the selected preset inputs; you have not confirmed these amounts. ':'This is the annualized cash subtotal of entered charges, not the full annual bill. ')+'Unconfirmed setup, filing and other annual fees remain on the checklist and are excluded from this subtotal.'));
  }
@@ -32,6 +32,7 @@ function run(focus=false){if(!form.reportValidity())return;try{
  if(r.firstYear!==null)out.append(node('p','First-year total = cash outlay + internal cost = '+money(r.firstYear)));
  if(r.renewal!==null)out.append(node('p',yearTwoFormula));
  if(r.twoYears!==null)out.append(node('p','Two years = '+money(r.firstYear)+' + '+money(r.yearTwo)+' = '+money(r.twoYears)));
+ if(r.taxAnnualIncluded)out.append(node('p','Tax filing / year-end fees: Included in plan. No extra filing charge is added.'));
  if(!view.waiting)out.append(node('p','Cash outlay is paid to the provider. Internal cost values your own transition time; it is not a provider charge.'));
  const checklistHeading=node('h3','Items to confirm before signing');checklistHeading.id='confirmation-checklist';out.append(checklistHeading);
  if(view.pending.length){const list=node('ul');for(const key of view.pending)list.append(node('li',form.querySelector('label[for="'+key+'"]').textContent+' — Pending confirmation'));out.append(list);}else out.append(node('p','No blank inputs. Confirm these terms in writing before signing.'));
@@ -41,5 +42,8 @@ function run(focus=false){if(!form.reportValidity())return;try{
  mountTakeaway({form,out,result:r,view,cashLabel,preset});
  inputStates();if(focus)out.focus();
 }catch(error){out.textContent=error.message;}}
+const includedField=form.elements.namedItem('taxAnnualIncluded');const filingField=form.elements.namedItem('taxAnnual');
+function syncIncluded(){filingField.disabled=includedField.checked;inputStates();}
+includedField.addEventListener('change',()=>{if(includedField.checked)filingField.value='';syncIncluded();});
 form.addEventListener('input',inputStates);form.addEventListener('change',inputStates);form.addEventListener('submit',event=>{event.preventDefault();run(true);});
-mountPresets({form,run});inputStates();run();
+mountPresets({form,run});syncIncluded();run();

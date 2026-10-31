@@ -5,8 +5,8 @@ import {readFileSync} from 'node:fs';
 const source=readFileSync(new URL('../src/assets/shared-inputs.js',import.meta.url),'utf8');
 const storage=new Map();
 function page(path, search='', initial={}, blocked=false){
-  const fields=path==='/'?['people','base','perPerson','oneTime','taxAnnual','otherAnnual','renewal','renewalMode','hours','hourly']:path.includes('quickbooks')?['people','broker','hsa','fsa','dc','commuter']:['people','plan','scope','runs','gm','gy','gs','am','ap','ae','ay','as','matched'];
-  const elements=Object.fromEntries(fields.map(name=>[name,{type:name==='matched'?'checkbox':'number',tagName:'INPUT',min:'0',max:'',step:['people','runs','broker','hsa','fsa','dc','commuter'].includes(name)?'1':'0.01',value:initial[name]??'',checked:false}]));
+  const fields=path==='/'?['people','base','perPerson','oneTime','taxAnnual','taxAnnualIncluded','otherAnnual','renewal','renewalMode','hours','hourly']:path.includes('quickbooks')?['people','broker','hsa','fsa','dc','commuter']:['people','plan','scope','runs','gm','gy','gs','am','ap','ae','ay','as','matched'];
+  const elements=Object.fromEntries(fields.map(name=>[name,{type:['matched','taxAnnualIncluded'].includes(name)?'checkbox':'number',tagName:'INPUT',min:'0',max:'',step:['people','runs','broker','hsa','fsa','dc','commuter'].includes(name)?'1':'0.01',value:initial[name]??'',checked:false}]));
   for(const [name, options] of Object.entries({plan:['simple','plus','premium'],scope:['single','multi'],renewalMode:['increase_amount','increase_percent','known_total']}))if(elements[name])Object.assign(elements[name],{tagName:'SELECT',type:'select-one',options:options.map(value=>({value})),value:initial[name]??options[0]});
   const notices=[],events={},form={before:n=>notices.push(n),elements:{namedItem:n=>elements[n]},addEventListener:(name,fn)=>events[name]=fn},hints=[],location={pathname:path,search,href:'https://truepayrollcost.com'+path+search};
   const context={URL,URLSearchParams,location,window:{},localStorage:{getItem:k=>{if(blocked)throw Error('blocked');return storage.get(k)},setItem:(k,v)=>{if(blocked)throw Error('blocked');storage.set(k,v)}},history:{replaceState:(_a,_b,url)=>{location.href=String(url)}},document:{querySelector:s=>s==='#cost-form, #calc'?form:{after:n=>hints.push(n)},createElement:()=>({append(){}})}};
@@ -50,4 +50,13 @@ test('explicit blank shared URLs and existing saved inputs are never replaced by
 
 test('a selected preset and edited source survive URL restoration',()=>{
  storage.clear();const a=page('/');a.context.window.PayrollInputs.setExample('preset:patriot-full-service');a.elements.base.value='37';a.elements.perPerson.value='5';a.commit();const restored=page('/',new URL(a.context.location.href).search);assert.equal(restored.context.window.PayrollInputs.example,'preset:patriot-full-service');assert.equal(restored.elements.base.value,'37');restored.events.input();restored.commit();assert.equal(page('/',new URL(restored.context.location.href).search).context.window.PayrollInputs.example,'edited:preset:patriot-full-service');
+});
+
+
+test('included filing status survives URL and storage without inventing a numeric zero',()=>{
+ storage.clear();const a=page('/','',{base:'49',perPerson:'6',people:'5',taxAnnual:''});a.elements.taxAnnualIncluded.checked=true;a.commit();
+ const shared=new URL(a.context.location.href);assert.equal(shared.searchParams.get('quote_annual_filing'),'');assert.equal(shared.searchParams.get('quote_annual_filing_included'),'1');
+ const restored=page('/',shared.search);assert.equal(restored.elements.taxAnnualIncluded.checked,true);assert.equal(restored.elements.taxAnnual.value,'');
+ assert.equal(page('/').elements.taxAnnualIncluded.checked,true);
+ const legacy=page('/','?calc=1&quote_annual_filing=');assert.equal(legacy.elements.taxAnnualIncluded.checked,false);
 });

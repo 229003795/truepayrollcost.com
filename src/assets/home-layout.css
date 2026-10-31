@@ -122,3 +122,12 @@
  body.quote-home .example-inputs dt{font-size:14px}
  body.quote-home .quote-example figcaption{grid-column:1}
 }
+
+@media screen {
+ body.quote-home .included-option{display:flex;align-items:flex-start;gap:10px;margin:12px 0 0;font-size:14px;line-height:1.5;font-weight:500}
+ body.quote-home .included-option input[type=checkbox]{width:20px;height:20px;min-height:20px;flex:none;margin:0}
+ body.quote-home input:disabled{background:#edf3f9;color:#566777}
+ body.quote-home #cost-result[data-stale=true]>:not(.result-stale-message){display:none}
+ body.quote-home #cost-result .result-stale-message{margin:0!important;font-size:16px!important;color:#23364b}
+ body.quote-home .result-ticket[data-stale=true] .ticket-lines small{display:none}
+}

@@ -3,6 +3,9 @@ export const renewalModes=['increase_amount','increase_percent','known_total'];
 export function calculate(input){
  const v=Object.fromEntries([...firstYearFields,'renewal'].map(k=>[k,input[k]??null]));
  for(const [key,value]of Object.entries(v))if(value!==null&&(!Number.isFinite(value)||value<0||(key==='people'&&(!Number.isSafeInteger(value)||value<1))))throw new RangeError('Enter non-negative amounts and a positive whole-number headcount. Leave unknown amounts blank.');
+ const taxAnnualIncluded=input.taxAnnualIncluded===true;
+ if(taxAnnualIncluded&&v.taxAnnual!==null)throw new RangeError('Choose Included or enter a separate filing fee, not both.');
+ if(taxAnnualIncluded)v.taxAnnual=0;
  const renewalMode=input.renewalMode??'increase_amount';if(!renewalModes.includes(renewalMode))throw new RangeError('Choose a valid year-two price basis.');
  const pendingFirstYear=firstYearFields.filter(k=>v[k]===null);
  const personMonthly=v.perPerson!==null&&v.people!==null?v.perPerson*v.people:null;
@@ -16,5 +19,5 @@ export function calculate(input){
  let yearTwo=null;if(v.renewal!==null){if(renewalMode==='known_total')yearTwo=v.renewal;else if(annualRecurring!==null)yearTwo=renewalMode==='increase_percent'?annualRecurring*(1+v.renewal/100):annualRecurring+v.renewal;}
  const twoYears=firstYear!==null&&yearTwo!==null?firstYear+yearTwo:null;
  for(const n of [monthly,annualRecurring,transition,firstYear,confirmedSubtotal,yearTwo,twoYears])if(n!==null&&!Number.isFinite(n))throw new RangeError('The amounts are too large to calculate.');
- return {...v,renewalMode,personMonthly,internal,monthly,annualRecurring,transition,firstYear,confirmedSubtotal,yearTwo,twoYears,pendingFirstYear,pending:[...pendingFirstYear,...(v.renewal===null?['renewal']:[])]};
+ return {...v,taxAnnualIncluded,renewalMode,personMonthly,internal,monthly,annualRecurring,transition,firstYear,confirmedSubtotal,yearTwo,twoYears,pendingFirstYear,pending:[...pendingFirstYear,...(v.renewal===null?['renewal']:[])]};
 }
