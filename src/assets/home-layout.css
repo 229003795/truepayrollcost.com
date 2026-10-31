@@ -33,9 +33,15 @@
  body.quote-home .result-missing-hint,body.quote-home #cost-result .result-missing-hint{display:block;margin:8px 0 0;font-size:13px!important;line-height:1.5;color:#566777}
  body.quote-home input,body.quote-home select{border:1px solid #7d8fa2;background:#fff;min-height:48px;width:100%;min-width:0}
  body.quote-home input:focus,body.quote-home select:focus{outline:2px solid #285f99;outline-offset:2px;border-color:#285f99;box-shadow:none}
+ body.quote-home .calculator-layout{align-items:start}
+ body.quote-home .field-group{padding:20px;margin-top:0;min-width:0}
+ body.quote-home .field-group>legend{float:left;width:100%;max-width:100%;padding:0;margin:0 0 18px;font-size:20px;line-height:1.4;font-weight:600}
+ body.quote-home .field-group>legend+*{clear:both}
+ body.quote-home #cost-result{padding:20px}
+ body.quote-home #cost-result>h3:first-child{margin:0 0 18px;font-size:20px;line-height:1.4}
  body.quote-home .group-fields{align-items:start;gap:24px}
  body.quote-home .quote-field{display:flex;flex-direction:column;align-items:stretch;min-width:0}
- body.quote-home .quote-field>label:first-child{display:block;min-height:3em;margin:0 0 8px}
+ body.quote-home .quote-field>label:first-child{display:block;min-height:0;margin:0 0 8px}
  body.quote-home .quote-field small{margin-top:8px;word-break:normal;overflow-wrap:break-word}
  body.quote-home .quote-field .input-state{align-self:flex-start;max-width:100%;font-size:13px!important;font-weight:500;padding:4px 8px}
  body.quote-home .preset-evidence:empty{display:none}
@@ -50,7 +56,7 @@
  body.quote-home .provider-guides p{margin:0;font-size:16px;line-height:1.7}
 }
 @media screen and (min-width:901px){
- body.quote-home #cost-result{position:sticky;top:108px;max-height:calc(100dvh - 128px);overflow:auto;scrollbar-gutter:stable}
+ body.quote-home #cost-result{position:static;max-height:none;overflow:visible;scrollbar-gutter:auto}
 }
 @media screen and (max-width:900px){
  body.quote-home .calculator-layout{grid-template-columns:minmax(0,1fr)}

@@ -1,0 +1,27 @@
+/* Shared containment and control alignment. Screen only; calculations/print untouched. */
+@media screen {
+ body main .calculator-layout,body main .inputs,body main .fields,body main .group-fields,
+ body main .hours-grid,body main .pay-grid,body main .comparison-hero,body main .split,body main .grid3{min-width:0}
+ body main .calculator-layout>*,body main .inputs>*,body main .fields>*,body main .group-fields>*,
+ body main .hours-grid>*,body main .pay-grid>*,body main .comparison-hero>*,body main .split>*,body main .grid3>*{min-width:0;max-width:100%}
+ body main fieldset{min-inline-size:0;max-width:100%;box-sizing:border-box}
+ body main legend{max-width:100%;white-space:normal;overflow-wrap:break-word}
+ body main input:not([type=checkbox]):not([type=radio]),body main select,body main textarea{box-sizing:border-box;max-width:100%;min-width:0;font:inherit}
+ body main select{min-height:46px;padding:10px 11px;border:1px solid #7d8fa2;border-radius:5px;background:#fff;color:#23364b}
+ body main input[type=checkbox],body main input[type=radio]{flex:0 0 auto;width:auto;max-width:none}
+ body main .comparison,body main .table-wrap,body main .figure-scroll{min-width:0;max-width:100%}
+ body main .result-ticket,body main .output{min-width:0;max-width:100%}
+ body main .ticket-lines dt,body main .ticket-lines dd{min-width:0;white-space:normal;overflow-wrap:break-word}
+ body main .btn,body main button{max-width:100%;white-space:normal;overflow-wrap:break-word}
+ body main .ticket-top,body main .ticket-foot{flex-wrap:wrap}
+ body main .ticket-status{max-width:100%;white-space:normal}
+ body main form input:focus-visible,body main form select:focus-visible{outline:2px solid #285f99;outline-offset:2px}
+}
+@media screen and (max-width:700px){
+ body main .ticket-lines>div{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
+ body main .ticket-lines dt,body main .ticket-lines dd{width:100%;white-space:normal;text-align:left}
+ body main .ticket-foot{align-items:flex-start;gap:10px}
+ body main .ticket-actions{flex-wrap:wrap}
+ body main .ticket-actions button{min-width:0;flex-basis:140px}
+ body main .hours-shift input:not([type=checkbox]),body main .pay-grid input:not([type=checkbox]){min-height:46px}
+}

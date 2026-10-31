@@ -1,0 +1,189 @@
+[
+  {
+    "file": "dist/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 1,
+    "controls": 9
+  },
+  {
+    "file": "dist/adp-vs-gusto/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/adp-vs-gusto/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 11
+  },
+  {
+    "file": "dist/calculator-for-payroll-hours/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/calculator-for-payroll-hours/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 1,
+    "controls": 28
+  },
+  {
+    "file": "dist/estimating-payroll-taxes/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/estimating-payroll-taxes/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 1,
+    "controls": 0
+  },
+  {
+    "file": "dist/gusto-next-day-pay-cost/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/gusto-next-day-pay-cost/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 1,
+    "controls": 0
+  },
+  {
+    "file": "dist/gusto-pricing/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/gusto-pricing/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 0
+  },
+  {
+    "file": "dist/gusto-vs-quickbooks/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/gusto-vs-quickbooks/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 1,
+    "controls": 6
+  },
+  {
+    "file": "dist/homebase-payroll-pricing/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/homebase-payroll-pricing/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 0
+  },
+  {
+    "file": "dist/how-much-does-payroll-cost/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/how-much-does-payroll-cost/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 3,
+    "controls": 0
+  },
+  {
+    "file": "dist/onpay-pricing/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/onpay-pricing/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 0
+  },
+  {
+    "file": "dist/pay-calculator-hours-and-minutes/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/pay-calculator-hours-and-minutes/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 1,
+    "controls": 12
+  },
+  {
+    "file": "dist/paychex-pricing/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/paychex-pricing/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 3,
+    "controls": 0
+  },
+  {
+    "file": "dist/payroll-tax-calculator/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/payroll-tax-calculator/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 3
+  },
+  {
+    "file": "dist/quickbooks-payroll-pricing/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/quickbooks-payroll-pricing/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 0
+  },
+  {
+    "file": "dist/rippling-payroll-pricing/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/rippling-payroll-pricing/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 0
+  },
+  {
+    "file": "dist/square-payroll-pricing/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/square-payroll-pricing/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 4,
+    "controls": 0
+  },
+  {
+    "file": "dist/time-card-calculator-with-lunch/index.html",
+    "duplicate_ids": [],
+    "canonical": [
+      "https://truepayrollcost.com/time-card-calculator-with-lunch/"
+    ],
+    "alignment_loaded": true,
+    "replacement_character": false,
+    "tables": 2,
+    "controls": 4
+  }
+]
