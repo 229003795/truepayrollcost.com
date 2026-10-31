@@ -1,0 +1,19 @@
+{
+  "csv_rows": 32,
+  "columns": 11,
+  "reference_totals": [
+    960,
+    720,
+    480,
+    1200,
+    1440,
+    240
+  ],
+  "symbolic_identity_inputs": [
+    0,
+    1,
+    7,
+    12.5
+  ],
+  "note": "test rates are algebra test inputs, not published payroll prices"
+}

@@ -1,0 +1,32 @@
+﻿section,scenario_or_period,actual_users,billable_quantity,months,monthly_base_usd,person_rate_usd,subtotal_or_expression,status,source,checked_date
+reference,Five illustrative users,5,5,12,40,8,960,Starting reference only; not payroll quote,https://www.rippling.com/solutions/small-businesses,2026-10-31
+reference,Actual first six months,10,10,6,40,8,720,Illustrative headcount,https://www.rippling.com/solutions/small-businesses,2026-10-31
+reference,Actual final six months,5,5,6,40,8,480,Illustrative headcount,https://www.rippling.com/solutions/small-businesses,2026-10-31
+reference_total,Actual-user year,,90,12,40,8,1200,90 user-months; rate-reference arithmetic,https://www.rippling.com/solutions/small-businesses,2026-10-31
+hypothesis,Ten-seat floor first half,10,10,6,40,8,720,Hypothetical floor; not Rippling policy,https://www.rippling.com/solutions/small-businesses,2026-10-31
+hypothesis,Ten-seat floor second half,5,10,6,40,8,720,Hypothetical floor; not Rippling policy,https://www.rippling.com/solutions/small-businesses,2026-10-31
+hypothesis_total,Ten-seat floor year,,120,12,40,8,1440,120 user-months; hypothetical rule,https://www.rippling.com/solutions/small-businesses,2026-10-31
+difference,Floor minus actual,,30,,,8,240,30 user-months times8,https://www.rippling.com/solutions/small-businesses,2026-10-31
+symbolic,Actual with separate quoted payroll rate,,,,,,1200 +90*p +S -C,p payroll rate; S setup; C credit; all require quote,Original algebra,2026-10-31
+symbolic,Floor with separate quoted payroll rate,,,,,,1440 +120*p +S -C,Same units and hypothetical floor assumed,Original algebra,2026-10-31
+your_period,Invoice period 1,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 2,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 3,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 4,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 5,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 6,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 7,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 8,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 9,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 10,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 11,,,,,,,Pending confirmation,,2026-10-31
+your_period,Invoice period 12,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Platform/package scope and base,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Payroll module rate and billing unit,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Time/benefits/other selected module rates,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Committed quantity and reduction mechanism,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Setup/migration amount,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Credits and eligible billing dates,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Renewal/notice and price-change terms,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Tax and benefit funding separate,,,,,,,Pending confirmation,,2026-10-31
+your_checklist,Internal transition hours and hourly cost separate,,,,,,,Pending confirmation,,2026-10-31
