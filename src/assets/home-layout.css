@@ -1,32 +1,79 @@
-/* Homepage layout only: preserve all content, rates and calculator behavior. */
-@media screen and (min-width:901px){
- body.quote-home .hero{grid-template-columns:minmax(0,1fr);gap:24px;padding:28px 0 32px}
- body.quote-home .hero>div:first-child{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:40px;row-gap:10px;padding:0}
- body.quote-home .hero .eyebrow{grid-column:1/-1;margin:0}
- body.quote-home .hero h1{grid-column:1;grid-row:2/4;margin:0;max-width:none}
- body.quote-home .hero .lead{grid-column:2;grid-row:2;margin:0;max-width:none}
- body.quote-home .hero .subnote{grid-column:2;grid-row:3;margin:0;max-width:none}
- body.quote-home .hero .result-ticket{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;row-gap:8px;width:100%;padding:20px 24px}
- body.quote-home .hero .ticket-top{grid-column:1/-1;grid-row:1;margin:0}
- body.quote-home .hero .payroll-presets{grid-column:1;grid-row:2;margin:0}
- body.quote-home .hero .ticket-lines{grid-column:2;grid-row:2/7;margin:0;align-self:start}
- body.quote-home .hero .ticket-title{grid-column:1;grid-row:3;margin:0}
- body.quote-home .hero .ticket-sub{grid-column:1;grid-row:4;margin:0}
- body.quote-home .hero .sample-source{grid-column:1;grid-row:5;margin:0}
- body.quote-home .hero .ticket-formula{grid-column:1;grid-row:6;margin:0}
- body.quote-home .hero .hero-primary{grid-column:2;grid-row:7;align-self:start}
- body.quote-home .hero #preset-notice{grid-column:1;grid-row:7;margin:0}
- body.quote-home .hero .ticket-scope{grid-column:1/-1;grid-row:8;margin:0}
- body.quote-home .hero .ticket-foot{grid-column:1/-1;grid-row:9;margin:0}
- body.quote-home #cost-result{position:sticky;top:108px;max-height:calc(100dvh - 128px);overflow:auto;overscroll-behavior:auto;scrollbar-gutter:stable}
+/* Homepage presentation. Loaded after the shared frame; no rate or formula changes. */
+@media screen {
+ body.quote-home .hero{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding:32px 0 40px}
+ body.quote-home .hero>div:first-child{display:block;max-width:920px;padding:0}
+ body.quote-home .hero .result-ticket{display:flex;flex-direction:column;gap:18px;width:100%;min-width:0;padding:24px}
+ body.quote-home .hero .ticket-top{margin:0;padding:0 0 14px;gap:12px;flex-wrap:wrap}
+ body.quote-home .hero .payroll-presets{margin:0}
+ body.quote-home .hero .payroll-presets>p{margin:0 0 10px}
+ body.quote-home .hero .preset-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+ body.quote-home .hero .preset-buttons .btn{display:flex;align-items:center;justify-content:center;min-width:0;width:100%;min-height:64px;margin:0;padding:12px;font-size:15px;line-height:1.45;white-space:normal;text-align:center;word-break:normal;overflow-wrap:break-word}
+ body.quote-home .hero .ticket-lines{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:0;margin:0;width:100%;border:1px solid #d4dfe9;border-radius:8px;overflow:hidden}
+ body.quote-home .hero .ticket-lines>div{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:10px;min-width:0;padding:20px;border:0;border-right:1px solid #d4dfe9}
+ body.quote-home .hero .ticket-lines>div:last-child{border-right:0}
+ body.quote-home .hero .ticket-lines dt{margin:0;min-height:3em;font-weight:500;font-size:14px!important;line-height:1.5}
+ body.quote-home .hero .ticket-lines dd{margin:0;white-space:normal;word-break:normal;overflow-wrap:break-word;line-height:1.5}
+ body.quote-home .hero .ticket-lines dd.is-number{font-size:40px;line-height:1.15;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+ body.quote-home .hero .ticket-lines dd:not(.is-number){font-size:18px;font-weight:500}
+ body.quote-home .hero .ticket-lines dd a{font-size:16px;font-weight:400;text-underline-offset:3px}
+ body.quote-home .hero .hero-primary{align-self:flex-start;width:auto;min-height:48px;margin:0;padding:12px 24px;font-size:16px}
+ body.quote-home .hero .sample-source{order:0;display:block;width:fit-content;max-width:100%;margin:0;font-size:14px!important;line-height:1.6;text-underline-offset:3px;overflow-wrap:break-word}
+ body.quote-home .hero .sample-source[hidden],body.quote-home .ticket-missing[hidden]{display:none}
+ body.quote-home .ticket-missing{padding:16px 18px;background:#f6f8fb;border:1px solid #d4dfe9;border-radius:6px}
+ body.quote-home .ticket-missing>p{margin:0 0 10px;font-size:14px;font-weight:600;color:#23364b}
+ body.quote-home .ticket-missing ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 28px;margin:0;padding-left:20px;color:#566777;font-size:14px;line-height:1.5}
+ body.quote-home .ticket-explanation{border-top:1px solid #d4dfe9;padding-top:14px;font-size:14px;color:#566777}
+ body.quote-home .ticket-explanation summary{cursor:pointer;min-height:32px;font-weight:600;color:#354c66;line-height:1.6}
+ body.quote-home .ticket-explanation-content{display:grid;gap:10px;padding:12px 0 0;max-width:88ch}
+ body.quote-home .hero .ticket-explanation-content>*{margin:0}
+ body.quote-home .ticket-explanation #preset-notice:empty{display:none}
+ body.quote-home .hero .ticket-foot{margin:0;padding-top:12px;border-top:1px solid #d4dfe9}
+ body.quote-home .hero .ticket-foot>span{display:none}
+ body.quote-home .hero .ticket-value{display:none}
+ body.quote-home .result-missing-hint,body.quote-home #cost-result .result-missing-hint{display:block;margin:8px 0 0;font-size:13px!important;line-height:1.5;color:#566777}
+ body.quote-home input,body.quote-home select{border:1px solid #7d8fa2;background:#fff;min-height:48px;width:100%;min-width:0}
+ body.quote-home input:focus,body.quote-home select:focus{outline:2px solid #285f99;outline-offset:2px;border-color:#285f99;box-shadow:none}
+ body.quote-home .group-fields{align-items:start;gap:24px}
+ body.quote-home .quote-field{display:flex;flex-direction:column;align-items:stretch;min-width:0}
+ body.quote-home .quote-field>label:first-child{display:block;min-height:3em;margin:0 0 8px}
+ body.quote-home .quote-field small{margin-top:8px;word-break:normal;overflow-wrap:break-word}
+ body.quote-home .quote-field .input-state{align-self:flex-start;max-width:100%;font-size:13px!important;font-weight:500;padding:4px 8px}
+ body.quote-home .preset-evidence:empty{display:none}
+ body.quote-home #cost-result dl{margin:16px 0 20px}
+ body.quote-home #cost-result dl>div{padding:18px}
+ body.quote-home #cost-result dd:not(.is-number){font-size:18px;line-height:1.5}
+ body.quote-home #cost-result .annual-total dd:not(.is-number){font-size:20px;color:#23364b}
+ body.quote-home #cost-result .result-missing-hint{margin-top:8px}
+ body.quote-home .provider-guides .grid3{align-items:start;gap:24px}
+ body.quote-home .provider-guides .card{padding:20px;border:1px solid #d4dfe9;border-radius:8px}
+ body.quote-home .provider-guides h3{margin:0 0 12px;font-size:20px;line-height:1.4}
+ body.quote-home .provider-guides p{margin:0;font-size:16px;line-height:1.7}
 }
-@media screen and (min-width:701px) and (max-width:900px){
- body.quote-home .hero{grid-template-columns:1fr;gap:20px}
- body.quote-home .hero>div:first-child{padding:0}
- body.quote-home .hero .lead,body.quote-home .hero .subnote{max-width:none}
- body.quote-home .calculator-layout{grid-template-columns:1fr}
+@media screen and (min-width:901px){
+ body.quote-home #cost-result{position:sticky;top:108px;max-height:calc(100dvh - 128px);overflow:auto;scrollbar-gutter:stable}
+}
+@media screen and (max-width:900px){
+ body.quote-home .calculator-layout{grid-template-columns:minmax(0,1fr)}
+ body.quote-home .hero .preset-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.quote-home .hero .ticket-lines{grid-template-columns:minmax(0,1fr)}
+ body.quote-home .hero .ticket-lines>div{border-right:0;border-bottom:1px solid #d4dfe9;padding:18px}
+ body.quote-home .hero .ticket-lines>div:last-child{border-bottom:0}
+ body.quote-home .hero .ticket-lines dt{min-height:0}
+ body.quote-home .provider-guides .grid3{grid-template-columns:1fr}
 }
 @media screen and (max-width:700px){
+ body.quote-home .hero{padding:24px 0 28px;gap:20px}
+ body.quote-home .hero .result-ticket{padding:16px;gap:16px}
+ body.quote-home .hero .ticket-top{flex-direction:row;align-items:center;margin:0}
+ body.quote-home .hero .ticket-lines dd.is-number{font-size:36px}
+ body.quote-home .hero .ticket-lines dd:not(.is-number){font-size:18px}
+ body.quote-home .hero .hero-primary{align-self:stretch;width:100%;text-align:center}
+ body.quote-home .ticket-missing{padding:14px}
+ body.quote-home .ticket-missing ul{grid-template-columns:1fr;gap:8px}
+ body.quote-home .quote-field>label:first-child{min-height:0}
  body.quote-home #cost-result{position:static;max-height:none;overflow:visible}
+ body.quote-home .group-fields,body.quote-home .field-group:first-child .group-fields{grid-template-columns:minmax(0,1fr)}
+ body.quote-home .takeaway-actions{grid-template-columns:1fr}
 }
+@media screen and (max-width:350px){body.quote-home .hero .preset-buttons{grid-template-columns:1fr}}
 @media print{body.quote-home #cost-result{position:static;max-height:none;overflow:visible}}

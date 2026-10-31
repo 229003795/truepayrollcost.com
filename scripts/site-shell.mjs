@@ -6,6 +6,6 @@ export function applySiteShell(html,home=false){
  html=html.replace(/<script src="\/assets\/design\.js[^"\n]*"><\/script>/,`<script src="/assets/design.js?v=${frameVersion}"></script>`);
  html=html.replace(/(<figure\b[^>]*>)(\s*<img\b[^>]*>)/g,'$1<span class="figure-hint" aria-hidden="true">Swipe diagram to read →</span><div class="figure-scroll" tabindex="0" role="region" aria-label="Diagram: scroll horizontally to read all labels">$2</div>');
  html=html.replace('</head>',`<link rel="stylesheet" href="/assets/frame.css?v=${frameVersion}"><link rel="stylesheet" href="/assets/mobile.css?v=${frameVersion}"><link rel="stylesheet" href="/assets/color.css?v=${frameVersion}"></head>`);
- if(home)html=html.replace('<body>','<body class="quote-home">');
+ if(home){html=html.replace('<body>','<body class="quote-home">');html=html.replace(/<link rel="stylesheet" href="\/assets\/home-layout\.css[^"]*">/,'');html=html.replace('</head>','<link rel="stylesheet" href="/assets/home-layout.css?v=20261031-reading1"></head>');html=html.replace('/assets/calculator.mjs?v=20261023-results1','/assets/calculator.mjs?v=20261031-reading1').replace('/assets/design.js?v='+frameVersion,'/assets/design.js?v=20261031-reading1');}
  return html;
 }
