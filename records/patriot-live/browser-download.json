@@ -1,0 +1,11 @@
+{
+  "actual_browser_download": true,
+  "rows_including_header": 18,
+  "columns": 6,
+  "state_months": 24,
+  "total": 1083,
+  "generated_date": "2026-11-01",
+  "browser_recovery": "Debugger unattached after download timeout; same-browser tabs.get and user.claimTab did not restore debugger",
+  "mobile_check": "not verified",
+  "unknown_input_browser_check": "not verified"
+}

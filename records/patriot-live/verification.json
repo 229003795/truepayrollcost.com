@@ -1,0 +1,57 @@
+{
+  "checked_utc": "2026-11-01T00:42:35.953727+00:00",
+  "commit": "ab2f8a9",
+  "page": {
+    "http": "200",
+    "bytes": 15837,
+    "canonical_raw": "<link rel=\"canonical\" href=\"https://truepayrollcost.com/patriot-software-pricing/\">",
+    "answer_present": true
+  },
+  "svg": {
+    "http": "200",
+    "bytes": 1619
+  },
+  "ui": {
+    "http": "200",
+    "bytes": 1810
+  },
+  "core": {
+    "http": "200",
+    "bytes": 2707
+  },
+  "csv": {
+    "http": "200",
+    "bytes": 2427,
+    "rows_including_header": 20,
+    "columns": [
+      13
+    ],
+    "header": [
+      "section",
+      "period",
+      "paid_workers",
+      "timecard_users",
+      "extra_filing_states",
+      "payroll_base_usd",
+      "worker_fees_usd",
+      "time_base_usd",
+      "time_user_fees_usd",
+      "state_fees_usd",
+      "cash_subtotal_usd",
+      "confirmation",
+      "source"
+    ],
+    "ledger_sum": 891
+  },
+  "home": {
+    "http": "200",
+    "bytes": 26613,
+    "backlinks": 1
+  },
+  "sitemap": {
+    "http": "200",
+    "bytes": 1981,
+    "urls": 18,
+    "new_url": true
+  }
+}
