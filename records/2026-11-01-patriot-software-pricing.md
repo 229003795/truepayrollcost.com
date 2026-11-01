@@ -1,0 +1,13 @@
+# Patriot software pricing — 2026-11-01
+
+Round1day11,08:30Asia/Shanghai daily queue. Authorized patriot software pricing110 US twelve-month average, userOct27 batch. Queue selection skips already-published Rippling. Latestmain7575a42; live sitemap-before17 and no Patriot route; no November1 article record at execution start. One planned new page, not a near-synonym of an existing page. Isolated worktree; old uncommitted records untouched.
+
+Research: actual signed-in external Chrome Gang Google query hl=en gl=us pws=0. Nine unique ordinary results on first page; first page2 entry duplicates OnPay, next Business.com completes ten unique candidates.9正文read,1Reddit blocked and not used. Source facts read via official public text; official pricing Chrome showed security verification and was not bypassed. Three third-party review bodies read in Chrome; no third-party outbound article links on our page. Details in2026-11-01-patriot-serp-review.json. No physicalUS assertion.
+
+Increment: official comparison pages already supply annual744 and discuss paid workers; reviewers already mention seasonal base charges. Do not call those discoveries exclusive. Our concrete original work is the12-period ledger with45paid-worker months,27time-card-user months,8extra-state months, a891subtotal, and333reconciliation against a1224flat-count schedule. State fee end dates are assumed written-confirmed inputs, not a cessation policy. Time subscription stays enabled12months; employee fee follows time-card usage per official FAQ. Counts differ intentionally.
+
+Deliverables: English page, answer-after-first-paragraph SVG,4-input regular-price calculator, dynamic CSV and fixed13-column/20-row ledger plus fillable confirmation lines;3FAQ direct answers;4official links withNovember1checked dates. Contextual homepage discovery link added to existing published-price card, and page links home worksheet and existing Gusto/QuickBooks scope worksheet. No separate Patriot-vs-X page or ranking.
+
+Validation:39tests pass, including new arithmetic/unknown/incompatible-quantity/CSV cases. CSV12monthlyrows sum891 and45/27/8. Static build18pages;canonical/SVG/XML/English/FAQ/source/link checks pass. No newpage counted until live deployment verified. Browser interaction/download/mobile evidence to be saved after release. NoGSC/percenturl/archive actions.
+
+Next queue: Paychex vs Gusto320,QuickBooks vs ADP210,then four newly authorized vendor-cost subjects (Zoho210,SurePayroll170,Wave140,Gusto vs OnPay140). Homepage payroll-cost-calculator remains conditional optimization, not counted as a ready new page. Gusto vs BambooHR140 remains scope-check backup only. Core and fixedthree opponents unchanged;November18index-first comparison unchanged.

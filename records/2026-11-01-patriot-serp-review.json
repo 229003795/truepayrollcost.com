@@ -1,0 +1,78 @@
+{
+  "query": "patriot software pricing",
+  "hl": "en",
+  "gl": "us",
+  "pws": 0,
+  "physical_location": "Google says Unknown; not verified US physical location",
+  "collection": "First page9 unique ordinary results; page2 repeated OnPay then Business.com selected as tenth unique; ads and AI Overview excluded",
+  "candidates": 10,
+  "bodies_read": 9,
+  "blocked": 1,
+  "rows": [
+    {
+      "rank": 1,
+      "title": "Patriot official pricing",
+      "url": "https://www.patriotsoftware.com/pricing/",
+      "evidence": "Read via public web text; Chrome showed security verification; regular/promo rates and no-pay billing already covered"
+    },
+    {
+      "rank": 2,
+      "title": "Patriot compare directory",
+      "url": "https://www.patriotsoftware.com/payroll/compare/",
+      "evidence": "Read public web body; comparison directory and base rates"
+    },
+    {
+      "rank": 3,
+      "title": "Patriot vs Gusto",
+      "url": "https://www.patriotsoftware.com/payroll/compare/patriot-software-vs-gusto/",
+      "evidence": "Read public web body; explicitly already gives744/year and per-worker-paid model"
+    },
+    {
+      "rank": 4,
+      "title": "Patriot payroll",
+      "url": "https://www.patriotsoftware.com/payroll/",
+      "evidence": "Read public web body; direct deposit setup and state fee scope"
+    },
+    {
+      "rank": 5,
+      "title": "Software Finder pricing",
+      "url": "https://softwarefinder.com/resources/patriot-software-pricing",
+      "evidence": "Chrome body read; tiers add-ons offer and state fees already described"
+    },
+    {
+      "rank": 6,
+      "title": "Patriot vs QuickBooks",
+      "url": "https://www.patriotsoftware.com/payroll/compare/patriot-software-vs-quickbooks/",
+      "evidence": "Read public web body; annual/monthly examples and add-on fees already present"
+    },
+    {
+      "rank": 7,
+      "title": "eLearning Industry pricing",
+      "url": "https://elearningindustry.com/patriot-payroll-pricing",
+      "evidence": "Chrome body read; half-price months and add-ons already described"
+    },
+    {
+      "rank": 8,
+      "title": "Patriot vs OnPay",
+      "url": "https://www.patriotsoftware.com/payroll/compare/patriot-software-vs-onpay/",
+      "evidence": "Read public web body; annual744 and multi-state already covered"
+    },
+    {
+      "rank": 9,
+      "title": "Reddit switching discussion",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1o7l3ez/thinking_of_switching_payrollcalled_2_places/",
+      "evidence": "Blocked by network security in Chrome; no body read, no quote or absence claim"
+    },
+    {
+      "rank": 10,
+      "title": "Business.com Patriot review",
+      "url": "https://www.business.com/reviews/patriot-software/",
+      "evidence": "Chrome body read; seasonal no-pay billing and time add-on fees already covered"
+    }
+  ],
+  "extra_official_sources": [
+    "https://www.patriotsoftware.com/payroll/add-ons/time-attendance/",
+    "https://www.patriotsoftware.com/payroll/multi-state-payroll/",
+    "https://www.patriotsoftware.com/accounting/software/1099-e-file/"
+  ]
+}

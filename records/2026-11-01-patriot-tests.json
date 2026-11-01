@@ -1,0 +1,13 @@
+{
+  "unit_tests": 39,
+  "failed": 0,
+  "static_csv_rows_including_header": 20,
+  "static_csv_columns": 13,
+  "ledger_sum": 891,
+  "paid_worker_months": 45,
+  "time_user_months": 27,
+  "extra_state_months": 8,
+  "sitemap_urls": 18,
+  "new_page_count": 1,
+  "live_verified": false
+}

@@ -1,0 +1,20 @@
+﻿section,period,paid_workers,timecard_users,extra_filing_states,payroll_base_usd,worker_fees_usd,time_base_usd,time_user_fees_usd,state_fees_usd,cash_subtotal_usd,confirmation,source
+generated,2026-11-01,,,,,,,,,,Illustration not a quote,https://www.patriotsoftware.com/pricing/
+illustration,Month 1,5,3,2,37,25,6,6,24,98,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 2,5,3,2,37,25,6,6,24,98,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 3,5,3,2,37,25,6,6,24,98,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 4,5,3,2,37,25,6,6,24,98,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 5,5,3,0,37,25,6,6,0,74,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 6,5,3,0,37,25,6,6,0,74,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 7,5,3,0,37,25,6,6,0,74,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 8,5,3,0,37,25,6,6,0,74,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 9,5,3,0,37,25,6,6,0,74,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 10,0,0,0,37,0,6,0,0,43,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 11,0,0,0,37,0,6,0,0,43,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+illustration,Month 12,0,0,0,37,0,6,0,0,43,Example; confirm state end dates and time subscription,https://www.patriotsoftware.com/pricing/
+total,12 regular-price months,45,27,8,444,225,72,54,96,891,Excludes promotions and unconfirmed costs,
+confirmation,Confirm paid-worker counts for every month,,,,,,,,,,,
+confirmation,Confirm subscribed time-product months and time-card-user counts,,,,,,,,,,,
+confirmation,Confirm additional state billing start and end dates,,,,,,,,,,,
+confirmation,Confirm promotion eligibility and invoice dates,,,,,,,,,,,
+confirmation,Confirm other charges tax and internal transition time,,,,,,,,,,,
