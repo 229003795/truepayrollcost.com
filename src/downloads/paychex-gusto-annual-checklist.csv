@@ -1,0 +1,24 @@
+section,item,year,quantity,rate_usd,amount_usd,evidence
+scope,AUTHORED HYPOTHETICAL EXAMPLE;NOT PAYCHEX PRICES,,,,,No vendor quote obtained
+checked,Gusto official rates,2026-11-02,,,,https://gusto.com/product/pricing
+checked,Paychex requests a quote;processing listed included,2026-11-02,,,,https://www.paychex.com/payroll/compare-payroll-solutions
+example,Monthly total,first,12,20,240,Authored assumption;not vendor price
+example,Billed runs,first,22,24,528,Authored assumption;not vendor price
+example,Setup,first,1,60,60,Authored assumption;not vendor price
+example,Recurring annual charges,first,1,120,120,Authored assumption;not vendor price
+subtotal,Quote-side,first,,,948,Specified supplier charges only
+benchmark,Gusto Simple five people,first,12,79,948,(49+6*5)*12;unchanged single-state scope
+example,Monthly total,following,12,20,240,Authored assumption;not vendor price
+example,Billed runs,following,26,24,624,Authored assumption;not vendor price
+example,Setup,following,1,0,0,Authored assumption;not vendor price
+example,Recurring annual charges,following,1,120,120,Authored assumption;not vendor price
+subtotal,Quote-side,following,,,984,Specified supplier charges only
+benchmark,Gusto Simple five people,following,12,79,948,(49+6*5)*12;unchanged single-state scope
+confirm,Product headcount states and services,,,,,Pending confirmation:write source and date
+confirm,Monthly total and billing basis,,,,,Pending confirmation:write source and date
+confirm,Included or separately billed processing,,,,,Pending confirmation:write source and date
+confirm,Waiver dates and covered runs,,,,,Pending confirmation:write source and date
+confirm,Setup one-time designation,,,,,Pending confirmation:write source and date
+confirm,Recurring annual fees not duplicated,,,,,Pending confirmation:write source and date
+confirm,Renewal terms and actual run dates,,,,,Pending confirmation:write source and date
+confirm,Internal transition hours and hourly cost,,,,,Pending confirmation:write source and date
