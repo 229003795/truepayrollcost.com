@@ -1,0 +1,51 @@
+{
+  "/paychex-vs-gusto/": {
+    "status": 200,
+    "bytes": 17221
+  },
+  "/assets/paychex-gusto-renewal.svg": {
+    "status": 200,
+    "bytes": 1324
+  },
+  "/assets/paychex-gusto.mjs": {
+    "status": 200,
+    "bytes": 2551
+  },
+  "/assets/paychex-gusto-core.mjs": {
+    "status": 200,
+    "bytes": 2706
+  },
+  "/downloads/paychex-gusto-annual-checklist.csv": {
+    "status": 200,
+    "bytes": 2003
+  },
+  "/": {
+    "status": 200,
+    "bytes": 26819
+  },
+  "/paychex-pricing/": {
+    "status": 200,
+    "bytes": 22146
+  },
+  "/sitemap.xml": {
+    "status": 200,
+    "bytes": 2080
+  },
+  "canonical": "<link rel=\"canonical\" href=\"https://truepayrollcost.com/paychex-vs-gusto/\">",
+  "csv": {
+    "rows_including_header": 24,
+    "columns": 7,
+    "header": [
+      "section",
+      "item",
+      "year",
+      "quantity",
+      "rate_usd",
+      "amount_usd",
+      "evidence"
+    ]
+  },
+  "home_backlinks": 1,
+  "family_backlinks": 1,
+  "sitemap_urls": 19
+}

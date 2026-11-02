@@ -1,0 +1,45 @@
+{
+  "actual_dynamic_browser_csv": {
+    "rows_including_header": 22,
+    "columns": 6,
+    "header": [
+      "section",
+      "item",
+      "quantity_or_value",
+      "unit",
+      "amount_usd",
+      "evidence"
+    ],
+    "generated_date": "2026-11-02",
+    "following_year": 984
+  },
+  "browser": {
+    "initial_pending": true,
+    "example_first": 948,
+    "example_next": 984,
+    "bridge": 36,
+    "clear_annual_pending_export_disabled": true,
+    "mobile390": {
+      "scrollWidth": 375,
+      "all7inputs_left": 16,
+      "all7inputs_right": 359,
+      "svg_loaded": true
+    },
+    "viewport_restored": true
+  },
+  "static_csv": {
+    "http_download_verified": true,
+    "rows": 24,
+    "columns": 7,
+    "browser_click_no_file_confirmed": true,
+    "documented_public_link_downloadMedia": "timeout15s;no further retries"
+  },
+  "patriot_carryover": {
+    "empty_state_pending_export_disabled": true,
+    "restored_default": 891,
+    "mobile390_scrollWidth": 375,
+    "svg_loaded": true,
+    "static_browser_download": "click performed but file not confirmed;HTTP contents previously verified"
+  },
+  "browser_policy": "chrome://downloads blocked by URL policy;not retried through alternative surfaces"
+}
