@@ -1,0 +1,10 @@
+field,quickbooks_value,adp_value,status
+company_count,,,pending
+worker_types,,,pending
+pay_frequency,,,pending
+jurisdictions,,,pending
+monthly_base,,,ADP quote required
+per_worker_or_run,,,ADP quote required
+implementation_fee,,,pending
+renewal_basis,,,pending
+tax_filing_and_add_ons,,,pending
