@@ -1,0 +1,12 @@
+field,example,confirmation_status,source_or_note
+US full-access base fee,40,published,Wave official pricing checked 2026-11-05
+Active employees,5,entered,Replace with actual active headcount
+Per active employee fee,6,published,Wave official pricing checked 2026-11-05
+Annual subscription subtotal,840,calculated,"(40 + 6*5)*12; subscription only"
+Independent contractors paid,0,pending,"Add $6 per contractor paid when confirmed"
+Sales tax,0,pending,"Do not enter 0 unless confirmed absent"
+State or local charges,,pending,"Keep separate from subscription subtotal"
+Wages,,pending,"Not included"
+Employer taxes,,pending,"Not included"
+Optional services,,pending,"Confirm separately"
+Internal administration hours,,pending,"Keep separate from vendor price"
