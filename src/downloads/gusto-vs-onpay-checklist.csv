@@ -1,0 +1,11 @@
+field,gusto,onpay,bamboohr_or_quote,confirmation_status
+Base monthly fee,49,49,,published entry rates checked 2026-11-07
+Per worker monthly fee,6,6,,published entry rates checked 2026-11-07
+Example active workers,5,5,,entered example
+Annual subscription subtotal,948,948,,calculated before extras
+Single-state payroll,Yes,, ,confirm plan scope
+Multi-state payroll,Plan dependent,Included,,confirm states
+Time tracking,,Optional bundle,,confirm add-on
+HR tools,Plan/add-on dependent,Optional bundle,Configuration dependent,pending
+Implementation fee,,None stated,,confirm quote terms
+Wages and employer taxes,,, ,excluded
