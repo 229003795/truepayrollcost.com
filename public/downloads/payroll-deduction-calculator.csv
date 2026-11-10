@@ -1,0 +1,10 @@
+line,amount,formula_or_note
+gross pay,2000.00,entered paycheck gross
+pre-tax deductions,200.00,entered employee deductions
+federal withholding,300.00,entered withholding amount
+state withholding,80.00,entered withholding amount
+local withholding,20.00,entered withholding amount
+other employee deductions,20.00,entered deduction amount
+total listed deductions,620.00,200+300+80+20+20
+estimated net pay,1380.00,2000-620
+scope,,employee-side estimate; confirm rates and amounts with payroll records
