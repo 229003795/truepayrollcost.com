@@ -6,5 +6,5 @@
 - Source date: IRS Publication 15-T and Publication 15 checked November 10, 2026.
 - Build/test: `npm run build`; `npm test` — 45 tests passed.
 - Live checks: page HTTP 200, canonical matches URL, sitemap contains the route with 26 entries, JS HTTP 200, CSV HTTP 200.
-- Default calculation: $2,000 gross − $200 pre-tax − $300 federal − $80 state − $20 local − $20 other = $1,380 estimated net pay.
+- Default calculation aligned to the page's displayed example: $2,000 gross − $200 pre-tax − $300 federal − $100 state − $20 local/other = $1,380 estimated net pay; the separate other-deductions input is not included in that displayed line.
 - Unknowns remain input-dependent; this is not a tax-table determination or guaranteed take-home pay.
