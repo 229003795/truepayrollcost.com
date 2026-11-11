@@ -1,0 +1,5 @@
+line,value,formula_or_note
+per-paycheck deductions,620.00,entered employee-side deductions
+pay periods,26,biweekly illustrative calendar
+annualized deductions,16120.00,620 multiplied by 26
+scope,,planning estimate; confirm changes and annual limits
