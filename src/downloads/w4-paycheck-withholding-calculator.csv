@@ -1,0 +1,6 @@
+line,value,formula_or_note
+regular federal withholding,156.00,entered per-paycheck withholding
+extra W-4 Step 4(c),25.00,entered extra withholding
+pay periods,26,biweekly illustrative calendar
+annual federal withholding estimate,4706.00,(156+25)*26
+scope,,employee withholding estimate; confirm W-4 and IRS tables
