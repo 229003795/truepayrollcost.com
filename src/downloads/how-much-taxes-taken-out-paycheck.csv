@@ -1,0 +1,7 @@
+field,value,unit,notes
+Federal income tax,200.00,USD per paycheck,entered example
+State income tax,100.00,USD per paycheck,entered example
+Local income tax,20.00,USD per paycheck,entered example
+Paychecks per year,26,checks,biweekly example
+Tax withholding total,320.00,USD per paycheck,formula federal plus state plus local
+Annual tax withholding,8320.00,USD per year,formula total times checks
