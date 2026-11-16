@@ -1,0 +1,7 @@
+field,value,unit,notes
+Estimated annual shortfall,1200.00,USD,entered example
+Job A share,50,percent,entered example
+Job A remaining paydays,20,paydays,entered example
+Job B remaining paydays,12,paydays,entered example
+Job A extra per paycheck,30.00,USD,job A share divided by paydays
+Job B extra per paycheck,50.00,USD,job B share divided by paydays
