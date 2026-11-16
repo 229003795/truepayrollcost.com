@@ -1,0 +1,6 @@
+field,value,unit,notes
+Covered wages,60000.00,USD,entered example
+Employer Social Security,3720.00,USD,6.2% of wages below 184500 wage base
+Employer Medicare,870.00,USD,1.45% of covered wages
+FUTA amount,42.00,USD,illustrative entered amount; confirm credit/state facts
+Federal employer-tax subtotal,4632.00,USD,Social Security plus Medicare plus FUTA
