@@ -1,0 +1,8 @@
+field,example_value,notes
+target_net_payment,1000,confirmed target net payment
+employee_withholding_entered,250,entered confirmed withholding; not calculated here
+gross_payment,1250,target net plus entered withholding
+employer_social_security,77.50,6.2 percent of gross payment
+employer_medicare,18.13,1.45 percent of gross payment
+other_employer_costs_entered,0,leave pending until confirmed
+known_employer_subtotal,1345.63,does not include unconfirmed taxes or benefits
