@@ -1,0 +1,10 @@
+field,example_value,notes
+plan,Payroll,keep Payroll and PEO plans separate
+employees,5,active W-2 headcount used in example
+payroll_base_monthly,50,published base fee
+payroll_per_employee_monthly,8,published employee fee
+five_person_payroll_annual,1080,($50 + $8 x 5) x 12
+peo_basic_per_employee_monthly,79,published PEO Basic rate
+peo_plus_per_employee_monthly,124,published PEO Plus rate
+addons_and_insurance,,confirm separately
+annual_and_renewal_terms,,confirm in written quote
