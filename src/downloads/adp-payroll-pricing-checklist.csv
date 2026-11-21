@@ -1,0 +1,11 @@
+field,example_value,notes
+product,ADP for One,do not mix with RUN or Workforce Now
+employees,1,published ADP for One scope
+published_annual_offer,500,ADP for One only
+published_quarterly_offer,127.95,ADP for One only
+run_package,,request written quote
+pay_frequency,,quote factor
+states,,quote factor
+tax_filing_and_forms,,confirm package inclusion and fees
+direct_deposit_and_checks,,confirm separately
+setup_promotion_renewal,,written terms required
