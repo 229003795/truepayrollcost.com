@@ -1,0 +1,9 @@
+field,example_value,notes
+solution,TriNet PEO or HR Plus,confirm employer-of-record scope
+employees,20,fixture only; use quoted active worksite count
+pepm_rate,150,fixture from official example; not a list price
+monthly_fixture,3000,20 x $150
+region_and_industry,,quote factor
+benefits_and_workers_comp,,confirm included or itemized
+payroll_tax_administration,,confirm responsibility and fees
+implementation_and_renewal,,written terms required
